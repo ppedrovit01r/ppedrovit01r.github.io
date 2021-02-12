@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Weather Shoes</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Week 6: Weather Shoes</h1>
+      <h2>Pedro Vitor</h2>
+    </header>
+    <main>
+      <h3>Perfect Footwear</h3>
+      <label
+        >Enter Weather:
+        <select id="weather">
+          <option style="display: none" value="">
+            --Please choose an option--
+          </option>
+          <option value="hot">Hot</option>
+          <option value="rain">Rain</option>
+          <option value="snow">Snow</option>
+          <option value="unknown">Unknown</option>
+        </select>
+      </label>
+      <label><button onclick="weatherShoes()">Find out!</button></label>
+      <hr />
+      <p><span id="output"></span></p>
+    </main>
+    <footer>
+      &copy;2021 &bull; Pedro Vitor &bull; BYU-Idaho &bull; CIT 160
+    </footer>
+    <script src="js/myScript.js"></script>
+  </body>
+</html>

@@ -65,16 +65,16 @@ function checkSimpleCalc() {
   let calcResult;
   switch (symbol) {
     case "+":
-      calcResult = (x + y);
+      calcResult = x + y;
       break;
     case "-":
-      calcResult = (x - y);
+      calcResult = x - y;
       break;
     case "*":
-      calcResult = (x * y);
+      calcResult = x * y;
       break;
     case "/":
-      calcResult = (x / y);
+      calcResult = x / y;
       break;
     default:
       break;
@@ -85,4 +85,28 @@ function checkSimpleCalc() {
   } else {
     document.getElementById("output").innerHTML = "Incorrect 😢";
   }
+}
+
+function weatherShoes() {
+  //INPUT - Receive the information on the day's weather
+  let weather = document.getElementById("weather").value;
+  //PROCESSING - Choose footwear
+  let footwear;
+  switch (weather) {
+    case "hot":
+      footwear = "sandals";
+      break;
+    case "rain":
+      footwear = "galoshes";
+      break;
+    case "snow":
+      footwear = "boots";
+      break;
+    default:
+      footwear = "shoes";
+      break;
+  }
+  //OUTPUT - Show the user the footwear set
+  document.getElementById("output").innerHTML =
+    "On " + weather + " weather you should wear " + footwear;
 }

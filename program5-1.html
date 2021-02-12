@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CIT 160 - Exam 1/1</title>
+  </head>
+  <body>
+    <header>
+      <h1>Exam 1 - After Tax's Pay</h1>
+      <h2>Pedro Vitor</h2>
+    </header>
+    <main>
+      <h3>Calculate Your After Tax Pay</h3>
+      <label>Total Regular Hours: <input type="text" id="regHours" /></label>
+      <label>Total Overtime Hours: <input type="text" id="overHours" /></label>
+      <label><button onclick="ataxPay()">Calculate</button></label>
+      <hr />
+      <p><span id="output"></span></p>
+    </main>
+    <footer>
+      &copy;2021 &bull; Pedro Vitor &bull; BYU-Idaho &bull; CIT 160
+    </footer>
+    <script>
+      function ataxPay() {
+        //INPUT - Get regular hours and overtime hours from user.
+        let regHours = parseFloat(document.getElementById("regHours").value);
+        let overHours = parseFloat(document.getElementById("overHours").value);
+        //PROGRESSING
+        // - Get gross pay (regular pay rate is 15 and overtime pay rate is 22.5)
+        let grossPay = regHours * 15 + overHours * 22.5;
+        // - Subtract tax amount (Tax rate equals .15)
+        let netPay = grossPay - grossPay * 0.15;
+        // - Rounding number to 2 decimals:
+        let digits = 2;
+        let multiplier = Math.pow(10, digits);
+        netPay = Math.round(netPay * multiplier) / multiplier;
+        //OUTPUT - Display the result with a $ symbol
+        document.getElementById("output").innerHTML =
+          "The after tax pay is $" + netPay;
+      }
+    </script>
+  </body>
+</html>

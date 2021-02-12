@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CIT 160 - Exam 1/2</title>
+  </head>
+  <body>
+    <header>
+      <h1>Exam 1 - Cylinder's Volume</h1>
+      <h2>Pedro Vitor</h2>
+    </header>
+    <main>
+      <h3>Calculate the volume of a cylinder</h3>
+      <label>Enter radius: <input type="text" id="radius" /></label>
+      <label>Enter height: <input type="text" id="height" /></label>
+      <label><button onclick="cylinderVolume()">Calculate</button></label>
+      <hr />
+      <p><span id="output"></span></p>
+    </main>
+    <footer>
+      &copy;2021 &bull; Pedro Vitor &bull; BYU-Idaho &bull; CIT 160
+    </footer>
+    <script>
+      function cylinderVolume() {
+        //INPUT - Get regular hours and overtime hours from user.
+        let r = parseFloat(document.getElementById("radius").value);
+        let h = parseFloat(document.getElementById("height").value);
+        //PROGRESSING
+        // - Get volume
+        let v = Math.PI * Math.pow(r,2) * h;
+        // - Rounding to nearest whole number:
+        v = Math.round(v)
+        //OUTPUT - Display the result with a $ symbol
+        document.getElementById("output").innerHTML =
+          "Volume: " + v;
+      }
+    </script>
+  </body>
+</html>

@@ -43,3 +43,14 @@ label {
 	margin: 5px;
 }
 
+#simpleCalc label {
+	display: inline-block;
+}
+
+#simpleCalc input {
+	width: 100px;
+}
+
+#simpleCalc #symbol {
+	width: 25px;
+}

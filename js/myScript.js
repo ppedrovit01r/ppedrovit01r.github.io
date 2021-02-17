@@ -118,7 +118,7 @@ function alarm() {
   var dayOfMonth = now.getDate();
   var dayOfWeek = now.getDay();
   //PROCESSING
-  var message = "";
+  let message = "";
   if ((dayOfWeek == 0 || dayOfWeek == 6) ||
       ((month == 0 && dayOfMonth == 1) ||
       (month == 6 && dayOfMonth == 4) ||
@@ -128,4 +128,23 @@ function alarm() {
   //OUTPUT
   document.getElementById("output").innerHTML =
     message;
+}
+
+function retailDiscount() {
+  //INPUT
+  let subtotal = document.getElementById("subtotal").value;
+  var dayOfWeek = new Date().getDay();
+  //PROCESSING
+  if ((dayOfWeek == 2 || dayOfWeek == 3) &&
+      (subtotal > 50)) {
+    subtotal *= .9;
+  } 
+  let total = subtotal * 1.06;
+  //Adding 2 decimals:
+  let digits = 2;
+  let multiplier = Math.pow(10, digits);
+  total = Math.round(total * multiplier) / multiplier;
+  //OUTPUT
+  document.getElementById("output").innerHTML =
+    "$ " + total;
 }

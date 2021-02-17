@@ -110,3 +110,22 @@ function weatherShoes() {
   document.getElementById("output").innerHTML =
     "On " + weather + " weather you should wear " + footwear;
 }
+
+function alarm() {
+  //INPUT - from the computer
+  var now = new Date();
+  var month = now.getMonth();
+  var dayOfMonth = now.getDate();
+  var dayOfWeek = now.getDay();
+  //PROCESSING
+  var message = "";
+  if ((dayOfWeek == 0 || dayOfWeek == 6) ||
+      ((month == 0 && dayOfMonth == 1) ||
+      (month == 6 && dayOfMonth == 4) ||
+      (month == 11 && dayOfMonth == 25))) {
+      message = "Sleep in.";
+    } else {message = "Get up!";}
+  //OUTPUT
+  document.getElementById("output").innerHTML =
+    message;
+}

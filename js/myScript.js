@@ -148,3 +148,16 @@ function retailDiscount() {
   document.getElementById("output").innerHTML =
     "$ " + total;
 }
+
+function sumOdds() {
+  //INPUT - Gets an integer "n" from the user
+  let n = parseInt(document.getElementById("number").value);
+  //PROCESSING - Sums every odd number until the limit "n"
+  let sum = 0;
+  for (let i = 1; i <= n; i+=2) {
+    sum += i;
+  }
+  //OUTPUT - Outputs the sum.
+  document.getElementById("output").innerHTML =
+    "Sum of Odd Values: " + sum;
+}

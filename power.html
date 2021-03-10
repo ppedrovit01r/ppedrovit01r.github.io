@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CIT 160 - Exam 2/1</title>
+  </head>
+  <body>
+    <header>
+      <h1>Exam 2 - Power</h1>
+      <h2>Pedro Vitor</h2>
+    </header>
+    <main>
+      <h3>Power Table of 2</h3>
+      <label><button onclick="powerTwo()">Calculate</button></label>
+      <hr />
+      <p><span id="output"></span></p>
+    </main>
+    <footer>
+      &copy;2021 &bull; Pedro Vitor &bull; BYU-Idaho &bull; CIT 160
+    </footer>
+    <script>
+      function powerTwo() {
+        //INPUT
+        //PROGRESSING
+        let output = "1, ";
+        let result = 1;
+        for (let i = 1; i <= 31; i++) {
+          result *= 2;
+          output += result;
+          if (i < 31) {
+            output += ", "
+          }
+        }
+        //OUTPUT
+        document.getElementById("output").innerHTML =
+          output;
+      }
+    </script>
+  </body>
+</html>

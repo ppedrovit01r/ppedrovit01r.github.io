@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CIT 160 - Exam 2/2</title>
+  </head>
+  <body>
+    <p>Please enter two numbers:</p>
+    <input type="text" id="one" size="5" /><br />
+    <input type="text" id="two" size="5" />
+    <button type="button" onclick="exam2()">Click</button>
+    <div id="output"></div>
+
+    <script>
+      function exam2() {
+        //INPUT
+        let x = parseFloat(document.getElementById("one").value);
+        let y = parseFloat(document.getElementById("two").value);
+        //PROCESSING
+        let output;
+        if ((x > 5 && y > 5) || (x + y) > 20) {
+          output = "True";
+        } else {
+          output = "False";
+        }
+        //OUTPUT
+        document.getElementById("output").innerHTML = output;
+      }
+    </script>
+  </body>
+</html>

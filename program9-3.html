@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CIT 160 - Exam 2/3</title>
+  </head>
+  <body>
+    <header>
+      <h1>Exam 2 - Divisible Integers</h1>
+      <h2>Pedro Vitor</h2>
+    </header>
+    <main>
+      <h3>Calculate integers between <em>start</em> and <em>end</em> that are <strong>evenly</strong> divisible by <em>divisor</em></h3>
+      <label>Enter start: <input type="text" id="start" /></label>
+      <label>Enter end: <input type="text" id="end" /></label>
+      <label>Enter divisor: <input type="text" id="divisor" /></label>
+      <label><button onclick="evenDisibles()">Calculate</button></label>
+      <hr />
+      <div id="output"></div>
+      <br>
+    </main>
+    <footer>
+      &copy;2021 &bull; Pedro Vitor &bull; BYU-Idaho &bull; CIT 160
+    </footer>
+    <script>
+      function evenDisibles() {
+        //INPUT 
+        let start = parseInt(document.getElementById("start").value);
+        let end = parseInt(document.getElementById("end").value);
+        let divisor = parseInt(document.getElementById("divisor").value);
+        //PROGRESSING
+        let output = "";
+        for (let i = start; i <= end; i++) {
+          if (!(i % divisor)) {
+            output += i + " ";
+          }
+        }
+        //OUTPUT 
+        document.getElementById("output").innerHTML =
+          output;
+      }
+    </script>
+  </body>
+</html>

@@ -1,4 +1,47 @@
-function doFV() {
+function doPayment() { //W11 More Functions With Parameters
+  let principal = parseFloat(document.getElementById("principal").value);
+  let annualRate = parseFloat(document.getElementById("annualRate").value);
+  let years = parseFloat(document.getElementById("years").value);
+  let periodsPerYear = parseFloat(document.getElementById("periodsPerYear").value);
+  let result = computePayment(principal, annualRate, years, periodsPerYear);
+  document.getElementById("outputPayment").innerHTML = "$" + result;
+}
+
+function doBalance() { //W11 More Functions With Parameters
+  let principal = parseFloat(document.getElementById("principal").value);
+  let annualRate = parseFloat(document.getElementById("annualRate").value);
+  let years = parseFloat(document.getElementById("years").value);
+  let periodsPerYear = parseFloat(document.getElementById("periodsPerYear").value);
+  let numberOfPaymentPaidToDate = parseFloat(document.getElementById("numberOfPaymentPaidToDate").value);
+  let result = computeBalance(principal, annualRate, years, periodsPerYear, numberOfPaymentPaidToDate);
+  document.getElementById("outputBalance").innerHTML = "$" + result;
+}
+
+function computePayment(principal, annualRate, years, periodsPerYear) { //W11 More Functions With Parameters
+  //Getting the payment
+  let payment = principal * (annualRate / periodsPerYear) / (1 - Math.pow(1 + (annualRate / periodsPerYear), (- years * periodsPerYear)));
+  //Adding 2 decimals:
+  let digits = 2;
+  let multiplier = Math.pow(10, digits);
+  payment = Math.round(payment * multiplier) / multiplier;
+  //return
+  return payment;
+}
+
+function computeBalance(principal, annualRate, years, periodsPerYear, numberOfPaymentPaidToDate) { //W11 More Functions With Parameters
+  //Getting the payment (without approximation)
+  let payment = principal * (annualRate / periodsPerYear) / (1 - Math.pow(1 + (annualRate / periodsPerYear), (- years * periodsPerYear)));
+  //Doing the balance
+  let balance = principal * Math.pow(1 + (annualRate / periodsPerYear), numberOfPaymentPaidToDate) - payment * (Math.pow(1 + (annualRate / periodsPerYear), numberOfPaymentPaidToDate) - 1) / (annualRate / periodsPerYear);
+  //Adding 2 decimals:
+  let digits = 2;
+  let multiplier = Math.pow(10, digits);
+  balance = Math.round(balance * multiplier) / multiplier;
+  //return
+  return balance;
+}
+
+function doFV() { //W11 More Functions With Parameters
   let principal = parseFloat(document.getElementById("principal").value);
   let annualRate = parseFloat(document.getElementById("annualRate").value);
   let years = parseFloat(document.getElementById("years").value);
@@ -7,7 +50,7 @@ function doFV() {
   document.getElementById("output").innerHTML = "$" + result;
 }
 
-function computeFutureValue(principal, annualRate, years, periodsPerYear) {
+function computeFutureValue(principal, annualRate, years, periodsPerYear) { //W11 More Functions With Parameters
   let future = principal * Math.pow((1 + (annualRate / periodsPerYear)), (years * periodsPerYear));
   //Adding 2 decimals:
   let digits = 2;
@@ -16,7 +59,7 @@ function computeFutureValue(principal, annualRate, years, periodsPerYear) {
   return future;
 }
 
-function doInputOutput() {
+function doInputOutput() { //W10 Functions With Parameters
   let temperature = parseFloat(document.getElementById("temperature").value);
   let windspeed = parseFloat(document.getElementById("windSpeed").value);
   let windchill;
@@ -26,7 +69,7 @@ function doInputOutput() {
   document.getElementById("output").innerHTML = windchill;
 }
 
-function windChill(tempF, speed) {
+function windChill(tempF, speed) { //W10 Functions With Parameters
   let windFactor = 35.74 + 0.6215 * tempF - 35.75 * Math.pow(speed, 0.16) + 0.4275 * tempF * Math.pow(speed, 0.16);
   return windFactor;
 }

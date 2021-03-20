@@ -41,6 +41,11 @@ h3 {
 label {
 	display: block;
 	margin: 5px;
+	text-align: left;
+}
+
+input {
+	padding-inline-end: 10px;
 }
 
 #simpleCalc label {

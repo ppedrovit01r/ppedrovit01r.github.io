@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>More Functions with Parameters</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <header>
+            <h1>Week 11: More Functions with Parameters</h1>
+            <h2>Pedro Vitor</h2>
+        </header>
+        <main>
+            <h3>Loan Calculator</h3>
+            <label>Amount borrowed (principal): <input type="text" id="principal"></label>
+            <label>Annual interest rate <em>(example: .065)</em>: <input type="text" id="annualRate"></label>
+            <label>Number of years: <input type="text" id="years"></label>
+            <label>Periods per year: <input type="text" id="periodsPerYear"></label>
+            <label><button onclick="doPayment()">Compute payment</button></label>
+            <p style="border-bottom: 1px solid #333;"><span id="outputPayment"></span></p>
+            <label>Number of payments paid to date: <input type="text" id="numberOfPaymentPaidToDate"></label>
+            <label><button onclick="doBalance()">Compute payoff amount</button></label>
+            <p style="border-bottom: 1px solid #333;"><span id="outputBalance"></span></p>
+        </main>
+        <footer>
+            &copy;2021 &bull; Pedro Vitor &bull; BYU-Idaho &bull; CIT 160
+        </footer>
+        <script src="js/myScript.js"></script>
+    </body>
+</html>

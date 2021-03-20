@@ -1,3 +1,21 @@
+function doFV() {
+  let principal = parseFloat(document.getElementById("principal").value);
+  let annualRate = parseFloat(document.getElementById("annualRate").value);
+  let years = parseFloat(document.getElementById("years").value);
+  let periodsPerYear = parseFloat(document.getElementById("periodsPerYear").value);
+  let result = computeFutureValue(principal, annualRate, years, periodsPerYear);
+  document.getElementById("output").innerHTML = "$" + result;
+}
+
+function computeFutureValue(principal, annualRate, years, periodsPerYear) {
+  let future = principal * Math.pow((1 + (annualRate / periodsPerYear)), (years * periodsPerYear));
+  //Adding 2 decimals:
+  let digits = 2;
+  let multiplier = Math.pow(10, digits);
+  future = Math.round(future * multiplier) / multiplier;
+  return future;
+}
+
 function doInputOutput() {
   let temperature = parseFloat(document.getElementById("temperature").value);
   let windspeed = parseFloat(document.getElementById("windSpeed").value);

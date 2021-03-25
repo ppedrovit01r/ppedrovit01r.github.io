@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Arrays</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Week 12: Arrays</h1>
+      <h2>Pedro Vitor</h2>
+    </header>
+    <main>
+      <label><button onclick="test()">Button</button></label>
+      <hr />
+      <div id="output"></div>
+    </main>
+    <footer>
+      &copy;2021 &bull; Pedro Vitor &bull; BYU-Idaho &bull; CIT 160
+    </footer>
+    <script>
+      /* Defining Table
+       * Input: no user input
+       * Processing: Test the addEnds and getMiddle functions by calling them.
+       * Output: The values returned from the addEnds and getMiddle functions.
+       */
+      function test() {
+        let list1 = [17, 8, 9, 5, 20];
+        let list2 = [12, 4, 8, 15, 17, 5, 20, 11];
+
+        // Test the addEnds function by calling it two times.
+        let sum1 = addEnds(list1);
+        let sum2 = addEnds(list2);
+
+        // Test the getMiddle function by calling it two times.
+        let mid1 = getMiddle(list1);
+        let mid2 = getMiddle(list2);
+
+        // Build a string to display to the user.
+        let output = sum1 + "<br>" + sum2 + "<br>" + mid1 + "<br>" + mid2;
+
+        // Display the output string for the user to see.
+        document.getElementById("output").innerHTML = output;
+      }
+
+      function addEnds(list) {
+        let size = list.length;
+        return (list[0] + list[size-1]);
+      }
+
+      function getMiddle(list) {
+        let size = list.length;
+        let key = size % 2;
+        switch (key) {
+            case 0:
+                let value = size/2;
+                let sumDiff = list[value - 1] + list[value];
+                return (sumDiff/2);
+                break;
+        
+            default:
+                let middleValue = (size - 1)/2;
+                return (list[middleValue]);
+                break;
+        }
+      }
+    </script>
+  </body>
+</html>

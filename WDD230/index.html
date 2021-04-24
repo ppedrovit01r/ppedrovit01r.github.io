@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Assignment portal for Pedro Vitor in WDD 230: Web Frontend Development at Brigham Young University - Idaho"
+    />
+    <title>WDD 230: Pedro Vitor</title>
+    <style>
+      body {
+          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+          text-align: center;
+          max-width: 960px;
+          margin: auto;
+        }
+      header {
+          background-color: teal;
+          border-radius: 2em 2em 0 0;
+      }
+      footer {
+          background-color: teal;
+          border-radius: 0 0 2em 2em;
+      }
+      main {
+          text-align: left;
+          padding-left: 3em;
+      }
+      h1 {
+          color: white;
+          padding: .5em;
+          margin: .5em 0 0 0;
+        }
+      .profile {
+          border-radius: 1.5em;
+          border: solid wheat .5em;
+          float:right;
+          margin: .7em .7em 0 0;
+        }
+      ul {
+          margin-top: .5em;
+          margin-bottom: 2em;
+      }
+      .footerLine {
+          color: white;
+          padding-top: 1em;
+          margin: 0;
+      }
+      .footerLine a:visited {
+          color: wheat;
+      }
+      .lastModified {
+          color: wheat;
+          font-size: .8em;
+          padding-bottom: 1em;
+          margin: .25em;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img
+        class="profile"
+        src="profile210125.jpg"
+        alt="Profile showing my blue hair and flowery shirt"
+        height="200"
+      />
+      <h1>Pedro Vitor</h1>
+    </header>
+    <main>
+      <h2>WDD 230: Assignment Portal</h2>
+      <hr>
+      <ul>
+        <li>Lesson 02: <a href="">Assignment Link</a></li>
+        <li>Lesson 03: <a href="">Assignment Link</a></li>
+        <li>Lesson 04: <a href="">Link</a> <a href="">Link</a></li>
+      </ul>
+    </main>
+    <footer>
+      <p class="footerLine">
+        &copy;<span id="currentYear"></span> &bull; Pedro Vitor &bull; Brazil
+        &bull;
+        <a target="_blank" href="https://www.byui.edu/online"
+          >BYU-Idaho Online Learning</a
+        >
+      </p>
+      <p class="lastModified">Last Updated: <span id="lastModified"></span></p>
+    </footer>
+    <script>
+      //footer details
+      document.getElementById(
+        "currentYear"
+      ).innerHTML = new Date().getFullYear();
+      document.getElementById("lastModified").innerHTML = new Date(
+        document.lastModified
+      );
+    </script>
+  </body>
+</html>

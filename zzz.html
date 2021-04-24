@@ -9,16 +9,44 @@
     <div id="output"></div>
 
     <script>
-      function nada() {
-        //INPUT
-        let output = 0;
-        //PROCESSING
-        for (let i = 1; i <= 263; i++) {
-            output += i;
-            
+      function averageBig(list) {
+        let count = 0;
+        let sum = 0;
+        for (let i = 0; i < list.length; i++) {
+          if (list[i] > 1000) {
+            sum += list[i];
+            count++;
+          }
         }
-        //OUTPUT
-        document.getElementById("output").innerHTML = output;
+        if (count == 0) {
+          return 0;
+        } else {
+          return (sum/count);
+        }
+      }
+      
+      function getLast(list) {
+        if (list[list.length -1] > 0) {
+          return list[list.length -1];
+        } else {
+          return list[list.length -2];
+        }
+      }
+
+      function depreciation(startValue, endValue, months) {
+        return ((startValue - endValue)/months);
+      }
+      
+      function makeFullName(givenName, familyName) {
+        return (givenName + ", " + familyName);
+      }
+
+      function nada() {
+        let list1 = [ 70, 1010, 950, 2014, 6 ];
+        let list2 = [ -72.3, 3000, 873, 2312, 68, 7501.3 ];
+        let list3 = [ 70, 950, 671, 6 ];	
+        let fn = averageBig(list1);
+        document.getElementById("output").innerHTML = fn;
       }
     </script>
   </body>

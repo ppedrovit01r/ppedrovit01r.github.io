@@ -8,6 +8,7 @@
       content="Assignment portal for Pedro Vitor in WDD 230: Web Frontend Development at Brigham Young University - Idaho"
     />
     <title>WDD 230: Pedro Vitor</title>
+    <link rel="stylesheet" href="css/normalize.css">
     <style>
       body {
           font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -35,8 +36,6 @@
       .profile {
           border-radius: 1.5em;
           border: solid #EFEAD2 .5em;
-          float:right;
-          margin: .7em .7em 0 0;
         }
       ul {
           margin-top: .5em;
@@ -56,6 +55,14 @@
           padding-bottom: 1em;
           margin: .25em;
       }
+
+      @media (min-width: 32.5em) { 
+        */large screens*/
+        .profile {
+          float: right;
+          margin: .7em .7em 0 0;
+        }
+      } 
     </style>
   </head>
   <body>

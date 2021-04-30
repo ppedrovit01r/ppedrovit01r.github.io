@@ -9,4 +9,18 @@
 	main div:nth-child(3) {
 		grid-column: span 2;
 	}
+	#principle3 {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 40px 34px 34px 1fr;
+	}
+	#principle3 h3 {
+		grid-column: span 2;
+	}
+	#principle3 a {
+		grid-area: 3 / 1 / span 1 / span 1;
+	}
+	#principle3 img {
+		grid-area: 2 / 2 / span 3 / span 1;
+	}
 }

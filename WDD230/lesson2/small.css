@@ -35,10 +35,20 @@ body {
     font-weight: normal;
   }
   h3 {
-      background-color: #28606d;
+    background-color: #28606d;
+  }
+  h4 {
+    color: #333;
   }
   main p, a {
-      padding: .5em;
+    padding: .5em;
+  }
+  main img {
+    padding: .5em;
+    width: 95%;
+  }
+  main p {
+    margin-top: 0;
   }
 
 /* footer ****************/

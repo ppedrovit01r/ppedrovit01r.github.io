@@ -8,60 +8,71 @@
       content="Assignment portal for Pedro Vitor in WDD 230: Web Frontend Development at Brigham Young University - Idaho"
     />
     <title>WDD 230: Pedro Vitor</title>
-    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/normalize.css" />
     <style>
       body {
-          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-          text-align: center;
-          max-width: 960px;
-          margin: auto;
-        }
-      header {
-          background-color: #28606D;
-          border-radius: 2em 2em 0 0;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        text-align: center;
+        max-width: 960px;
+        margin: auto;
       }
+      header,
       footer {
-          background-color: #28606D;
-          border-radius: 0 0 2em 2em;
+        background-color: #28606d;
+        border-radius: 0;
       }
       main {
-          text-align: left;
-          padding-left: 3em;
+        text-align: left;
+        padding: 0 2em;
       }
       h1 {
-          color: white;
-          padding: .5em;
-          margin: .5em 0 0 0;
-        }
+        color: white;
+        padding: 0.5em;
+        margin-top: 0;
+      }
       .profile {
-          border-radius: 1.5em;
-          border: solid #EFEAD2 .5em;
-        }
+        border-radius: 1em;
+        border: solid #efead2 0.5em;
+        margin-top: 1em;
+      }
       ul {
-          margin-top: .5em;
-          margin-bottom: 2em;
+        margin-top: 0.5em;
+        margin-bottom: 2em;
       }
       .footerLine {
-          color: white;
-          padding-top: 1em;
-          margin: 0;
+        color: white;
+        padding-top: 1em;
+        margin: 0;
       }
-      .footerLine a:visited, .footerLine a:link {
-          color: #EFEAD2;
+      .footerLine a:visited,
+      .footerLine a:link {
+        color: #efead2;
       }
       .lastModified {
-          color: #EFEAD2;
-          font-size: .8em;
-          padding-bottom: 1em;
-          margin: .25em;
+        color: #efead2;
+        font-size: 0.8em;
+        padding-bottom: 1em;
+        margin: 0.25em;
       }
 
-      @media only screen and (min-width: 32.5em) { 
+      @media only screen and (min-width: 32.5em) {
+        h1 {
+          margin-top: 0.125em;
+        }
         .profile {
           float: right;
-          margin: .7em .7em 0 0;
+          margin: 0.7em 0.7em 0 0;
         }
-      } 
+      }
+
+      @media only screen and (min-width: 960px) {
+        header {
+          border-radius: 1em 1em 0 0;
+        }
+        footer {
+          border-radius: 0 0 1em 1em;
+        }
+      }
     </style>
   </head>
   <body>
@@ -76,9 +87,9 @@
     </header>
     <main>
       <h2>WDD 230: Assignment Portal</h2>
-      <hr>
+      <hr />
       <ul>
-        <li>Lesson 02: <a href="">Assignment Link</a></li>
+        <li>Lesson 02: <a href="/WDD230/lesson2/design-principles.html">Assignment Link</a></li>
         <li>Lesson 03: <a href="">Assignment Link</a></li>
         <li>Lesson 04: <a href="">Link</a> <a href="">Link</a></li>
       </ul>

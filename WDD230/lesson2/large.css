@@ -1,0 +1,10 @@
+/* Desktop Views ****************************/
+@media only screen and (min-width: 48em) {
+    main {
+		grid-template-columns: 1fr 1fr 1fr;
+        margin: .5em 0;
+	}
+    main div:nth-child(3) {
+		grid-column: span 1;
+	}
+  }

@@ -19,11 +19,11 @@ body {
   }
   main div {
       border: 1px solid #bbb;
-      border-radius: .5em 0;
+      border-radius: .75em;
       background-color: #eee;
   }
   main h3 {
-      border-radius: .5em 0 0 0;
+      border-radius: .5em .5em 0 0;
   }
   h1, h2, h3, h4, h5 {
     color: white;

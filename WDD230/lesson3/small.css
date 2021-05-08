@@ -15,11 +15,13 @@ body {
     font-size: 16px;
     max-width: 960px;
     margin: auto;
+    background-color: var(--blue);
 }
 
 main {
     text-align: left;
-    margin: 1em;
+    padding: 1em;
+    background-color: white;
 }
 
 .websiteLogo {
@@ -34,20 +36,32 @@ main {
     font-family: 'Quicksand', Arial, sans-serif;
     font-size: 40px;
     font-weight: bold;
+    color: var(--yellow);
 }
 
 .primaryNav {
     font-family: 'Quicksand', Arial, sans-serif;
     font-size: 30px;
+    background-color: var(--green);
 }
 
 .footerNav {
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
+    background-color: var(--gray);
+    color: white;
+}
+
+.subtitle {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-style: italic;
+    margin-top: 0;
 }
 
 h1 {
     font-size: 30px;
+    color: var(--green);
 }
 
 h2 {
@@ -57,6 +71,10 @@ h2 {
 h3 {
     font-size: 20px;
     padding-top: .75em;
+}
+
+hr {
+    margin-top: 2em;
 }
 
 table {
@@ -78,6 +96,7 @@ table tr td {
 .colors {
     text-align: center;
     padding: 5px;
+    border-color: white;
 }
 
 .primary {

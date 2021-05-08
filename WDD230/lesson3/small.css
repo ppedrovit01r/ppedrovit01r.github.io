@@ -1,0 +1,89 @@
+h1, h2, h3 {
+    font-family: 'Quicksand', Arial, sans-serif;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    max-width: 960px;
+    margin: auto;
+}
+
+main {
+    text-align: left;
+    margin: 1em;
+}
+
+.websiteLogo {
+    width: 200px;
+}
+
+.imgDomain {
+    max-width: 900px;
+}
+
+.header {
+    font-family: 'Quicksand', Arial, sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.primaryNav {
+    font-family: 'Quicksand', Arial, sans-serif;
+    font-size: 30px;
+}
+
+.footerNav {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+h2 {
+    font-size: 25px;
+}
+
+h3 {
+    font-size: 20px;
+    padding-top: .75em;
+}
+
+table {
+    width: 100%;
+    border-spacing: 0;
+}
+
+table, td {
+    border: .5px solid black;
+}
+
+table tr td h1, h2, h3 {
+    margin: 0;
+}
+table tr td {
+    padding: 10px;
+}
+
+.colors {
+    text-align: center;
+    padding: 5px;
+}
+
+.primary {
+    background-color: greenyellow;
+}
+
+.secondary {
+    background-color: hotpink;
+}
+
+.accent1 {
+    background-color: indigo;
+}
+
+.accent2 {
+    background-color: red;
+}

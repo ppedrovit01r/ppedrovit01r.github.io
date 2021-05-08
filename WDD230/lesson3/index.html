@@ -23,13 +23,26 @@
     <link rel="stylesheet" href="large.css" />
   </head>
   <body>
+    <div class="head-line"></div>
+    <nav>
+      <ul>
+        <li>
+          <a href="index.html">HOME</a>
+        </li>
+        <li>
+          <a href="target-audience.html">AUDIENCE</a>
+        </li>
+        <li>
+          <a href="color-scheme.html">COLOR SCHEME</a>
+        </li>
+        <li>
+          <a href="typography.html" class="active">TYPOGRAPHY</a>
+        </li>
+      </ul>
+    </nav>
     <main>
-      <img
-        src="infonado.png"
-        alt="Infonado's icon showing a tornado and some leaves"
-        class="websiteLogo"
-      />
-      <h1>Infonado.org | Site Plan</h1>
+      <h1 class=header>Infonado.org | Site Plan</h1>
+      <p>Site Plan for the Weather Site Project by Pedro Vitor in WDD 230</p>
       <hr />
       <h2>Overview</h2>
       <h3>Site Name</h3>
@@ -57,12 +70,43 @@
         become a reliable spot where people can find interesting and useful
         information.
       </p>
-      <h3><a href="target-audiente.html">Target Audience and Scenarios</a></h3>
+      <h3>Site Icon</h3>
+      <img
+        src="infonado.png"
+        alt="Infonado's icon showing a tornado and some leaves"
+        class="websiteLogo"
+      />
       <hr />
-      <h2>Style Guide</h2>
-      <h3><a href="color-scheme.html">Color Scheme</a></h3>
-      <h3><a href="typography.html">Typography</a></h3>
+      <h2>Navigation</h2>
+      <nav class="exNav">
+        <ul>
+          <li>
+            <a href="#" class="active">HOME</a>
+          </li>
+          <li>
+            <a href="target-audience.html">AUDIENCE</a>
+          </li>
+          <li>
+            <a href="color-scheme.html">COLOR SCHEME</a>
+          </li>
+          <li>
+            <a href="typography.html">TYPOGRAPHY</a>
+          </li>
+        </ul>
+      </nav>
       <hr />
     </main>
+    <footer>
+      <p class="footerLine">
+        &copy;<span id="currentYear"></span> &bull; Pedro Vitor &bull; Brazil
+        &bull;
+        <a target="_blank" href="https://www.byui.edu/online"
+          >BYU-Idaho Online Learning</a
+        >
+      </p>
+      <p class=subtitle>The Weather Site Project &bull; WDD 230</p>
+      <p class=back><a href="/WDD230/index.html">Go back to the Main Page</a></p>
+    </footer>
+    <script src="/WDD230/lesson2/javascript.js"></script>
   </body>
 </html>

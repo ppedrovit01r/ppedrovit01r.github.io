@@ -1,0 +1,17 @@
+/* Tablet Views ******************************/
+@media only screen and (min-width: 37.5em) {
+  /* Horizontal Menu Examples */
+  /* Flex *********************/
+  nav ul {
+    display: flex;
+  }
+  nav ul li {
+    flex: 1 1 100%;
+  }
+  .persona {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-gap: 1em;
+    text-align: left;
+}
+}

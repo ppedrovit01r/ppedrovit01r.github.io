@@ -15,7 +15,12 @@ body {
     font-size: 16px;
     max-width: 960px;
     margin: auto;
-    /*background-color: var(--blue);*/
+    background-color: var(--blue);
+}
+
+.head-line {
+    background-color: var(--green);
+    height: 1em;
 }
 
 main {
@@ -24,12 +29,51 @@ main {
     background-color: white;
 }
 
+nav {
+    background-color: var(--blue);
+    text-align: center;
+}
+
+.exNav {
+    margin: 1em 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav ul li a {
+    font-family: 'Quicksand', Arial, sans-serif;
+    font-size: 20px;
+    display: block;
+    color: white;
+    padding: .75em;
+    text-decoration: none;
+    text-align: center;
+}
+
+nav a:hover {
+    background-color: var(--yellow);
+    color: black;
+    font-weight: bold;
+}
+
+.active {
+    color: var(--yellow);
+    font-weight: bold;
+}
+
 .websiteLogo {
     width: 200px;
 }
 
 .imgDomain {
-    max-width: 900px;
+    width: 95%;
+    display: block;
+    margin: 0 auto;
 }
 
 .header {
@@ -107,6 +151,7 @@ table tr td {
 
 .secondary {
     background-color: var(--blue);
+    color: white;
 }
 
 .accent1 {
@@ -115,4 +160,38 @@ table tr td {
 
 .accent2 {
     background-color: var(--yellow);
+}
+
+.persona {
+    display: block;
+}
+
+.persona img {
+    width: 190px;
+    padding: 0 5px;
+    display: block;
+    margin: 0 auto;
+}
+
+footer {
+    padding: 1em 0;
+    background-color: var(--gray);
+    color: var(--yellow);
+    text-align: center;
+}
+
+footer p {
+    margin: 0 1em;
+}
+
+footer a {
+    color: var(--yellow);
+}
+
+footer .subtitle {
+    color:white;
+}
+
+.back {
+    font-size: 14px;
 }

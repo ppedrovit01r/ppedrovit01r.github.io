@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
       content="Lesson 3 on a Site Plan on Typography for the Weather Site Project by Pedro Vitor in WDD 230: Web Frontend Development at Brigham Young University - Idaho"
@@ -21,70 +21,102 @@
     <link rel="stylesheet" href="small.css" />
     <link rel="stylesheet" href="medium.css" />
     <link rel="stylesheet" href="large.css" />
-</head>
-<body>
+  </head>
+  <body>
+    <div class="head-line"></div>
+    <nav>
+        <ul>
+          <li>
+            <a href="index.html">HOME</a>
+          </li>
+          <li>
+            <a href="target-audience.html">AUDIENCE</a>
+          </li>
+          <li>
+            <a href="color-scheme.html">COLOR SCHEME</a>
+          </li>
+          <li>
+            <a href="typography.html" class="active">TYPOGRAPHY</a>
+          </li>
+        </ul>
+      </nav>
     <main>
-        <h1>Typography</h1>
-        <p>The primary text fonts are Quicksand, and Roboto (stacked in that order).</p>
-        <table>
-            <tr>
-                <td>Site header</td>
-                <td>Quicksand</td>
-                <td>40px</td>
-                <td>#000000</td>
-                <td class=header>Sample</td>
-            </tr>
-            <tr>
-                <td>Primary Navigation</td>
-                <td>Quicksand</td>
-                <td>30px</td>
-                <td>#000000</td>
-                <td class=primaryNav>Sample</td>
-            </tr>
-            <tr>
-                <td>Footer Navigation</td>
-                <td>Roboto</td>
-                <td>20px</td>
-                <td>#000000</td>
-                <td class=footerNav>Sample</td>
-            </tr>
-            <tr>
-                <td>Heading 1 (h1)</td>
-                <td>Quicksand</td>
-                <td>30px</td>
-                <td>#000000</td>
-                <td><h1>Sample</h1></td>
-            </tr>
-            <tr>
-                <td>Heading 2 (h2)</td>
-                <td>Quicksand</td>
-                <td>27px</td>
-                <td>#000000</td>
-                <td><h2>Sample</h2></td>
-            </tr>
-            <tr>
-                <td>Heading 3 (h3)</td>
-                <td>Quicksand</td>
-                <td>20px</td>
-                <td>#000000</td>
-                <td><h3>Sample</h3></td>
-            </tr>
-            <tr>
-                <td>Paragraph text (p)</td>
-                <td>Roboto</td>
-                <td>16px</td>
-                <td>#000000</td>
-                <td><p>Sample</p></td>
-            </tr>
-            <tr>
-                <td>Image subtitle</td>
-                <td>Roboto italic</td>
-                <td>14px</td>
-                <td>#000000</td>
-                <td class="subtitle"><p>Sample</p></td>
-            </tr>
-        </table>
-        <hr>
+      <h1>Typography</h1>
+      <p>
+        The primary text fonts are Quicksand, and Roboto (stacked in that
+        order).
+      </p>
+      <table>
+        <tr>
+          <td>Site header</td>
+          <td>Quicksand</td>
+          <td>40px</td>
+          <td>#000000</td>
+          <td class="header">Sample</td>
+        </tr>
+        <tr>
+          <td>Primary Navigation</td>
+          <td>Quicksand</td>
+          <td>20px</td>
+          <td>#000000</td>
+          <td class="primaryNav">Sample</td>
+        </tr>
+        <tr>
+          <td>Footer Navigation</td>
+          <td>Roboto</td>
+          <td>20px</td>
+          <td>#000000</td>
+          <td class="footerNav">Sample</td>
+        </tr>
+        <tr>
+          <td>Heading 1 (h1)</td>
+          <td>Quicksand</td>
+          <td>30px</td>
+          <td>#000000</td>
+          <td><h1>Sample</h1></td>
+        </tr>
+        <tr>
+          <td>Heading 2 (h2)</td>
+          <td>Quicksand</td>
+          <td>27px</td>
+          <td>#000000</td>
+          <td><h2>Sample</h2></td>
+        </tr>
+        <tr>
+          <td>Heading 3 (h3)</td>
+          <td>Quicksand</td>
+          <td>20px</td>
+          <td>#000000</td>
+          <td><h3>Sample</h3></td>
+        </tr>
+        <tr>
+          <td>Paragraph text (p)</td>
+          <td>Roboto</td>
+          <td>16px</td>
+          <td>#000000</td>
+          <td><p>Sample</p></td>
+        </tr>
+        <tr>
+          <td>Image subtitle</td>
+          <td>Roboto italic</td>
+          <td>14px</td>
+          <td>#000000</td>
+          <td class="subtitle"><p>Sample</p></td>
+        </tr>
+      </table>
+      <hr />
     </main>
-</body>
+    <footer>
+        <p class="footerLine">
+          &copy;<span id="currentYear"></span> &bull; Pedro Vitor &bull; Brazil
+          &bull;
+          <a target="_blank" href="https://www.byui.edu/online"
+            >BYU-Idaho Online Learning</a
+          >
+        </p>
+        <p class=subtitle>The Weather Site Project &bull; WDD 230</p>
+        <p class=back><a href="/WDD230/index.html">Go back to the Main Page</a></p>
+      </footer>
+      <script src="/WDD230/lesson2/javascript.js"></script>
+  </body>
 </html>

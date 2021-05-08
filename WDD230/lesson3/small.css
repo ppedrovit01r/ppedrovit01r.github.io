@@ -1,6 +1,6 @@
 :root {
-    --green: #34C166;
-    --blue: #75B8C8;
+    --green: #2BA154;
+    --blue: #2AB7CA;
     --red: #EF233C;
     --yellow: #EEC584;
     --gray: #605856;
@@ -36,20 +36,20 @@ main {
     font-family: 'Quicksand', Arial, sans-serif;
     font-size: 40px;
     font-weight: bold;
-    color: var(--yellow);
+    color: var(--green);
 }
 
 .primaryNav {
     font-family: 'Quicksand', Arial, sans-serif;
     font-size: 30px;
-    background-color: var(--green);
+    background-color: var(--blue);
 }
 
 .footerNav {
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
     background-color: var(--gray);
-    color: white;
+    color: var(--yellow);
 }
 
 .subtitle {
@@ -65,7 +65,8 @@ h1 {
 }
 
 h2 {
-    font-size: 25px;
+    font-size: 27px;
+    color: var(--blue);
 }
 
 h3 {
@@ -74,7 +75,7 @@ h3 {
 }
 
 hr {
-    margin-top: 2em;
+    margin: 1em 0;
 }
 
 table {

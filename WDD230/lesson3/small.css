@@ -82,7 +82,6 @@ table tr td {
 
 .primary {
     background-color: var(--green);
-    color: white;
 }
 
 .secondary {
@@ -91,7 +90,6 @@ table tr td {
 
 .accent1 {
     background-color: var(--red);
-    color: white;
 }
 
 .accent2 {

@@ -1,3 +1,11 @@
+:root {
+    --green: #34C166;
+    --blue: #75B8C8;
+    --red: #EF233C;
+    --yellow: #EEC584;
+    --gray: #605856;
+}
+
 h1, h2, h3 {
     font-family: 'Quicksand', Arial, sans-serif;
 }
@@ -73,17 +81,19 @@ table tr td {
 }
 
 .primary {
-    background-color: greenyellow;
+    background-color: var(--green);
+    color: white;
 }
 
 .secondary {
-    background-color: hotpink;
+    background-color: var(--blue);
 }
 
 .accent1 {
-    background-color: indigo;
+    background-color: var(--red);
+    color: white;
 }
 
 .accent2 {
-    background-color: red;
+    background-color: var(--yellow);
 }

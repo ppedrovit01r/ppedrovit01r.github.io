@@ -126,6 +126,8 @@ hr {
 table {
     width: 100%;
     border-spacing: 0;
+    display: block;
+    overflow: scroll;
 }
 
 table, td {

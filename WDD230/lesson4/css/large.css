@@ -1,0 +1,10 @@
+/* Desktop Views ****************************/
+@media only screen and (min-width: 960px) {
+    .active {
+        text-decoration: overline;
+    }
+
+    header img {
+        width: 65px;
+    }
+}

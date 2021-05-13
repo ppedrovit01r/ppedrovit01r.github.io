@@ -8,8 +8,13 @@
   }
 
   header {
-      padding: .75em;
+      padding: 1.25em .75em;
+      justify-content: left;
   }
+
+header button {
+    display: none;
+}
 
   .navigation {
     display: flex;
@@ -25,11 +30,12 @@
     border: none;
     border-right: 1px solid rgba(000, 000, 000, 0.1);
     font-size: 1em;
+    padding: 1.2em 0;
   }
 
-  .navigation li:first-child {
+  /*.navigation li:first-child {
     display: none;
-  }
+  }*/
 
   .navigation a:hover {
     background-color: var(--yellow);

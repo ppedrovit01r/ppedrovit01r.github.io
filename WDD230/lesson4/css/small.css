@@ -20,10 +20,25 @@ body {
 
 header {
     display: flex;
-    align-items: center;
-    justify-content: left;
-    padding: 5px;
+    align-items: flex-end;
+    justify-content: space-evenly;
+    padding: .75em 5px;
     background-color: var(--green);
+}
+
+header button {
+    align-self: stretch;
+    padding: 0 .5em;
+    border: none;
+    background-color: transparent;
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+header button:active {
+    background-color: var(--yellow);
+    color: black;
 }
 
 header h1 {
@@ -83,10 +98,10 @@ nav {
     width: 100%;
 }
 
-.navigation li:first-child {
+/*.navigation li:first-child {
 	display: block;
     border-top: 1px solid rgba(000, 000, 000, 0.1);
-}
+}*/
 
 .navigation li {
 	display: none;

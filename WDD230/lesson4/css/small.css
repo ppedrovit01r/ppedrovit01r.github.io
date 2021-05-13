@@ -6,6 +6,10 @@
     --gray: #363130;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 h1, h2, h3 {
     font-family: 'Quicksand', Arial, sans-serif;
 }
@@ -183,6 +187,19 @@ h4 {
 
 hr {
     margin: 1em 0;
+}
+
+.scrollUp {
+    background-color: var(--green);
+    padding: .75em;
+    border: none;
+    display: block;
+    margin: 0 0 0 auto;
+}
+
+.scrollUp a {
+    text-decoration: none;
+    color: white;
 }
 
 footer {

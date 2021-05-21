@@ -1,9 +1,11 @@
 :root {
     --green: #2BA154;
+    --darkgreen: #1E713B;
     --blue: #3D6D7B;
-    --red: #EF233C;
+    --darkblue: #2F5460;
+    --red: #C1292E; /*#EF233C;*/
     --yellow: #EEC584;
-    --gray: #363130;
+    --gray: #090C08; /*#363130;*/
 }
 
 html{
@@ -48,7 +50,7 @@ header {
     align-items: flex-end;
     justify-content: center;
     padding: .75em 5px;
-    background-color: var(--green);
+    background-color: var(--darkblue);
 }
 
 header button {
@@ -131,7 +133,6 @@ nav {
 
 .navigation li {
 	display: none;
-    border-bottom: 1px solid rgba(000, 000, 000, 0.1);
 }
 
 .navigation li a {
@@ -151,9 +152,14 @@ nav {
 }
 
 .active {
-    color: var(--yellow);
     font-weight: bold;
-    background-color: rgba(000, 000, 000, 0.15);
+    background-color: white;
+    border-radius: 1em 1em 0 0;
+}
+
+.navigation .active a {
+    color: var(--darkgreen);
+    text-decoration: underline;
 }
 
 .responsive li {
@@ -189,13 +195,13 @@ nav {
 
   .forecast li {
     padding: 0;
-    border: 1px solid var(--blue);
+    border: 1px solid var(--darkblue);
   }
 
   .forecast p {
     margin: 0;
     padding: .5em;
-    background-color: var(--blue);
+    background-color: var(--darkblue);
     color: white;
   }
 
@@ -212,6 +218,7 @@ nav {
     display: block;
     width: 80%;
     margin: 0 auto;
+    border: 2px solid var(--darkblue);
   }
 
 .footerNav {

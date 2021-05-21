@@ -174,6 +174,46 @@ nav {
     color: white;
 }
 
+.forecast {
+    text-align: center;
+    font-family: 'Quicksand', Arial, sans-serif;
+    margin-bottom: 2.5em;
+  }
+
+  .forecast ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+  }
+
+  .forecast li {
+    padding: 0;
+    border: 1px solid var(--blue);
+  }
+
+  .forecast p {
+    margin: 0;
+    padding: .5em;
+    background-color: var(--blue);
+    color: white;
+  }
+
+  .forecast span {
+    margin-bottom: .5em;
+  }
+
+.article {
+    background-color: rgba(000, 000, 000, 0.1);
+    padding: 0 1em 1em 1em;
+}
+
+.article img {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+  }
+
 .footerNav {
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
@@ -194,7 +234,7 @@ h1 {
 }
 
 h2 {
-    font-size: 27px;
+    font-size: 24px;
     color: var(--blue);
 }
 

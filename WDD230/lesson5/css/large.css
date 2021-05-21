@@ -20,6 +20,10 @@
         padding: 1.5em;
     }
 
+    .article {
+        margin: 0 2em;
+    }
+
     footer {
         padding: 1.5em;
         max-width: 1080px;

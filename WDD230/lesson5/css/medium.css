@@ -62,12 +62,26 @@
     position: absolute;
     top: 1em;
     left: 1em;
-    width: 300px;
+    width: 250px;
     background-color: whitesmoke;
     border: 1px solid var(--gray);
     padding: 1.5rem;
     box-shadow: 0 0 30px #333;
     opacity: .9;
+  }
+
+
+
+  .article {
+    background-color: rgba(000, 000, 000, 0.1);
+    padding: 0.5em 2em;
+  }
+
+  .article img {
+    float: right;
+    width: 240px;
+    margin-left: 1em;
+    margin-bottom: 1em;
   }
 
   footer {

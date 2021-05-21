@@ -57,7 +57,7 @@
   .active {
     border-radius: 1em 1em 0 0;
   }
-  
+
   .herodiv {
     position: relative;
   }
@@ -74,7 +74,9 @@
     opacity: .9;
   }
 
-
+.forecast hr {
+  display: none;
+}
 
   .article {
     background-color: rgba(000, 000, 000, 0.1);

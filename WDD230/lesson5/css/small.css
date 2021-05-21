@@ -150,7 +150,6 @@ nav {
 .active {
     font-weight: bold;
     background-color: white;
-    border-radius: 1em 1em 0 0;
 }
 
 .navigation .active a {
@@ -241,7 +240,7 @@ nav {
 
 h1 {
     font-size: 30px;
-    color: var(--green);
+    color: var(--darkgreen);
 }
 
 h2 {

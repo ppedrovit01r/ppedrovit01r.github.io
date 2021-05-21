@@ -54,6 +54,10 @@
     font-weight: bold;
   }
 
+  .active {
+    border-radius: 1em 1em 0 0;
+  }
+  
   .herodiv {
     position: relative;
   }

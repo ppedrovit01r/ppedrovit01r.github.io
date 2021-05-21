@@ -21,6 +21,28 @@ body {
     background-color: var(--blue);
 }
 
+.banner {
+    background-color: var(--red);
+    padding: .75em 0;
+    display: none;
+}
+
+.banner h1 {
+    margin: 0;
+    color: white;
+    text-align: center;
+    font-size: .9em;
+    font-family: 'Roboto', sans-serif;
+}
+
+.banner p {
+    margin: 0;
+    color: white;
+    padding: .3em;
+    text-align: center;
+    font-size: .9em;
+}
+
 header {
     display: flex;
     align-items: flex-end;
@@ -82,7 +104,7 @@ main {
     padding: 1em;
     background-color: white;
     margin: auto;
-    max-width: 960px;
+    max-width: 1080px;
 }
 
 main img {

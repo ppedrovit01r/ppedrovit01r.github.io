@@ -21,3 +21,8 @@ const datefield = document.querySelector(".date");
 const now = new Date();
 const fulldate = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(now);
 datefield.textContent = fulldate;
+
+//display Pancake at the park only on Fridays
+if (now.getDay() == 5) {
+  document.querySelector('.banner').style.display = "block"
+}

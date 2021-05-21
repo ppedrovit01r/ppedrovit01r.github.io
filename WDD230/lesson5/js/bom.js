@@ -6,8 +6,11 @@ button.addEventListener("click", () => {
   let book = input.value;
   input.value = '';
 
+  if (book == "") {
+    book = 'Invalid Value';
+  }
   let listItem = document.createElement('li');
-  let listText = document.createElement('span');
+  let listText = document.createElement('p');
   let deleteButton = document.createElement('button');
 
   listItem.appendChild(listText);

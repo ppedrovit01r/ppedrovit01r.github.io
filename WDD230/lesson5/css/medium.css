@@ -3,6 +3,13 @@
   /* Horizontal Menu Examples */
   /* Flex *********************/
 
+  .banner h1 {
+    font-size: 1em;
+  }
+
+  .banner p {
+    font-size: 1em;
+  }
   .headings h1 {
     font-size: 2em;
   }
@@ -45,6 +52,22 @@
     background-color: var(--yellow);
     color: black;
     font-weight: bold;
+  }
+
+  .herodiv {
+    position: relative;
+  }
+
+  .weatherSummary {
+    position: absolute;
+    top: 1em;
+    left: 1em;
+    width: 300px;
+    background-color: whitesmoke;
+    border: 1px solid var(--gray);
+    padding: 1.5rem;
+    box-shadow: 0 0 30px #333;
+    opacity: .9;
   }
 
   footer {

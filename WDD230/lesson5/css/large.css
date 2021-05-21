@@ -1,5 +1,5 @@
 /* Desktop Views ****************************/
-@media only screen and (min-width: 960px) {
+@media only screen and (min-width: 1080px) {
     
     .headings h1 {
         font-size: 2.4em;
@@ -22,7 +22,7 @@
 
     footer {
         padding: 1.5em;
-        max-width: 960px;
+        max-width: 1080px;
         margin: auto;
     }
 }

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Lesson 5 on a Site Plan for the Weather Site Project by Pedro Vitor in WDD 230: Web Frontend Development at Brigham Young University - Idaho"
+    />
+    <title>Preston, ID | Infonado.org</title>
+    <link
+      rel="shortcut icon"
+      href="images/iconfinder__windy_1337503_MOD.ico"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link rel="stylesheet" href="css/small.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
+  </head>
+  <body>
+    <div class="banner">
+      <h1>✨ Saturday = Preston Pancakes in the Park 🥞</h1>
+      <p><em>9:00 a.m.</em> Saturday at the pavilion.</p>
+    </div>
+    <header>
+      <img src="images/infonado.png" alt="infonado.org Logo" />
+      <div class="headings">
+        <h1>Infonado.org</h1>
+        <p class="motto subtitle">Swift News Coming Your Way!</p>
+      </div>
+      <button class="ham">&#9776;</button>
+    </header>
+    <nav>
+      <ul class="navigation">
+        <!--<li><a class="ham" href="#">&#9776;</a></li>-->
+        <li><a href="/WDD230/index.html">HOME</a></li>
+        <li class="active"><a href="#">PRESTON</a></li>
+        <li><a href="#">SODA SPRINGS</a></li>
+        <li><a href="#">FISH HAVEN</a></li>
+        <li><a href="#">STORM CENTER</a></li>
+        <li><a href="#">GALLERY</a></li>
+      </ul>
+    </nav>
+    <main>
+      <h1>Preston, Idaho</h1>
+      <div class="herodiv">
+        <picture>
+          <source media="(max-width: 360px)" srcset="images/franklinOriginal360.jpg">
+          <source media="(max-width: 720px)" srcset="images/franklinOriginal720.jpg">
+          <img src="images/franklinOriginal1080.jpg" alt="sunny landscape">
+        </picture>
+        <div class="weatherSummary">
+          <h2>Weather Summary</h2>
+          <hr>
+          <ul>
+            <li>Currently: <span>Sunny</span></li>
+            <li>High: <span><span class="tempF">48</span>&deg;F</span></li>
+            <li>Wind Chill: <span id="windChill"></span></li>
+            <li>Humidity: <span>69%</span></li>
+            <li>Wind Speed: <span><span class="windSpeed">5</span> mph</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="forecast">
+        <hr />
+        <h2>Five Day Forecast</h2>
+        <ul>
+          <li>
+            <p>Wed</p>
+            <img src="images/iconfinder_weather-01_1530392.png" alt="Sunny" />
+            <span>86&deg;F</span>
+          </li>
+          <li>
+            <p>Thu</p>
+            <img src="images/iconfinder_weather-01_1530392.png" alt="Sunny" />
+            <span>87&deg;F</span>
+          </li>
+          <li>
+            <p>Fri</p>
+            <img src="images/iconfinder_weather-02_1530391.png" alt="Cloudy" />
+            <span>78&deg;F</span>
+          </li>
+          <li>
+            <p>Sat</p>
+            <img src="images/iconfinder_weather-02_1530391.png" alt="Cloudy" />
+            <span>75&deg;F</span>
+          </li>
+          <li>
+            <p>Sun</p>
+            <img src="images/iconfinder_weather-03_1530390.png" alt="Rainy" />
+            <span>72&deg;F</span>
+          </li>
+        </ul>
+      </div>
+      <div class="article">
+        <h3>Article Title</h3>
+        <img
+          src="images/pexels-damien-schnorhk-7440936-mod.jpg"
+          alt="Photo of a stunning country landscape by Damien Schnorhk from Pexels
+        "
+        />
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi quis
+          tenetur aspernatur, ratione magnam blanditiis ipsum molestias optio
+          nisi numquam distinctio eius rerum odio praesentium, magni quidem
+          nulla voluptas libero reiciendis. Velit magni eius labore ullam. Velit
+          neque, sed eveniet dolore quidem voluptas ipsum aperiam ut
+          consectetur? Quos tempora nulla et libero ad nisi perspiciatis,
+          architecto, voluptas ut amet expedita, commodi quam deleniti id
+          ducimus reiciendis corporis. Nesciunt quam quos nobis asperiores,
+          voluptates qui esse quae sint eius eum accusamus alias deleniti
+          repudiandae odio reprehenderit quaerat, consequuntur architecto
+          aspernatur autem incidunt sed? Voluptas eos tempora dolorum commodi,
+          maxime molestias natus pariatur enim libero mollitia modi. Sit at ut,
+          molestias voluptas libero molestiae pariatur optio facilis voluptate
+          ullam quod atque accusamus labore. Cupiditate debitis corrupti
+          recusandae, est iure facere perspiciatis explicabo repellendus,
+          molestias voluptas alias esse placeat distinctio reiciendis eum quasi,
+          cumque excepturi iusto laborum atque illum! Eligendi deserunt, numquam
+          totam placeat, sint explicabo obcaecati maiores doloremque ad libero
+          tempore praesentium provident a voluptatum. Id magni non quasi dicta
+          error, quae est laboriosam placeat cum in repellat tempore nam iure
+          fugiat consequatur dolor harum molestiae tempora perspiciatis! Porro
+          voluptatum praesentium pariatur fugit perspiciatis nam dicta delectus
+          aliquam debitis harum dolorum dolore odio cum, nemo necessitatibus
+          ratione possimus quis iusto est eos aliquid sit. Dolorem dolore
+          nesciunt quibusdam nobis deserunt earum et doloremque eaque quis
+          inventore, consequuntur ducimus natus culpa molestias molestiae
+          quaerat praesentium nulla, quae ad amet rem? Nobis atque tenetur
+          perspiciatis nisi eveniet corporis iste itaque consequuntur nulla, in
+          recusandae.
+        </p>
+      </div>
+    </main>
+    <footer>
+      <div class="map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d401305.28418053564!2d-111.94931229483902!3d42.12390786681677!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f7e912f87f63%3A0xe053d0392bae5f12!2s127%20E%20Oneida%20St%2C%20Preston%2C%20ID%2083263!5e0!3m2!1sen!2sus!4v1621978527311!5m2!1sen!2sus"
+          title="Google Maps"
+          allowfullscreen=""
+          loading="lazy"
+        ></iframe>
+      </div>
+      <div class="contact">
+        <h4>Contact Information</h4>
+        <p>
+          &nbsp;&#128205;&nbsp; Middle of Nowhere, ID<br />
+          &#128231; customerservice@infonado.org<br />
+          &#128222; (208) 555-5555
+        </p>
+      </div>
+      <div class="social">
+        <a href="#"><img src="images/facebook64.png" alt="Facebook" /></a>
+        <a href="#"><img src="images/twitter64.png" alt="Twitter" /></a>
+        <a href="#"><img src="images/instagram64.png" alt="Instagram" /></a>
+      </div>
+    </footer>
+    <div class="BYUfooter">
+      <p class="footerLine">
+        &copy;<span id="currentYear"></span> &bull; Pedro Vitor &bull; Brazil
+        &bull;
+        <a target="_blank" href="https://www.byui.edu/online"
+          >BYU-Idaho Online Learning</a
+        >
+      </p>
+      <p class="subtitle">
+        The Weather Site Project &bull; WDD 230 &bull;
+        <a href="/WDD230/index.html">Go back to the Main Page</a>
+      </p>
+      <div class="date subtitle"></div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+      WebFont.load({
+        google: {
+          families: ["Quicksand:300,400,700", "Roboto:300,400,700"],
+        },
+      });
+    </script>
+    <script src="js/windchill.js"></script>
+    <script src="js/javascript.js"></script>
+  </body>
+</html>

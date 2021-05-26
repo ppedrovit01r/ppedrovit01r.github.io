@@ -1,0 +1,114 @@
+/* Tablet Views ******************************/
+@media only screen and (min-width: 45em) {
+  /* Horizontal Menu Examples */
+  /* Flex *********************/
+
+  .banner h1 {
+    font-size: 1em;
+  }
+
+  .banner p {
+    font-size: 1em;
+  }
+  .headings h1 {
+    font-size: 2em;
+  }
+
+  header {
+    padding: 1.25em 0.75em;
+    justify-content: center;
+  }
+
+  header button {
+    display: none;
+  }
+
+  header img {
+    width: 55px;
+  }
+
+  .navigation {
+    display: flex;
+    justify-content: center;
+  }
+
+  .navigation li {
+    display: block;
+  }
+
+  .navigation li a {
+    text-align: center;
+    border: none;
+    border-right: 1px solid rgba(000, 000, 000, 0.1);
+    font-size: 1em;
+    padding: 1.2em 1em;
+  }
+
+  /*.navigation li:first-child {
+    display: none;
+  }*/
+
+  .navigation a:hover {
+    background-color: var(--yellow);
+    color: black;
+    font-weight: bold;
+  }
+
+  .active {
+    border-radius: 1em 1em 0 0;
+  }
+
+  .herodiv {
+    position: relative;
+  }
+
+  .weatherSummary {
+    position: absolute;
+    top: 1em;
+    left: 1em;
+    width: 250px;
+    background-color: whitesmoke;
+    border: 1px solid var(--gray);
+    padding: 1.5rem;
+    box-shadow: 0 0 30px #333;
+    opacity: .9;
+  }
+
+.forecast hr {
+  display: none;
+}
+
+  .article {
+    background-color: rgba(000, 000, 000, 0.1);
+    padding: 0.5em 2em;
+  }
+
+  .article img {
+    float: right;
+    width: 240px;
+    margin-left: 1em;
+    margin-bottom: 1em;
+  }
+
+  footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 1em;
+  }
+
+  .map {
+    display: block;
+    border: 0;
+  }
+  .social {
+    text-align: left;
+  }
+  .social img {
+    width: 37px;
+  }
+
+  .BYUfooter p {
+    font-size: .9em;
+  }
+}

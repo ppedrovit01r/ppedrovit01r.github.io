@@ -88,14 +88,14 @@ header {
 
 header button {
   align-self: center;
-  padding: .5em .5em;
+  padding: 0.5em 0.5em;
   border: none;
   background-color: transparent;
   color: white;
   font-size: 22px;
   font-weight: bold;
   margin-left: auto;
-  margin-right: .5em;
+  margin-right: 0.5em;
 }
 
 header button:active {
@@ -111,7 +111,7 @@ header h1 {
 
 header img {
   width: 50px;
-  margin-left: .5em;
+  margin-left: 0.5em;
 }
 
 header p {
@@ -306,5 +306,17 @@ footer a {
 
 /***************** GALLERY *********************/
 .gallery {
-  display: block;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1em;
+}
+
+.gallery figcaption {
+  display: none;
+}
+
+.visitedGallery {
+  margin-top: 2em;
+  text-align: center;
+  
 }

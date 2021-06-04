@@ -1,3 +1,5 @@
+// ********************** NAVIGATION ****************/
+
 const hambutton = document.querySelector(".ham");
 const mainnav = document.querySelector(".navigation");
 
@@ -23,6 +25,20 @@ const fulldate = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(
 datefield.textContent = fulldate;
 
 //display Pancake at the park only on Fridays
-if (now.getDay() == 5) {
-  document.querySelector('.banner').style.display = "block"
+//if (now.getDay() == 5) {
+//  document.querySelector('.banner').style.display = "block"
+//}
+
+//************************** STORAGE *****************/
+let daysSinceLastVisit;
+
+if (!localStorage.getItem('lastVisit')) {
+  localStorage.setItem('lastVisit', now.getTime());
+  daysSinceLastVisit = 1000;
+} else {
+  let miliseconds = now.getTime() - localStorage.getItem('lastVisit');
+  let oneDay = 1000 * 60 * 60 * 24;
+  daysSinceLastVisit = Math.round(miliseconds/oneDay);
 }
+
+document.getElementById("visits").innerHTML = daysSinceLastVisit;

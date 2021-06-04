@@ -34,7 +34,7 @@ let daysSinceLastVisit;
 
 if (!localStorage.getItem('lastVisit')) {
   localStorage.setItem('lastVisit', now.getTime());
-  daysSinceLastVisit = 1000;
+  document.querySelector('.visitedGallery').innerHTML = "Thank you for visiting our page! 🙏"
 } else {
   let miliseconds = now.getTime() - localStorage.getItem('lastVisit');
   let oneDay = 1000 * 60 * 60 * 24;

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Lesson 7 on a Site Plan for Progressive Loading of Images by Pedro Vitor in WDD 230: Web Frontend Development at Brigham Young University - Idaho"
+    />
+    <title>Progressive Loading of Images</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link rel="stylesheet" href="css/lazyload.css" />
+  </head>
+  <body>
+    <h1>Progressive Loading</h1>
+    <picture><img src="images/placeholder.jpg" data-src="https://placekitten.com/300/400" alt="kitten"></picture>
+    <picture><img src="images/placeholder.jpg" data-src="http://placeimg.com/300/400/any" alt=""></picture>
+    <picture><img src="images/placeholder.jpg" data-src="http://placebear.com/300/400" alt="bear"></picture>
+    <picture><img src="images/placeholder.jpg" data-src="https://www.fillmurray.com/300/400" alt="Fill Murray"></picture>
+    <picture><img src="images/placeholder.jpg" data-src="https://loremflickr.com/300/400" alt="photo from Flickr"></picture>
+    <picture><img src="images/placeholder.jpg" data-src="https://placebeard.it/300x400" alt="beard"></picture>
+    <script src="js/lazyload.js"></script>
+  </body>
+</html>

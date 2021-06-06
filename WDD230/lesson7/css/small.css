@@ -311,10 +311,6 @@ footer a {
   grid-gap: 1em;
 }
 
-.gallery figcaption {
-  display: none;
-}
-
 .visitedGallery {
   margin-top: 2em;
   text-align: center;

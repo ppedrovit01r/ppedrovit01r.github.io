@@ -1,0 +1,53 @@
+:root {
+  --line1: #e7f0ed;
+  --line2: #e7ffed;
+  --blue: #628ca6;
+  --green: #7fb9c2;
+}
+
+body {
+  font-family: Ubuntu, sans-serif;
+}
+
+table {
+  margin: 5% auto;
+  text-align: center;
+  box-shadow: rgba(98, 140, 166, 0.4) 5px 5px, rgba(98, 140, 166, 0.3) 10px 10px,
+    rgba(98, 140, 166, 0.2) 15px 15px, rgba(98, 140, 166, 0.1) 20px 20px,
+    rgba(98, 140, 166, 0.05) 25px 25px;
+}
+
+th,
+td {
+  padding: 0.4em 0.8em;
+}
+
+thead td {
+  background-color: var(--green);
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+thead th {
+  background-color: var(--blue);
+  color: white;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: var(--line1);
+}
+
+tbody tr:nth-child(even) {
+  background-color: var(--line2);
+}
+
+tfoot td {
+  background-color: var(--green);
+  font-size: 0.7em;
+  padding: 0.8em;
+}
+
+.colored {
+    background-color: var(--blue);
+    color: white;
+}

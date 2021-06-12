@@ -334,7 +334,7 @@ form fieldset legend {
   font-weight: bold;
 }
 
-form label.top + input, form label.top + select {
+form label.top + input, form label.top + select, form textarea {
   display: block;
   font-size: 1rem;
   border: none;
@@ -345,6 +345,10 @@ form label.top + input, form label.top + select {
   width: 92%;
   max-width: 22rem;
   margin-bottom: 5%;
+}
+
+form textarea {
+  margin-bottom: 0;
 }
 
 form label.sbs {

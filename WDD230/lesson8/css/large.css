@@ -56,8 +56,12 @@
   }
 
   /****************** FORMS ***************/
-form fieldset {
-  padding: 1% 2% 0 2%;
+.centerForm {
+  padding: 2.5%;
+}
+
+  form fieldset {
+  padding: 1% 2% 2% 3%;
   margin-bottom: 2%;
 }
 
@@ -81,9 +85,23 @@ form label.sbs {
   form label p {
     margin-bottom: 0;
   }
-
-  form input.submitBtn {
-    margin: 0 0 2rem 2%;
+  .noDeadspace {
+    display: grid;
+    grid-template-columns: 25rem 1fr;
+    grid-gap: 1.5em;
   }
 
+  .noDeadspace form {
+    grid-column: 1/2;
+  }
+
+  .noDeadspace picture {
+    display: block;
+    grid-column: 2/3;
+  }
+
+  .noDeadspace picture img {
+    border-radius: .4em;
+    margin-top: .9em;
+  }
 } /*************end of media query**********/

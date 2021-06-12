@@ -140,23 +140,14 @@ form label.sbs {
   }
 
   form input.submitBtn {
-    margin: 1% 0 2rem 2%;
-  }
-
-  .noDeadspace {
-    display: grid;
-    grid-template-columns: 25rem 1fr;
-    grid-gap: 1em;
-  }
-
-  .noDeadspace form {
-    grid-column: 1/2;
-  }
-
-  .noDeadspace picture {
     display: block;
-    grid-column: 2/3;
-    border-radius: 1em;
+    margin: 2% auto;
+    max-width: 16rem;
+
+  }
+
+  .centerForm {
+    padding: 2.5% 25%;
   }
 
 } /*************end of media query**********/

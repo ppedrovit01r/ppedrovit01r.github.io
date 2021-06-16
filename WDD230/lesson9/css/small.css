@@ -1,0 +1,395 @@
+:root {
+  --green: #2ba154;
+  --darkgreen: #1e713b;
+  --blue: #3d6d7b;
+  --darkblue: #2f5460;
+  --red: #c1292e; /*#EF233C;*/
+  --yellow: #eec584;
+  --gray: #090c08; /*#363130;*/
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Quicksand", Arial, sans-serif;
+  color: var(--darkgreen);
+}
+
+h1 {
+  font-size: 30px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+h3 {
+  font-size: 20px;
+  padding-top: 0.75em;
+}
+
+h4 {
+  margin: 0.5em 1em;
+}
+
+hr {
+  margin: 1em 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  margin: auto;
+  background-color: var(--blue);
+}
+
+.subtitle {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-style: italic;
+  margin-top: 0;
+}
+
+/***************** BANNER *********************/
+.banner {
+  background-color: var(--red);
+  padding: 0.75em 0;
+  display: none;
+}
+
+.banner h1 {
+  margin: 0;
+  color: white;
+  text-align: center;
+  font-size: 0.9em;
+  font-family: "Roboto", sans-serif;
+}
+
+.banner p {
+  margin: 0;
+  color: white;
+  padding: 0.3em;
+  text-align: center;
+  font-size: 0.9em;
+}
+
+/***************** HEADER *********************/
+header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 0.75em 5px;
+  background-color: var(--darkblue);
+}
+
+header button {
+  align-self: center;
+  padding: 0.5em 0.5em;
+  border: none;
+  background-color: transparent;
+  color: white;
+  font-size: 22px;
+  font-weight: bold;
+  margin-left: auto;
+  margin-right: 0.5em;
+}
+
+header button:active {
+  background-color: var(--yellow);
+  color: black;
+}
+
+header h1 {
+  color: white;
+  font-size: 22px;
+  margin: 0;
+}
+
+header img {
+  width: 50px;
+  margin-left: 0.5em;
+}
+
+header p {
+  display: inline;
+  margin: 0;
+}
+
+.headings {
+  display: flex;
+  flex-direction: column;
+  padding: 0 10px;
+}
+
+.headings h1 {
+  padding-bottom: 3px;
+}
+
+.motto {
+  color: whitesmoke;
+}
+
+/***************** NAVIGATION *********************/
+nav {
+  background-color: var(--blue);
+  margin: 0;
+}
+
+.navigation {
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+  width: 100%;
+}
+
+.navigation li {
+  display: none;
+}
+
+.navigation li a {
+  font-family: "Quicksand", Arial, sans-serif;
+  font-size: 20px;
+  display: block;
+  color: white;
+  padding: 0.75em;
+  text-decoration: none;
+  text-align: center;
+}
+
+.navigation a:active {
+  background-color: var(--yellow);
+  color: black;
+  font-weight: bold;
+}
+
+.active {
+  font-weight: bold;
+  background-color: white;
+}
+
+.navigation .active a {
+  color: var(--darkgreen);
+}
+
+.responsive li {
+  display: block;
+}
+
+/***************** MAIN *********************/
+main {
+  text-align: left;
+  padding: 2.5%;
+  background-color: white;
+  margin: auto;
+  max-width: 1080px;
+}
+
+main img {
+  width: 100%;
+}
+
+/***************** WEATHER SUMMARY *********************/
+.weatherSummary span {
+  font-weight: bold;
+  color: var(--darkblue);
+}
+
+/***************** FORECAST *********************/
+.forecast {
+  text-align: center;
+  font-family: "Quicksand", Arial, sans-serif;
+  margin-bottom: 2.5em;
+}
+
+.forecast h2 {
+  color: var(--darkblue);
+}
+
+.forecast ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  padding: 0;
+}
+
+.forecast li {
+  padding: 0;
+  border: 1px solid var(--darkblue);
+}
+
+.forecast p {
+  margin: 0;
+  padding: 0.5em;
+  background-color: var(--darkblue);
+  color: white;
+}
+
+.forecast span {
+  margin-bottom: 0.5em;
+}
+
+/***************** ARTICLE *********************/
+.article {
+  background-color: rgba(000, 000, 000, 0.1);
+  padding: 0 1em 1em 1em;
+}
+
+.article img {
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+  border: 2px solid var(--darkblue);
+}
+/***************** FOOTER *********************/
+footer {
+  padding: 1em;
+  background-color: var(--gray);
+  color: var(--yellow);
+  font-size: 0.9em;
+}
+
+footer p {
+  margin: 0.25em 1em;
+}
+
+footer a {
+  color: var(--yellow);
+}
+
+.contact p {
+  color: whitesmoke;
+}
+
+.social {
+  margin: 1.5em;
+  text-align: center;
+}
+
+.social a {
+  margin: 0 0.5em;
+}
+
+.social img {
+  width: 44px;
+}
+
+.map {
+  display: none;
+}
+
+/***************** BYU-FOOTER *********************/
+.BYUfooter {
+  text-align: center;
+  background-color: black;
+  color: var(--yellow);
+  padding: 0.75em 0;
+}
+
+.BYUfooter p {
+  margin: 0.25em 0;
+  font-size: 0.8em;
+}
+
+.BYUfooter .subtitle {
+  color: whitesmoke;
+  font-style: normal;
+}
+
+.BYUfooter a {
+  color: var(--yellow);
+}
+
+/***************** GALLERY *********************/
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1em;
+}
+
+.visitedGallery {
+  margin-top: 2em;
+  text-align: center;
+  
+}
+
+/***************** FORMS *********************/
+
+form fieldset {
+  margin: 2% 0;
+  padding: 4% 2% 0 2%;
+  border-radius: 4px;
+}
+
+form fieldset label {
+  font-size: .9em;
+}
+
+form fieldset legend {
+  color: var(--darkgreen);
+  font-weight: bold;
+}
+
+form label.top + input, form label.top + select, form textarea {
+  display: block;
+  font-size: 1rem;
+  border: none;
+  background-color: #eee;
+  border-radius: 4px;
+  padding: .75rem;
+  color: #333;
+  width: 92%;
+  max-width: 22rem;
+  margin-bottom: 5%;
+}
+
+form textarea {
+  margin-bottom: 2%;
+}
+
+form label.sbs {
+  display: block;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+form label.range {
+  margin-bottom: 5%;
+  display: flex;
+  justify-content: space-between;
+  max-width: 20rem;
+}
+
+form input#severity {
+  width: 80%;
+}
+
+form label.comments {
+  margin-top: 7%;
+  display: block;
+}
+
+form input.submitBtn {
+  border: none;
+  background-color: var(--darkgreen);
+  color: white;
+  font-weight: bold;
+  border-radius: .5rem;
+  margin: 2% 0 2rem 2%;
+  padding: .75rem 1.5rem;
+  width: 100%;
+  max-width: 21rem;
+}
+
+
+form label.top + input:required:valid {
+  border-left: green solid;
+}
+
+.noDeadspace picture {
+  display: none;
+}

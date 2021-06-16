@@ -1,0 +1,69 @@
+h1, h2 {
+    font-family: "Lora", serif;
+    color: rgb(102, 30, 30);
+}
+
+p {
+    font-family: "Source Sans Pro", sans-serif;
+}
+
+body {
+    padding: .5em;
+    text-align: center;
+    background-color: rgb(245, 245, 233);
+}
+
+h1 {
+    margin: .5em 0 1em 0;
+    padding: .5em 0;
+    box-shadow: rgb(38, 57, 77) 0px 0px 10px 0px;
+    background-color: rgb(255, 255, 255, .8);
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1em;
+    margin-bottom: 1em;
+}
+
+.cards section {
+    padding: .5em;
+    background-color: rgb(255, 255, 255, .8);
+    box-shadow: rgb(38, 57, 77, .4) 0px 0px 5px 0px;
+}
+
+.cards h2 {
+    margin: .3em 0;
+    color: rgb(102, 30, 30);
+}
+
+.cards p {
+    margin: .1rem 0;
+}
+
+.cards img {
+    width: 60%;
+    border: solid #24190f 12px;
+    border-radius: .2em;
+    box-shadow: rgb(38, 57, 77, .4) 0px 20px 30px -10px;
+    margin: .75em 0 0 0;
+}
+
+footer {
+    margin: .5em 0;
+}
+
+/* Medium/Tablet Views ******************************/
+@media only screen and (min-width: 30em) {
+    .cards {
+        grid-template-columns: 1fr 1fr;
+    }
+} /*************end of media query**********/
+
+/* Large/Desktop Views ******************************/
+@media only screen and (min-width: 56em) {
+    .cards {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+} /*************end of media query**********/

@@ -476,14 +476,14 @@ form label.top + input:required:valid {
   width: 300px;
 }
 
-.news section {
+.news div {
   margin-bottom: 1em;
   background-color:  rgb(47, 84, 96, .125);
   padding: 1em;
   border-radius: .5em;
 }
 
-.news section:hover {
+.news div:hover {
   background-color: white;
 }
 

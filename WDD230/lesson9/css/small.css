@@ -505,6 +505,9 @@ form label.top + input:required:valid {
 
 .news .more {
   background-color: #666;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .news .more:hover {

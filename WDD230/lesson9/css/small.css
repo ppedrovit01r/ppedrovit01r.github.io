@@ -431,6 +431,11 @@ form label.top + input:required:valid {
   margin: 2em;
 }
 
+.homehero a:hover {
+  background-color: #eec584;
+  color: black;
+}
+
 .homehero img {
   width: 100%;
 }

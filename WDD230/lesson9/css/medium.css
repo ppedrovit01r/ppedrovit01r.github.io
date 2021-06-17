@@ -150,5 +150,40 @@ form label.sbs {
     padding: 2.5% 25%;
   }
 
+/************ HOME ****************/
+.herotext {
+  top: 10%;
+}
+
+.herotext p {
+  font-size: 1.2em;
+  margin: 2em 0 3em 0;
+}
+
+.towns {
+  margin: 0 3em;
+}
+
+.towns section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0;
+}
+
+.towns section:nth-child(odd) {
+  flex-direction: row-reverse;
+}
+
+.news {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1em;
+}
+
+.news h1 {
+  grid-column: 1 / span 2;
+}
 } /*************end of media query**********/
 

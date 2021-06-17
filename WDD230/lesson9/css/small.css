@@ -393,3 +393,125 @@ form label.top + input:required:valid {
 .noDeadspace picture {
   display: none;
 }
+
+/***************** HOME *********************/
+
+.homehero {
+  position: relative;
+  color: whitesmoke;
+  max-width: 1124px;
+  margin: 0 auto;
+  border-top: solid white 2px;
+}
+
+.herotext {
+  position: absolute;
+  top: 5%;
+  text-align: center;
+  width: 80%;
+  padding: 0 10%;
+}
+
+.homehero h1{
+  color: white;
+}
+
+.homehero p {
+  margin-bottom: 12%;
+}
+
+.homehero a {
+  background-color: var(--darkgreen);
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 1em 2em;
+  border-radius: 2em;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 3px 8px;
+  margin: 2em;
+}
+
+.homehero img {
+  width: 100%;
+}
+
+.towns {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1em;
+  
+}
+
+.towns h1{
+  margin: .5em 0 0 0 ;
+}
+
+.towns section {
+  background-color: rgb(47, 84, 96, .125);
+  border-radius: .5em;
+  text-align: center;
+  padding: 0 1em 1em 1em;
+}
+
+.towns section h2 {
+  margin-bottom: .05em;
+}
+
+.towns section p {
+  margin: .75em;
+}
+
+.towns section span {
+  color: var(--green);
+  font-family:  "Quicksand", Arial, sans-serif;
+  font-weight: bold;
+}
+
+.towns section img {
+  width: 300px;
+}
+
+.news section {
+  margin-bottom: 1em;
+  background-color:  rgb(47, 84, 96, .125);
+  padding: 1em;
+  border-radius: .5em;
+}
+
+.news section:hover {
+  background-color: white;
+}
+
+.news picture {
+  float: left;
+  margin-right: 1rem;
+  width: 50%;
+}
+
+.news a {
+  text-decoration: none;
+  color: black;
+}
+
+.news span {
+  font-style: italic;
+  font-weight: bold;
+}
+
+.news .more {
+  background-color: #666;
+}
+
+.news .more:hover {
+  background-color: var(--blue);
+}
+
+.news .more a {
+  display: block;
+  color: whitesmoke;
+  text-align: center;
+}
+
+.news .more a:hover {
+  color: white;
+}

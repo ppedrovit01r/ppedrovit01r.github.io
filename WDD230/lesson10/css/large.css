@@ -137,4 +137,12 @@ form label.sbs {
   color: var(--blue);
 }
 
+.forecast ul {
+  justify-content: space-around;
+}
+
+.forecast li {
+  padding: 1em 2.5em;
+}
+
 } /*************end of media query**********/

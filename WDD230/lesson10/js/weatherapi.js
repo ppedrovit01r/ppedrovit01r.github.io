@@ -72,7 +72,7 @@ fetch(forecastURL)
       let desc = document.createElement("p");
 
       day.innerHTML = getWeekDay(dayOfWeek + i);
-      let forecastDay = 0 + 8 * (i-1);
+      let forecastDay = -1 + 8 * i;
       icon.setAttribute('src', `https://openweathermap.org/img/wn/${forecast.list[forecastDay].weather[0].icon}@2x.png`);
       desc.innerHTML = `${
         forecast.list[forecastDay].weather[0].main

@@ -74,6 +74,7 @@ fetch(forecastURL)
       day.innerHTML = getWeekDay(dayOfWeek + i);
       let forecastDay = -1 + 8 * i;
       icon.setAttribute('src', `https://openweathermap.org/img/wn/${forecast.list[forecastDay].weather[0].icon}@2x.png`);
+      icon.setAttribute('alt', forecast.list[forecastDay].weather[0].main)
       desc.innerHTML = `${
         forecast.list[forecastDay].weather[0].main
       } <strong>${forecast.list[forecastDay].main.temp.toFixed(0)}&deg;F</strong>`;

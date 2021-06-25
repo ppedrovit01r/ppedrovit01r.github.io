@@ -60,7 +60,7 @@ const forecastURL = `http://api.openweathermap.org/data/2.5/forecast?id=${Presto
 fetch(forecastURL)
   .then((response) => response.json())
   .then((jsObject) => {
-    console.log(jsObject);
+    //console.log(jsObject);
     let forecast = jsObject;
 
     let ul = document.createElement("ul");

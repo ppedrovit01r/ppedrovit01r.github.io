@@ -1,7 +1,7 @@
 const PrestonId = "5604473";
 const myId = "f6b72466de41a9b962d33a29f3f1e123";
 
-const weatherURL = `http://api.openweathermap.org/data/2.5/weather?id=${PrestonId}&appid=${myId}&units=imperial`;
+const weatherURL = `https://api.openweathermap.org/data/2.5/weather?id=${PrestonId}&appid=${myId}&units=imperial`;
 fetch(weatherURL)
   .then((response) => response.json())
   .then((jsObject) => {
@@ -56,7 +56,7 @@ function getWeekDay(dayOfWeek) {
   return weekdays[dayOfWeek];
 }
 
-const forecastURL = `http://api.openweathermap.org/data/2.5/forecast?id=${PrestonId}&appid=${myId}&units=imperial`;
+const forecastURL = `https://api.openweathermap.org/data/2.5/forecast?id=${PrestonId}&appid=${myId}&units=imperial`;
 fetch(forecastURL)
   .then((response) => response.json())
   .then((jsObject) => {

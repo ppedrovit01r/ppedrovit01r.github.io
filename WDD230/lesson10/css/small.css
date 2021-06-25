@@ -194,6 +194,44 @@ main img {
 }
 
 /***************** WEATHER SUMMARY *********************/
+
+.weatherSummary h2 {
+  background-color: var(--darkgreen);
+  color: white;
+  margin: 0;
+  padding: .75rem;
+  text-align: center;
+}
+
+.weatherSummary ul {
+  list-style: none;
+  padding: 0 0 1.25em 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: .4rem;
+  align-items: center;
+}
+
+.weatherSummary #iconTemp {
+  height: 90px;
+  width: auto;
+  place-self: center;
+  border-radius: 1em;
+}
+
+.weatherSummary #currentTemp {
+  font-size: 2.75em;
+}
+
+.weatherSummary ul li:nth-child(odd) {
+  text-align: right;
+}
+
+.weatherSummary ul li:nth-child(1) {
+  align-self: center;
+}
+
 .weatherSummary span {
   font-weight: bold;
   color: var(--darkblue);
@@ -204,33 +242,51 @@ main img {
   text-align: center;
   font-family: "Quicksand", Arial, sans-serif;
   margin-bottom: 2.5em;
+  
 }
 
 .forecast h2 {
   color: var(--darkblue);
+
+}
+
+.forecast h3 {
+  margin: 0;
+  padding: 0;
+  color: white;
+  place-self: center;
 }
 
 .forecast ul {
   display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   justify-content: center;
   list-style-type: none;
-  padding: 0;
+  padding: 2.5%;
+  border-radius: .5em;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
 }
 
 .forecast li {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
   padding: 0;
-  border: 1px solid var(--darkblue);
-}
-
-.forecast p {
-  margin: 0;
-  padding: 0.5em;
+  margin: .5em;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+  border-radius: .5em;
   background-color: var(--darkblue);
   color: white;
 }
 
-.forecast span {
-  margin-bottom: 0.5em;
+.forecast img {
+  width: 72px;
+}
+
+.forecast p {
+  margin: 0;
+  padding: 0;
 }
 
 /***************** ARTICLE *********************/
@@ -540,3 +596,4 @@ main.presentation li {
   margin: 0 auto;
   padding: 0;
 }
+

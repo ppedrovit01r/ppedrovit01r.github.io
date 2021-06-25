@@ -67,16 +67,27 @@
     position: absolute;
     top: 1em;
     left: 1em;
-    width: 250px;
+    width: 300px;
     background-color: whitesmoke;
-    border: 1px solid var(--gray);
-    padding: 1.5rem;
-    box-shadow: 0 0 30px #333;
-    opacity: .9;
+    border: 2px solid white;
+    border-radius: 2.5%;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    opacity: .95;
   }
 
-.forecast hr {
-  display: none;
+  .weatherSummary h2 {
+    border-radius: 2.5% 2.5% 0 0;
+  }
+
+.forecast ul {
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.forecast li {
+  flex-direction: column;
+  padding: 1em;
 }
 
   .article {

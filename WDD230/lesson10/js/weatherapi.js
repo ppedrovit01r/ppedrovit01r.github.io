@@ -5,7 +5,7 @@ const weatherURL = `http://api.openweathermap.org/data/2.5/weather?id=${PrestonI
 fetch(weatherURL)
   .then((response) => response.json())
   .then((jsObject) => {
-    //console.log(jsObject);
+    console.log(jsObject);
     let weather = jsObject;
 
     let t = weather.main.temp;
@@ -60,7 +60,7 @@ const forecastURL = `http://api.openweathermap.org/data/2.5/forecast?id=${Presto
 fetch(forecastURL)
   .then((response) => response.json())
   .then((jsObject) => {
-    //console.log(jsObject);
+    console.log(jsObject);
     let forecast = jsObject;
 
     let ul = document.createElement("ul");

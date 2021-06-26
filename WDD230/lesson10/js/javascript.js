@@ -25,9 +25,9 @@ const fulldate = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(
 datefield.textContent = fulldate;
 
 //display Pancake at the park only on Fridays
-//if (now.getDay() == 5) {
-//  document.querySelector('.banner').style.display = "block"
-//}
+if (now.getDay() == 5) {
+  document.querySelector('.banner').style.display = "block"
+}
 
 //************************** STORAGE *****************/
 let daysSinceLastVisit;

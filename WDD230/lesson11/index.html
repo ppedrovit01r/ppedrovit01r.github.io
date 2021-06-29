@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Final for the Weather Site Project by Pedro Vitor in WDD 230: Web Frontend Development at Brigham Young University - Idaho"
+    />
+    <title>Home | Infonado.org</title>
+    <link
+      rel="shortcut icon"
+      href="images/iconfinder__windy_1337503_MOD.ico"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link rel="stylesheet" href="css/small.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
+  </head>
+  <body>
+    <header>
+      <img src="images/infonado.png" alt="infonado.org Logo" />
+      <div class="headings">
+        <h1>Infonado.org</h1>
+        <p class="motto subtitle">Swift News Coming Your Way!</p>
+      </div>
+      <button class="ham">&#9776;</button>
+    </header>
+    <nav>
+      <ul class="navigation">
+        <!--<li><a class="ham" href="#">&#9776;</a></li>-->
+        <li class="active"><a href="#">HOME</a></li>
+        <li><a href="preston.html">PRESTON</a></li>
+        <li><a href="#">SODA SPRINGS</a></li>
+        <li><a href="#">FISH HAVEN</a></li>
+        <li><a href="stormcenter.html">STORM CENTER</a></li>
+        <li><a href="gallery.html">GALLERY</a></li>
+      </ul>
+    </nav>
+    <div class="homehero">
+      <picture>
+        <source media="(max-width: 600px)" srcset="images/heroimg600.jpg">
+        <source media="(max-width: 720px)" srcset="images/heroimg720.jpg">
+        <img src="images/heroimg.jpg" alt="sunny landscape">
+      </picture>
+      <div class="herotext">
+        <h1>Hey Young Adult!</h1>
+        <p>Haven't yet been able to complete High School? Just sign up below and take 4 exams to complete now! Enjoy this excellent opportunity!</p>
+        <a href="#">Sign Up Here</a>
+      </div>
+    </div>
+    <main>
+      <div class="towns"><h1>Towns</h1></div>
+      <div class="news">
+        <h1>News</h1>
+        <div>
+          <picture>
+            <img src="images/xbox.jpg" alt="Xbox Design Lab">
+          </picture>
+          <a href="#"><strong>Custom Xbox controllers are back and available today</strong><br> Microsoft is bringing its Xbox Design Lab back for Xbox Series X controllers. Originally launched in 2016, Xbox Design Lab allows Xbox owners to create personalized Xbox controllers. Microsoft is bringing the program back for the next-gen Xbox Series X controllers, after putting it on hold just ahead of the Series X launch last year. <span>Read more...</span></a>
+        </div>
+        <div>
+          <a href="#"><strong>Pokémon Unite will launch first on Nintendo Switch in July</strong><br> Pokémon Unite, the team-based, five vs. five strategy game co-developed with Tencent’s TiMi Studio Group, now has a release window — and it’s soon. It’s coming first to Nintendo Switch in July 2021, followed by a release on mobile devices in September. Presumably, it’ll be released on both iOS and Android, but specific platforms weren’t confirmed today. <span>Read more...</span></a>
+        </div>
+        <div>
+          <a href="#"><strong>Here are the best iPad deals right now!!</strong><br><span>Check out...</span></a>
+        </div>
+        <div class="more">
+          <a href="#">More news...</a>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d401305.28418053564!2d-111.94931229483902!3d42.12390786681677!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f7e912f87f63%3A0xe053d0392bae5f12!2s127%20E%20Oneida%20St%2C%20Preston%2C%20ID%2083263!5e0!3m2!1sen!2sus!4v1621978527311!5m2!1sen!2sus"
+          title="Google Maps"
+          allowfullscreen=""
+          loading="lazy"
+        ></iframe>
+      </div>
+      <div class="contact">
+        <h4>Contact Information</h4>
+        <p>
+          &nbsp;&#128205;&nbsp; Middle of Nowhere, ID<br />
+          &#128231; contact-us@infonado.org<br />
+          &#128222; (208) 555-5555
+        </p>
+      </div>
+      <div class="social">
+        <a href="#"><img src="images/facebook64.png" alt="Facebook" /></a>
+        <a href="#"><img src="images/twitter64.png" alt="Twitter" /></a>
+        <a href="#"><img src="images/instagram64.png" alt="Instagram" /></a>
+      </div>
+    </footer>
+    <div class="BYUfooter">
+      <p class="footerLine">
+        &copy;<span id="currentYear"></span> &bull; Pedro Vitor &bull; Brazil
+        &bull;
+        <a target="_blank" href="https://www.byui.edu/online"
+          >BYU-Idaho Online Learning</a
+        >
+      </p>
+      <p class="subtitle">
+        The Weather Site Project &bull; WDD 230 &bull;
+        <a href="/WDD230/index.html">Go back to the Main Page</a>
+      </p>
+      <div class="date subtitle"></div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+      WebFont.load({
+        google: {
+          families: ["Quicksand:300,400,700", "Roboto:300,400,700"],
+        },
+      });
+    </script>
+    <script src="js/javascript.js" defer></script>
+  </body>
+</html>

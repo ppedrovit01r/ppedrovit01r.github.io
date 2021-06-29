@@ -1,0 +1,206 @@
+/* Tablet Views ******************************/
+@media only screen and (min-width: 45em) {
+  /* Horizontal Menu Examples */
+  /* Flex *********************/
+
+  .banner h1 {
+    font-size: 1em;
+  }
+
+  .banner p {
+    font-size: 1em;
+  }
+  .headings h1 {
+    font-size: 2em;
+  }
+
+  header {
+    padding: 1.25em 0.75em;
+    justify-content: center;
+  }
+
+  header button {
+    display: none;
+  }
+
+  header img {
+    width: 55px;
+  }
+
+  .navigation {
+    display: flex;
+    justify-content: center;
+  }
+
+  .navigation li {
+    display: block;
+  }
+
+  .navigation li a {
+    text-align: center;
+    border: none;
+    border-right: 1px solid rgba(000, 000, 000, 0.1);
+    font-size: 1em;
+    padding: 1.2em 1em;
+  }
+
+  /*.navigation li:first-child {
+    display: none;
+  }*/
+
+  .navigation a:hover {
+    background-color: var(--yellow);
+    color: black;
+    font-weight: bold;
+    border-radius: 1em 1em 0 0;
+  }
+
+  .active {
+    border-radius: 1em 1em 0 0;
+  }
+
+  .herodiv {
+    position: relative;
+  }
+
+  .weatherSummary {
+    position: absolute;
+    top: 1em;
+    left: 1em;
+    width: 300px;
+    background-color: whitesmoke;
+    border: 2px solid white;
+    border-radius: 2.5%;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    opacity: .95;
+  }
+
+  .weatherSummary h2 {
+    border-radius: 2.5% 2.5% 0 0;
+  }
+
+.forecast ul {
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.forecast li {
+  flex-direction: column;
+  padding: 1em;
+}
+
+.forecastDivider {
+  display: none;
+}
+
+  .article {
+    background-color: rgba(000, 000, 000, 0.1);
+    padding: 0.5em 2em;
+  }
+
+  .article img {
+    float: right;
+    width: 240px;
+    margin-left: 1em;
+    margin-bottom: 1em;
+  }
+
+  footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 1em;
+  }
+
+  .map {
+    display: block;
+    border: 0;
+  }
+  .social {
+    text-align: left;
+  }
+  .social img {
+    width: 37px;
+  }
+
+  .BYUfooter p {
+    font-size: .9em;
+  }
+
+/***************** GALLERY *********************/
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+/****************** FORMS ***************/
+form fieldset {
+  padding: 2% 2% 0 2%;
+}
+
+form label.top + input, form label.top + select {
+  margin-bottom: 2%;
+}
+
+form label.comments {
+  margin-top: 3%;
+}
+
+form label.range {
+  margin-bottom: 3%;
+}
+
+form label.sbs {
+    padding: 1% 0;;
+  }
+
+  form input.submitBtn {
+    display: block;
+    margin: 2% auto;
+    max-width: 16rem;
+
+  }
+
+  .centerForm {
+    padding: 2.5% 25%;
+  }
+
+/************ HOME ****************/
+.herotext {
+  top: 10%;
+}
+
+.herotext p {
+  font-size: 1.2em;
+  margin: 2em 0 3em 0;
+}
+
+.towns {
+  margin: 0 3em;
+}
+
+.towns section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0;
+}
+
+.towns section:nth-child(odd) {
+  flex-direction: row-reverse;
+}
+
+.news {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1em;
+}
+
+.news h1 {
+  grid-column: 1 / span 2;
+}
+} /*************end of media query**********/
+

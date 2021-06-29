@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Lesson 8 for the Weather Site Project by Pedro Vitor in WDD 230: Web Frontend Development at Brigham Young University - Idaho"
+    />
+    <title>Gallery | Infonado.org</title>
+    <link
+      rel="shortcut icon"
+      href="images/iconfinder__windy_1337503_MOD.ico"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link rel="stylesheet" href="css/small.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
+  </head>
+  <body>
+    <header>
+      <img src="images/infonado.png" alt="infonado.org Logo" />
+      <div class="headings">
+        <h1>Infonado.org</h1>
+        <p class="motto subtitle">Swift News Coming Your Way!</p>
+      </div>
+      <button class="ham">&#9776;</button>
+    </header>
+    <nav>
+      <ul class="navigation">
+        <!--<li><a class="ham" href="#">&#9776;</a></li>-->
+        <li><a href="/WDD230/lesson11/">HOME</a></li>
+        <li><a href="preston.html">PRESTON</a></li>
+        <li><a href="#">SODA SPRINGS</a></li>
+        <li><a href="#">FISH HAVEN</a></li>
+        <li class="active"><a href="#">STORM CENTER</a></li>
+        <li><a href="gallery.html">GALLERY</a></li>
+      </ul>
+    </nav>
+    <main class="centerForm">
+      <h1>Storm Center</h1>
+      <p>Please, send us details about storms.</p>
+      <div class="noDeadspace">
+        <form method="GET" action="thanks.html">
+          <fieldset>
+            <legend>Contact Information</legend>
+            <div>
+              <label for="name" class="top"
+                >Full Name:* </label
+              >
+              <input
+                type="text"
+                name="name"
+                id="name"
+                pattern="[A-Za-z]{3,)"
+                autofocus
+                required
+              />
+            </div>
+            <div>
+              <label for="email" class="top">E-mail: </label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="joejohnson@email.com"
+              />
+            </div>
+            <div>
+              <label for="tel" class="top">Telefone:* </label>
+              <input type="tel" name="tel" id="tel" required />
+            </div>
+            <div>
+              <label for="zipcode" class="top">Zip Code:* </label>
+              <input type="number" name="zipcode" id="zipcode" required />
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Storm Details</legend>
+            <div>
+              <label for="date" class="top">Storm Date: </label>
+              <input type="date" name="date" id="date" />
+            </div>
+            <div>
+              <label for="type" class="top">Storm Type: </label>
+              <input list="stormTypes" name="type" id="type" />
+              <datalist id="stormTypes">
+                <option value="Flash Flood">Flash Flood</option>
+                <option value="Hail">Hail</option>
+                <option value="Hurricane">Hurricane</option>
+                <option value="Thunderstorm">Thunderstorm</option>
+                <option value="Tornado">Tornado</option>
+              </datalist>
+            </div>
+            <div>
+              <label class="sbs">Storm Severity: </label>
+              <label class="range">
+                <input
+                type="range"
+                name="range"
+                id="severity"
+                value="5"
+                min="1"
+                max="10"
+                step="1"
+                oninput="adjustRange(this.value)"
+                onchange="adjustRange(this.value)"
+              />
+              <span id="rangeValue">5</span>
+              </label>
+            </div>
+            <div>
+              <label for="region" class="top">Storm Region: </label>
+              <select name="region" id="region">
+                <option value="" disabled selected>Select Region...</option>
+                <option value="Preston">Preston</option>
+                <option value="Soda Springs">Soda Springs</option>
+                <option value="Fish Haven">Fish Haven</option>
+                <option value="Somewhere Idaho">Another inside Idaho</option>
+                <option value="Other Location">Location outside Idaho</option>
+              </select>
+            </div>
+            <div>
+              <label>User In-danger Level?</label>
+              <label class="sbs"
+                ><input type="radio" name="danger" value="Yes" /> Yes</label
+              >
+              <label class="sbs"
+                ><input type="radio" name="danger" value="Maybe" /> Maybe</label
+              >
+              <label class="sbs"
+                ><input type="radio" name="danger" value="No" /> No</label
+              >
+            </div>
+            <div>
+              <label for="comments" class="top comments"
+                >Additional Information or Comments:
+              </label>
+              <textarea name="comments" id="comments" rows="5" placeholder="Leave your comments here!"></textarea>
+            </div>
+          </fieldset>
+          <div>
+            <input
+              type="submit"
+              value="Send Storm Information"
+              class="submitBtn"
+            />
+          </div>
+        </form>
+        <picture>
+          <img src="images/sky.jpg" alt="orange passage">
+      </picture>
+      </div>
+    </main>
+    <footer>
+      <div class="map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d401305.28418053564!2d-111.94931229483902!3d42.12390786681677!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f7e912f87f63%3A0xe053d0392bae5f12!2s127%20E%20Oneida%20St%2C%20Preston%2C%20ID%2083263!5e0!3m2!1sen!2sus!4v1621978527311!5m2!1sen!2sus"
+          title="Google Maps"
+          allowfullscreen=""
+          loading="lazy"
+        ></iframe>
+      </div>
+      <div class="contact">
+        <h4>Contact Information</h4>
+        <p>
+          &nbsp;&#128205;&nbsp; Middle of Nowhere, ID<br />
+          &#128231; contact-us@infonado.org<br />
+          &#128222; (208) 555-5555
+        </p>
+      </div>
+      <div class="social">
+        <a href="#"><img src="images/facebook64.png" alt="Facebook" /></a>
+        <a href="#"><img src="images/twitter64.png" alt="Twitter" /></a>
+        <a href="#"><img src="images/instagram64.png" alt="Instagram" /></a>
+      </div>
+    </footer>
+    <div class="BYUfooter">
+      <p class="footerLine">
+        &copy;<span id="currentYear"></span> &bull; Pedro Vitor &bull; Brazil
+        &bull;
+        <a target="_blank" href="https://www.byui.edu/online"
+          >BYU-Idaho Online Learning</a
+        >
+      </p>
+      <p class="subtitle">
+        The Weather Site Project &bull; WDD 230 &bull;
+        <a href="/WDD230/index.html">Go back to the Main Page</a>
+      </p>
+      <div class="date subtitle"></div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+      WebFont.load({
+        google: {
+          families: ["Quicksand:300,400,700", "Roboto:300,400,700"],
+        },
+      });
+    </script>
+    <script src="js/javascript.js" defer></script>
+  </body>
+</html>

@@ -44,7 +44,7 @@ body {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   margin: auto;
-  background-color: var(--blue);
+  background-color: var(--darkblue);
 }
 
 .subtitle {
@@ -458,6 +458,7 @@ form label.top + input:required:valid {
   max-width: 1124px;
   margin: 0 auto;
   border-top: solid white 2px;
+  background-color: white;
 }
 
 .herotext {
@@ -465,31 +466,37 @@ form label.top + input:required:valid {
   top: 5%;
   text-align: center;
   width: 80%;
+  height: 65%;
   padding: 0 10%;
+  background: rgb(30,113,59);
+  background: radial-gradient(circle, rgba(30,113,59,0.8) 0%, rgba(47,84,96,0) 85%);
 }
 
 .homehero h1{
   color: white;
+  font-weight: normal;
+  font-size: 28px;
 }
 
 .homehero p {
   margin-bottom: 12%;
+  font-family: "Quicksand", Arial, sans-serif;
 }
 
 .homehero a {
-  background-color: var(--darkgreen);
-  color: white;
+  background-color: white;
+  color: black;
   font-weight: bold;
   text-decoration: none;
   padding: 1em 2em;
   border-radius: 2em;
-  box-shadow: rgba(0, 0, 0, 0.4) 0px 3px 8px;
   margin: 2em;
 }
 
 .homehero a:hover {
   background-color: #eec584;
   color: black;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 3px 8px;
 }
 
 .homehero img {
@@ -540,7 +547,8 @@ form label.top + input:required:valid {
 }
 
 .news div:hover {
-  background-color: white;
+  background-color: whitesmoke;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 
 .news picture {
@@ -557,6 +565,12 @@ form label.top + input:required:valid {
 .news span {
   font-style: italic;
   font-weight: bold;
+  display: block;
+}
+
+.news strong {
+  display: block;
+  margin-bottom: 1.5%;
 }
 
 .news .more {
@@ -574,6 +588,7 @@ form label.top + input:required:valid {
   display: block;
   color: whitesmoke;
   text-align: center;
+  padding: 1em 10em;
 }
 
 .news .more a:hover {

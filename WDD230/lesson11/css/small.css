@@ -330,6 +330,11 @@ footer a {
   margin: 0 0.5em;
 }
 
+.social img:hover {
+  border-radius: 200em;
+  box-shadow: rgba(255, 255, 255, 0.3) 0px 1px 0px, rgba(255, 255, 255, 0.3) 0px 8px 24px, rgba(255, 255, 255, 0.3) 0px 16px 48px;
+}
+
 .social img {
   width: 44px;
 }

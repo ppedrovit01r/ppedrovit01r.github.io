@@ -481,7 +481,7 @@ form label.top + input:required:valid {
 .homehero p {
   margin-bottom: 12%;
   font-family: "Quicksand", Arial, sans-serif;
-  text-shadow: 0px 0px 0px black, 0 0 5px var(--green), 0 0 2px var(--darkgreen);
+  
 }
 
 .homehero a {

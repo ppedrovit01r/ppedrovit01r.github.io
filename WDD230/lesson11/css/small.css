@@ -468,8 +468,7 @@ form label.top + input:required:valid {
   width: 80%;
   height: 99%;
   padding: 0 10%;
-  background: rgb(30,113,59);
-  background: radial-gradient(circle, rgba(30,113,59,0.8) 0%, rgba(47,84,96,0) 85%);
+  background: rgb(30,113,59,.4);
 }
 
 .homehero h1{

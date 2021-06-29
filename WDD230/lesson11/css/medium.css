@@ -172,6 +172,8 @@ form label.sbs {
   top: 0%;
   width: 50%;
   padding: 0 25%;
+  background: rgb(30,113,59);
+  background: radial-gradient(circle, rgba(30,113,59,0.8) 0%, rgba(47,84,96,0) 85%);
 }
 
 .herotext h1 {

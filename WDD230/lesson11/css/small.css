@@ -618,3 +618,39 @@ main.presentation li {
   padding: 0;
 }
 
+/***************** Error 404 *********************/
+.error404 img {
+  width: 90%;
+  display: block;
+  margin: 0 auto;
+}
+
+.error404 div {
+  text-align: center;
+  font-family: "Quicksand", Arial, sans-serif;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.error404 div a {
+  display: inline-block;
+  background-color: var(--darkgreen);
+  text-decoration: none;
+  color: white;
+  padding: 1.25em 1em;
+  border: none;
+  border-radius: 2%;
+  margin: 2%;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.error404 div a:nth-child(odd):hover {
+  background-color: #1A7CC3;
+  color: white;
+}
+
+.error404 div a:nth-child(even):hover {
+  background-color: #FDC840;
+  color: white;
+  
+}

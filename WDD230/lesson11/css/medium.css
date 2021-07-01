@@ -210,5 +210,11 @@ form label.sbs {
 .news h1 {
   grid-column: 1 / span 2;
 }
+
+/***************** Error 404 *********************/
+.error404 img {
+  width: 50%;
+}
+
 } /*************end of media query**********/
 

@@ -91,19 +91,17 @@
   padding: 1em;
 }
 
-.forecastDivider {
+.pageDivider {
   display: none;
 }
 
-  .article {
-    background-color: rgba(000, 000, 000, 0.1);
-    padding: 0.5em 2em;
-  }
 
-  .article img {
+  .article figure {
+    margin-top: 0;
+    margin-right: 6%;
     float: right;
-    width: 240px;
-    margin-left: 1em;
+    width: 180px;
+    margin-left: 2%;
     margin-bottom: 1em;
   }
 
@@ -127,6 +125,10 @@
 
   .BYUfooter p {
     font-size: .9em;
+  }
+
+  h2 {
+    margin-top: 2em;
   }
 
 /***************** GALLERY *********************/
@@ -215,6 +217,9 @@ form label.sbs {
 .error404 img {
   width: 50%;
 }
+
+/***************** Towns Pages *********************/
+
 
 } /*************end of media query**********/
 

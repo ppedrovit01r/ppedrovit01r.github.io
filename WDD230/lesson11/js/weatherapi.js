@@ -1,7 +1,30 @@
 const PrestonId = "5604473";
+const SodaSpringsId = "5607916";
+const FishHavenId = "5593814"; //I got the Id for Garden City as it appears not to have an Id for Fish Haven
 const myId = "f6b72466de41a9b962d33a29f3f1e123";
+let TownId = ""; let TownNumber = "";
 
-const weatherURL = `https://api.openweathermap.org/data/2.5/weather?id=${PrestonId}&appid=${myId}&units=imperial`;
+const townName = document.querySelector('.active').textContent;
+//console.log(townName);
+switch (townName) {
+  case 'PRESTON':
+    TownId = PrestonId;
+    TownNumber = 6;
+    break;
+  case 'SODA SPRINGS':
+    TownId = SodaSpringsId;
+    TownNumber = 0;
+    break;
+  case 'FISH HAVEN':
+    TownId = FishHavenId;
+    TownNumber = 2;
+    break;
+  default:
+    break;
+}
+
+/************************ WEATHER SUMMARY *******************/
+const weatherURL = `https://api.openweathermap.org/data/2.5/weather?id=${TownId}&appid=${myId}&units=imperial`;
 fetch(weatherURL)
   .then((response) => response.json())
   .then((jsObject) => {
@@ -56,7 +79,7 @@ function getWeekDay(dayOfWeek) {
   return weekdays[dayOfWeek];
 }
 
-const forecastURL = `https://api.openweathermap.org/data/2.5/forecast?id=${PrestonId}&appid=${myId}&units=imperial`;
+const forecastURL = `https://api.openweathermap.org/data/2.5/forecast?id=${TownId}&appid=${myId}&units=imperial`;
 fetch(forecastURL)
   .then((response) => response.json())
   .then((jsObject) => {
@@ -87,4 +110,26 @@ fetch(forecastURL)
       ul.appendChild(li);
     }
     document.querySelector("div.forecast").appendChild(ul);
+  });
+
+/************************ TOWN NEWS  *******************/
+const requestURL =
+  "https://byui-cit230.github.io/weather/data/towndata.json";
+
+fetch(requestURL)
+  .then(function (response) {
+    return response.json();
+  })
+  .then(function (jsonObject) {
+    console.table(jsonObject);
+    const towns = jsonObject["towns"];
+    let ul = document.createElement("ul");
+    for (let i = 0; i < towns[TownNumber].events.length; i++) {
+      let li = document.createElement("li");
+
+      li.innerHTML = towns[TownNumber].events[i];
+
+      ul.appendChild(li);
+    }
+    document.querySelector("#townNews").appendChild(ul);
   });

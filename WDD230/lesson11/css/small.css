@@ -17,6 +17,7 @@ h2,
 h3 {
   font-family: "Quicksand", Arial, sans-serif;
   color: var(--darkgreen);
+  padding: 0 2.5%;
 }
 
 h1 {
@@ -34,6 +35,10 @@ h3 {
 
 h4 {
   margin: 0.5em 1em;
+}
+
+p {
+  padding: 0 3%;
 }
 
 hr {
@@ -183,7 +188,7 @@ nav {
 /***************** MAIN *********************/
 main {
   text-align: left;
-  padding: 2.5%;
+  padding: 2% 0;
   background-color: white;
   margin: auto;
   max-width: 1080px;
@@ -191,6 +196,28 @@ main {
 
 main img {
   width: 100%;
+}
+
+/***************** TOWN PAGES *********************/
+.title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.title a {
+  background-color: var(--darkgreen);
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: .8em;
+  padding: .6em .8em;
+  margin-right: 3%;
+}
+
+#townNews ul li {
+  margin: 1em;
 }
 
 /***************** WEATHER SUMMARY *********************/
@@ -290,14 +317,10 @@ main p.weatherInfo {
 }
 
 /***************** ARTICLE *********************/
-.article {
-  background-color: rgba(000, 000, 000, 0.1);
-  padding: 0 1em 1em 1em;
-}
 
 .article img {
   display: block;
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
   border: 2px solid var(--darkblue);
 }
@@ -655,5 +678,4 @@ main.presentation li {
 .error404 div a:nth-child(even):hover {
   background-color: #FDC840;
   color: white;
-  
 }

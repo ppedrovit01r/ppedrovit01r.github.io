@@ -11,6 +11,7 @@ fetch(requestURL)
     const towns = jsonObject["towns"];
     for (let i = 0; i < towns.length; i++ ) {
       if (towns[i].name == 'Preston' || towns[i].name == 'Soda Springs' || towns[i].name == 'Fish Haven') {
+        let a = document.createElement('a');
         let card = document.createElement('section');
         let div = document.createElement('div');
         let h2 = document.createElement('h2');
@@ -20,6 +21,7 @@ fetch(requestURL)
         let pRain = document.createElement('p');
         let img = document.createElement('img');
 
+        a.setAttribute('href', towns[i].name.replace(/\s+/g, '').toLowerCase() + '.html');
         h2.textContent = towns[i].name;
         motto.textContent = towns[i].motto;
         pYear.textContent = 'Year Founded: ' + towns[i].yearFounded;
@@ -35,8 +37,9 @@ fetch(requestURL)
         div.appendChild(pRain);
         card.appendChild(div)
         card.appendChild(img);
+        a.appendChild(card);
 
-        document.querySelector('div.towns').appendChild(card);
+        document.querySelector('div.towns').appendChild(a);
       }
         //doesnt do anything if not
     }

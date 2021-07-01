@@ -108,14 +108,9 @@
   footer {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     font-size: 1em;
   }
-
-.contact {
-  text-align: left;
-  min-width: 240px;
-}
 
   .map {
     display: block;
@@ -196,7 +191,7 @@ form label.sbs {
   margin: 0 3em;
 }
 
-.towns section {
+.towns a {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -208,10 +203,14 @@ form label.sbs {
   flex-direction: row-reverse;
 }
 
+.towns h2 {
+  margin-top: .5em;
+}
+
 .news {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 1em;
+  grid-gap: 0 1em;
 }
 
 .news h1 {

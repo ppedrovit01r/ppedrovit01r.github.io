@@ -37,8 +37,8 @@ h4 {
   margin: 0.5em 1em;
 }
 
-p {
-  padding: 0 3%;
+main p {
+  padding: 0 2em;
 }
 
 hr {
@@ -500,9 +500,9 @@ form label.top + input:required:valid {
   position: absolute;
   top: 0%;
   text-align: center;
-  width: 80%;
+  width: 90%;
   height: 99%;
-  padding: 0 10%;
+  padding: 0 5%;
   background: rgb(30,113,59,.4);
 }
 
@@ -550,11 +550,22 @@ form label.top + input:required:valid {
   margin: .5em 0 0 0 ;
 }
 
-.towns section {
-  background-color: rgb(47, 84, 96, .125);
+.towns a {
+  text-decoration: none;
+  color: black;
   border-radius: .5em;
+  background-color: rgb(47, 84, 96, .125);
+  padding: 0 1em;
+  margin: 0 .5em;
+}
+
+.towns a:hover {
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.towns section {
   text-align: center;
-  padding: 0 1em 1em 1em;
+  height: 100%;
 }
 
 .towns section h2 {
@@ -575,16 +586,14 @@ form label.top + input:required:valid {
   width: 300px;
 }
 
-.news div {
-  margin-bottom: 1em;
-  background-color:  rgb(47, 84, 96, .125);
-  padding: 1em;
-  border-radius: .5em;
-}
-
-.news div:hover {
+.news a:hover {
   background-color: whitesmoke;
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.news {
+  display: flex;
+  flex-direction: column;
 }
 
 .news picture {
@@ -594,6 +603,10 @@ form label.top + input:required:valid {
 }
 
 .news a {
+  margin-bottom: 1em;
+  background-color:  rgb(47, 84, 96, .125);
+  padding: 1em;
+  border-radius: .5em;
   text-decoration: none;
   color: black;
 }
@@ -610,21 +623,21 @@ form label.top + input:required:valid {
 }
 
 .news .more {
-  background-color: #666;
+  background-color: rgb(47, 84, 96, .125);
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .news .more:hover {
-  background-color: var(--blue);
+  background-color: var(--darkgreen);
+  color: white;
 }
 
 .news .more a {
   display: block;
   color: whitesmoke;
   text-align: center;
-  padding: 1em 10em;
 }
 
 .news .more a:hover {

@@ -375,7 +375,10 @@ footer a {
 .visitedGallery {
   margin-top: 2em;
   text-align: center;
-  
+}
+
+.gallery figure {
+  margin: 0;
 }
 
 /***************** FORMS *********************/

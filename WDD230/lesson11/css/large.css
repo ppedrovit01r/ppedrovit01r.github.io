@@ -39,18 +39,19 @@
   .gallery figcaption {
     font-size: 0.9em;
     padding: 2%;
+    text-align: center;
   }
 
-  .gallery picture img {
+  .gallery figure img {
     border-radius: 1% 1% 0 0;
   }
 
-  .gallery picture {
+  .gallery figure {
     border-radius: 1%;
     box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
   }
 
-  .gallery picture:hover {
+  .gallery figure:hover {
     box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px,
       rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
   }

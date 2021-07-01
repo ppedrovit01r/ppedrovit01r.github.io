@@ -340,6 +340,10 @@ footer a {
   color: var(--yellow);
 }
 
+.contact {
+  text-align: center;
+}
+
 .contact p {
   color: whitesmoke;
 }

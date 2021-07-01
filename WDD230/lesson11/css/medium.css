@@ -108,9 +108,14 @@
   footer {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
     font-size: 1em;
   }
+
+.contact {
+  text-align: left;
+  min-width: 240px;
+}
 
   .map {
     display: block;

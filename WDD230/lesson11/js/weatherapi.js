@@ -121,7 +121,7 @@ fetch(requestURL)
     return response.json();
   })
   .then(function (jsonObject) {
-    console.table(jsonObject);
+    //console.table(jsonObject);
     const towns = jsonObject["towns"];
     let ul = document.createElement("ul");
     for (let i = 0; i < towns[TownNumber].events.length; i++) {

@@ -213,6 +213,10 @@ form label.sbs {
   grid-gap: 0 1em;
 }
 
+.news a {
+  border-radius: .5em;
+}
+
 .news h1 {
   grid-column: 1 / span 2;
 }

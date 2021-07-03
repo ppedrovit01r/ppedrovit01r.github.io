@@ -401,6 +401,7 @@ footer a {
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 1em;
+  margin: 0 .75em;
 }
 
 .visitedGallery {
@@ -609,7 +610,6 @@ form label.top + input:required:valid {
   margin-bottom: 1em;
   background-color:  rgb(47, 84, 96, .125);
   padding: 1em;
-  border-radius: .5em;
   text-decoration: none;
   color: black;
 }

@@ -29,6 +29,7 @@ fetch(requestURL)
         pRain.textContent = 'Annual Rain Fall: ' + towns[i].averageRainfall;
         img.setAttribute('src', 'images/' + towns[i].photo);
         img.setAttribute('alt', 'Town ' + (i+1) + ': ' + towns[i].name);
+        img.setAttribute('loading', 'lazy');
 
         div.appendChild(h2);
         div.appendChild(motto);

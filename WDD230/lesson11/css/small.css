@@ -328,8 +328,12 @@ main p.weatherInfo {
 footer {
   padding: 1em;
   background-color: var(--gray);
-  color: var(--yellow);
   font-size: 0.9em;
+}
+
+footer .contact h1 {
+  color: var(--yellow);
+  font-size: 1.2em;
 }
 
 footer p {

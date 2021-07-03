@@ -53,9 +53,8 @@ fetch(weatherURL)
 
     const imagesrc = `https://openweathermap.org/img/w/${weather.weather[0].icon}.png`;
     document.getElementById("iconTemp").setAttribute("src", imagesrc);
-    document
-      .getElementById("iconTemp")
-      .setAttribute("alt", weather.weather[0].main);
+    document.getElementById("iconTemp").setAttribute("alt", weather.weather[0].main);
+    document.getElementById("iconTemp").setAttribute("loading", "lazy");
   });
 
 //get day of the week
@@ -100,6 +99,7 @@ fetch(forecastURL)
       day.innerHTML = getWeekDay(1 + dayOfWeek + i);
       icon.setAttribute('src', `https://openweathermap.org/img/wn/${forecast18pm[i].weather[0].icon}@2x.png`);
       icon.setAttribute('alt', forecast18pm[i].weather[0].main)
+      icon.setAttribute('loading', "lazy");
       desc.innerHTML = `${
         forecast18pm[i].weather[0].main
       } <strong>${forecast18pm[i].main.temp.toFixed(0)}&deg;F</strong>`;

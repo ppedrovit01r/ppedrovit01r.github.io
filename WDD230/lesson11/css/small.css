@@ -497,7 +497,6 @@ form label.top + input:required:valid {
   max-width: 1124px;
   margin: 0 auto;
   border-top: solid white 2px;
-  background-color: white;
 }
 
 .herotext {

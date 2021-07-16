@@ -15,7 +15,7 @@
         grid-template-columns: 1fr 1fr;
     }
 
-    :is(.footerHeadline, .credits) {
+    .footerHeadline, .credits {
         grid-column-end: span 2;
     }
     

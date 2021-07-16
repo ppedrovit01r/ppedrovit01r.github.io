@@ -1,6 +1,10 @@
 @media only screen and (min-width: 900px) {
     /***************** HEADER *********************/
     /*max-width attribute for header ul inside footer section*/
+    header {
+        background: linear-gradient(157deg, var(--blue) 0%, rgba(255,187,22,.5) 250%);
+    }
+    
     header ul .NavBar .menuNav {
         display: none;
     }

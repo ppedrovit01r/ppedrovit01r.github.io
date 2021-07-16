@@ -49,7 +49,7 @@ header ul {
   list-style: none;
 }
 
-header ul a {
+header a {
   text-decoration: none;
 }
 
@@ -65,7 +65,7 @@ header .NavBar {
     justify-content: space-between;
 }
 
-header ul .NavBar .logoNav {
+header .NavBar .logoNav {
   display: grid;
   grid-template-columns: 1fr 4fr;
   align-items: center;
@@ -80,6 +80,10 @@ header .logo {
 /***************** NAVIGATION *********************/
 header ul li {
     display: none;
+}
+
+header ul li a {
+    padding: 0 20%;
 }
 
 header.responsive {

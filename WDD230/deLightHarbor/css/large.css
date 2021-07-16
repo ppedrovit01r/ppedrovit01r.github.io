@@ -2,10 +2,12 @@
     /***************** HEADER *********************/
     /*max-width attribute for header ul inside footer section*/
     header {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
         background: linear-gradient(157deg, var(--blue) 0%, rgba(255,187,22,.5) 250%);
     }
     
-    header ul .NavBar .menuNav {
+    header .NavBar .menuNav {
         display: none;
     }
 
@@ -14,10 +16,23 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+        width: 100%;
+    }
+
+    header ul li {
+        width: 90%;
+    }
+
+    header li:hover {
+        border-radius: 1em;
+    }
+
+    header ul li a {
+        padding: 0 12%;
     }
 
     header .borderSpace {
-        margin: .5%;
+        margin: 1%;
     }
 
     header ul li {
@@ -25,7 +40,7 @@
     }
 
     /***************** FOOTER *********************/
-    header ul, footer div {
+    header ul, header .NavBar, footer div {
         max-width: 1440px;
         margin-left: auto;
         margin-right: auto;

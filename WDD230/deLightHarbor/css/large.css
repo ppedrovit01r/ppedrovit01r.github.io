@@ -1,0 +1,46 @@
+@media only screen and (min-width: 900px) {
+    /***************** HEADER *********************/
+    /*max-width attribute for header ul inside footer section*/
+    header ul .NavBar .menuNav {
+        display: none;
+    }
+
+    /***************** NAVIGATION *********************/
+    header ul {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    header .borderSpace {
+        margin: .5%;
+    }
+
+    header ul li {
+        display: block;
+    }
+
+    /***************** FOOTER *********************/
+    :is(header ul, footer div) {
+        max-width: 1440px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    footer .footerHeadline {
+        text-align: left;
+        width: 100%;
+    }
+
+    footer div hr {
+        height: 1px;
+    }
+
+    footer .headquarters {
+        padding-left: 4em;
+    }
+
+    footer .follow {
+        padding-right: 4em;
+    }
+} /*************end of media query**********/

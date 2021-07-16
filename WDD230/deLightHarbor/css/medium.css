@@ -1,0 +1,23 @@
+@media only screen and (min-width: 600px) {
+    /***************** HEADER *********************/
+    header .NavBar {
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+    }
+
+    header .logoNav {
+        margin-left: 1em;
+    }
+
+    /***************** FOOTER *********************/
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    :is(.footerHeadline, .credits) {
+        grid-column-end: span 2;
+    }
+    
+
+} /*************end of media query**********/

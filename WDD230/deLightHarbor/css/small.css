@@ -1,0 +1,184 @@
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --platinum: #e6e6e6;
+  --gray: #2f373b;
+  --blue: #006985;
+  --yellow: #ffbb16;
+  --red: #b62b2b;
+  --weath: #fde2c3;
+}
+
+body {
+  font-family: "Bona Nova", Georgia, "Times New Roman", Times, serif;
+}
+
+:is(h1, h2, h3, h4, h5, h6) {
+  font-family: "Nunito Sans", Tahoma, Verdana, sans-serif;
+  margin: 0;
+}
+
+div {
+  margin: 24px 0;
+}
+
+ul {
+  margin: 0.25em 0;
+}
+
+/***************** AUXILIARY *********************/
+.borderSpace {
+  margin-left: 3%;
+  margin-right: 3%;
+}
+
+.logo {
+    font-size: 1.4em;
+}
+
+/***************** HEADER *********************/
+header {
+    background-color: var(--blue);
+}
+
+header ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+header ul a {
+  text-decoration: none;
+}
+
+:is(header h1, header a) {
+  font-family: "Nunito Sans", Tahoma, Verdana, sans-seri;
+  color: var(--platinum);
+}
+
+header .NavBar {
+    margin-top: 0;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+header ul .NavBar .logoNav {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  align-items: center;
+  grid-gap: 1em;
+}
+
+header .logo {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+/***************** NAVIGATION *********************/
+header ul li {
+    display: none;
+}
+
+header.responsive {
+    background: linear-gradient(157deg, var(--blue) 0%, rgba(255,187,22,.5) 250%);
+}
+
+header.responsive li {
+    display: block;
+}
+
+header li {
+    text-align: center;
+    padding: .5em 0;
+}
+
+header li a {
+    width: 100%;
+}
+
+header li:hover {
+    background-color: var(--platinum);
+}
+
+header li:hover a {
+    color: var(--blue);
+    font-weight: bold;
+}
+
+header li.liInactive:hover {
+    background-color: none;
+}
+
+header li.liInactive:active {
+    background-color: none;
+}
+
+/***************** HAMBURGER ICON *********************/
+header .menuNav {
+  display: inline-block;
+  cursor: pointer;
+}
+
+header :is(.bar1, .bar2, .bar3) {
+  width: 28px;
+  height: 3px;
+  margin: 7px 0;
+  transition: 0.4s;
+  background-color: var(--platinum);
+}
+
+/* Rotate first bar */
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-5px, 4px);
+  transform: rotate(-45deg) translate(-5px, 4px);
+}
+
+/* Fade out the second bar */
+.change .bar2 {
+  opacity: 0;
+}
+
+/* Rotate last bar */
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-9px, -9px);
+  transform: rotate(45deg) translate(-9px, -9px);
+}
+
+/***************** FOOTER *********************/
+footer {
+  background-color: var(--platinum);
+  color: var(--gray);
+  text-align: center;
+}
+
+footer h1.logo {
+  text-align: left;
+}
+
+footer :is(.headquarters, .follow) ul {
+  list-style: none;
+  padding: 0;
+}
+
+footer .follow ul {
+  display: flex;
+  justify-content: center;
+}
+
+footer .follow ul li {
+  background-color: var(--blue);
+  border-radius: 2.5em;
+  padding: 0.1em 0.2em 0;
+  margin: 0 2%;
+}
+
+footer .follow ul li:hover {
+    background: linear-gradient(157deg, var(--blue) 0%, rgba(255,187,22,.5) 250%);
+}
+
+footer .credits {
+  font-size: 0.8em;
+}

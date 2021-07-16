@@ -109,11 +109,11 @@ header li:hover a {
 }
 
 header li.liInactive:hover {
-    background-color: none;
+    background-color: transparent;
 }
 
 header li.liInactive:active {
-    background-color: none;
+    background-color: transparent;
 }
 
 /***************** HAMBURGER ICON *********************/

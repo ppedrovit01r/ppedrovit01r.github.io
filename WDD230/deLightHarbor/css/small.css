@@ -38,6 +38,14 @@ ul {
     font-size: 1.4em;
 }
 
+.img-div {
+  margin: 0 auto;
+}
+
+.img-div picture img{
+  width: 100vw;
+}
+
 /***************** HEADER *********************/
 header {
     background-color: var(--blue);
@@ -160,6 +168,7 @@ footer {
 
 footer h1.logo {
   text-align: left;
+  padding-top: .75em;
 }
 
 footer .headquarters ul, footer .follow ul {
@@ -180,9 +189,29 @@ footer .follow ul li {
 }
 
 footer .follow ul li:hover {
-    background: linear-gradient(157deg, var(--blue) 0%, rgba(255,187,22,.5) 250%);
+  background: linear-gradient(157deg, var(--blue) 0%, rgba(255,187,22,.5) 250%);
 }
 
 footer .credits {
   font-size: 0.8em;
+}
+
+/***************** MAIN *********************/
+main h1, main h2, main h3, main h4, main h5, main h6 {
+    color: var(--blue);
+}
+
+main {
+  max-width: 1350px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/***************** HERO IMG *********************/
+
+main .heroimg picture {
+  display: block;
+  background-color: #ccc;
+  width: 100vw;
+  height: 120vw;
 }

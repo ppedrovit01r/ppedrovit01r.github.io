@@ -1,4 +1,11 @@
 @media only screen and (min-width: 600px) {
+    div {
+        margin: 12px 0;
+    }
+    
+    /***************** AUXILIARY *********************/
+    
+    
     /***************** HEADER *********************/
     header .NavBar {
         flex-direction: row-reverse;
@@ -9,6 +16,13 @@
         margin-left: 1em;
     }
 
+    /***************** MAIN *********************/
+    /***************** HERO IMG *********************/
+    main .heroimg picture {
+    width: 100vw;
+    height: 75vw;
+    }
+    
     /***************** FOOTER *********************/
     footer {
         display: grid;
@@ -18,6 +32,23 @@
     .footerHeadline, .credits {
         grid-column-end: span 2;
     }
+
+    footer .footerHeadline {
+        margin-top: 0;
+    }
+
+    footer .headquarters {
+        margin-left: auto;
+        margin-right: 0;
+    }
+
+    footer .follow {
+        margin-left: 5em;
+        margin-right: auto;
+    }
     
+    footer .credits {
+        margin-bottom: 0;
+    }
 
 } /*************end of media query**********/

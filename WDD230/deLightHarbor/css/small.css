@@ -64,6 +64,10 @@ ul {
   width: 100vw;
 }
 
+.max3Columns {
+  display: block;
+}
+
 .moreColumns {
   text-align: left;
   display: grid;
@@ -320,4 +324,112 @@ main .advertisement .Big {
 
 main .advertisement .Bourbon {
   background-color: red;
+}
+
+/***************** TOP HERO *********************/
+main .top-hero {
+  position: relative;
+}
+
+main .top-hero-text {
+  position: absolute;
+  top: 33%;
+  display: block;
+  width: 100%;
+}
+
+main .top-hero h1 {
+  width: 100%;
+  text-align: center;
+  color: white;
+  text-shadow: 4px 4px 10px var(--gray); 
+}
+
+/***************** CONTACT PAGE *********************/
+main .contactGrid h1 {
+  text-align: center;
+}
+
+main .contactBlock {
+  width: 80%;
+  margin: 1em auto;
+  border-radius: .75em;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  padding: 6% 6% 2%;
+}
+
+main .contactGrid iframe {
+  display: block;
+  margin: 0 auto;
+  border-radius: .75em;
+  width: 92%;
+  height: 300px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+main .contactGrid a {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+main .contactGrid a:hover {
+  color: var(--blue);
+}
+
+main .contactBlock .addGreen {
+  color: green;
+}
+
+main .contactBlock .addRed {
+  color: var(--red);
+}
+
+main .contactBlock span {
+  color: #555;
+}
+
+main .contactBlock form div {
+  margin: 12px 0;
+}
+
+main .contactBlock form input, main .contactBlock form textarea {
+  background-color: #eee;
+  border: 0;
+  display: block;
+  width: 94%;
+  padding: .5em 3%;
+}
+
+main .contactBlock form input.inputButton {
+  width: 100%;
+  font-weight: bold;
+}
+
+main .contactBlock form input.inputButton:hover {
+  background-color: var(--blue);
+  color: var(--platinum);
+}
+
+main .contactBlock ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+main .contactBlock ul li {
+  margin: 1em 0;
+}
+
+main .contactBlock ul i {
+  font-weight: normal;
+}
+
+main .contactBlock ul a {
+  display: block;
+  width: 88%;
+  background-color: var(--blue);
+  color: var(--platinum);
+  padding: .5em 6%;
+  border-radius: 2px;
+  text-align: center;
 }

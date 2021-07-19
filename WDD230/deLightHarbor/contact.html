@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Fictional Chamber of Commerce for the city of Porto Alegre, RS - Brasil. This website is part of Pedro Vitor's WDD 230: Web Frontend Development at Brigham Young University - Idaho"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/small.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
+    <link rel="shortcut icon" href="delightharbor.ico" type="image/x-icon" />
+    <title>deLight Harbor | Home</title>
+  </head>
+  <body>
+    <header> <!--Upper bar-->
+      <div class="NavBar borderSpace">
+        <a href="../deLightHarbor/" class="logoNav">
+          <picture class="borderSpace">
+            <source media="(min-width:900px)" srcset="images/icon64.png" />
+            <img src="images/icon48.png" alt="dLH icon" />
+          </picture>
+          <h1 class="logo"><span>deLight</span>&nbsp;Harbor</h1>
+        </a>
+        <div class="menuNav" onclick="toggleMenu(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+      </div>
+      <ul>
+        <li><a href="portoalegre.html">Porto Alegre</a></li>
+        <li><a href="join.html">Join Us</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li class="activePage"><a href="contact.html">Contact Us</a></li>
+        <li class="liInactive"></li>
+      </ul>
+    </header>
+    <main>
+      <div class="top-hero img-div">
+        <picture style="display:block; height: 300px; background-color: brown;"></picture>
+        <div class="top-hero-text">
+            <h1>We're Here to Help!</h1>
+        </div>
+      </div>
+      <div class="contactGrid">
+        <h1>Contact Us</h1>
+        <div class="max3Columns">
+            <div class="contactBlock">
+                <h2>Visit Our Head:</h2>
+                <p><a target="_blank" href="https://www.google.com/maps/place/Av.+Borges+de+Medeiros,+410+-+Centro+Hist%C3%B3rico,+Porto+Alegre+-+RS,+90020-022,+Brazil/@-30.0301052,-51.2298173,17z/">
+                Av. Borges de Medeiros, 410 - Centro Histórico, Porto Alegre</a>
+                <br>(Near the Public Market)</p>
+                <p>Right now we're <strong id="hqStatus"></strong>.</p>
+                <p>Work Hours: Mon to Sat 7AM-7PM
+                <br><span>(Brasilia Standard Time GMT-3)</span></p>
+                <p>Tel: <a href="tel:+555123456789">+55 (51) 2345-6789</a> &#127463;&#127479;</p>
+            </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3454.235348850895!2d-51.22981728426317!3d-30.03010523757158!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9519790f419ba57d%3A0x2e6e434433a787c1!2sAv.%20Borges%20de%20Medeiros%2C%20410%20-%20Centro%20Hist%C3%B3rico%2C%20Porto%20Alegre%20-%20RS%2C%2090020-022%2C%20Brazil!5e0!3m2!1sen!2sus!4v1626726114555!5m2!1sen!2sus" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <div class="contactBlock" id="sendMessage">
+                <h2>Not in POA Right Now?</h2>
+                <p><strong>That's okay!</strong> You can send us a message and we will reply as soon as possible!</p>
+                <form method="GET" action="thanks.html">
+                    <div>
+                        <label for="name">Your Name: </label>
+                        <input type="text" name="name" id="name" pattern="[A-Za-z]{3,} required">
+                    </div>
+                    <div>
+                        <label for="email" class="top">E-mail: </label>
+                        <input
+                          type="email"
+                          name="email"
+                          id="email"
+                          placeholder="joejohnson@email.com"
+                          required
+                        />
+                      </div>
+                      <div>
+                        <label for="tel" class="top">Telefone: <i>(Optional)</i></label>
+                        <input type="tel" name="tel" id="tel">
+                      </div>
+                      <div>
+                        <label for="comments" class="top comments">Message:</label>
+                        <textarea name="comments" id="comments" rows="5" required></textarea>
+                      </div>
+                      <div>
+                          <input class="inputButton" type="button" value="Send">
+                      </div>
+                </form>
+            </div>
+            <div class="contactBlock">
+                <h2>Board of Directors (2021)</h2>
+                <ul class="max3Columns">
+                    <li>
+                        <strong>Pedro Vitor <i>@ppedrovit0r</i><br>Council President</strong><br>
+                        Executive Director<br>
+                        Since Dec. 2019
+                    </li>
+                    <li>
+                        <strong>Sarah Moraes <i>@sarahfdem</i><br>Vice President</strong><br>
+                        Managing Director
+                    </li>
+                    <li>
+                        <strong>Mainã Dante <i>@mainadante</i><br>Secretary</strong><br>
+                        Producer
+                    </li>
+                    <li>
+                        <strong>Benjamin Brollo <i>@ben.brollo</i></strong><br>
+                        Development Director
+                    </li>
+                    <li>
+                        <strong>Louise Dornelles <i>@loudornelles</i></strong><br>
+                        Publisher
+                    </li>
+                    <li class="li-button">
+                        <a href="join.html">Want to Join Our Team?</a>
+                    </li>
+                </ul>
+            </div>
+          </div>
+      </div>
+    </main>
+    <footer> <!--Down bar-->
+      <div class="footerHeadline">
+        <h1 class="logo borderSpace"><span>deLight</span> Harbor's Summary</h1>
+        <hr>
+        <ul class="footerSummary moreColumns">
+          <li><a href="../deLightHarbor/">Homepage</a><ul class="sub-ul">
+            <li><a href="../deLightHarbor/#">Local Top 3</a></li>
+            <li><a href="../deLightHarbor/#">Purpose</a></li>
+            <li><a href="../deLightHarbor/#">Upcoming Events</a></li>
+          </ul></li>
+          <li><a href="portoalegre.html">Porto Alegre</a><ul class="sub-ul">
+            <li><a href="portoalegre.html#">Information</a></li>
+            <li><a href="portoalegre.html#">History</a></li>
+            <li><a href="portoalegre.html#">Current Events</a></li>
+          </ul></li>
+          <li><a href="join.html">Join Us</a><ul class="sub-ul">
+            <li><a href="join.html#">Benefits</a></li>
+            <li><a href="join.html#">Membership Levels</a></li>
+          </ul></li>
+          <li><a href="directory.html">Directory</a><ul class="sub-ul">
+            <li><a href="directory.html#">List of Partners</a></li>
+            <li><a href="directory.html#">JSON File</a></li>
+          </ul></li>
+          <li><a href="contact.html">Contact Us</a><ul class="sub-ul">
+            <li><a href="contact.html#sendMessage">Send Us a Message</a></li>
+          </ul></li>
+        </ul>
+        <hr />
+      </div>
+      <div class="headquarters borderSpace">
+        <h2>Headquarters</h2>
+        <ul>
+          <li>
+            <span>📌</span>Av. Borges de Medeiros, 410 - Centro Histórico, Porto
+            Alegre - RS
+          </li>
+          <li><span>🕐</span>Open Monday to Saturday 7AM-7PM</li>
+          <li><span>📞</span>+55 (51) 2345-6789</li>
+        </ul>
+      </div>
+      <div class="follow borderSpace">
+        <h2>Follow Us</h2>
+        <ul>
+          <li>
+            <a target="_blank" href="https://www.facebook.com/">
+              <picture>
+                <!--source
+                  media="(min-width:900px)"
+                  srcset="images/socialIcons/fb64.png"
+                /-->
+                <img
+                  src="images/socialIcons/fb48.png"
+                  alt="Facebook"
+                  loading="lazy"
+                />
+              </picture>
+            </a>
+          </li>
+          <li>
+            <a target="_blank" href="https://twitter.com/">
+              <picture>
+                <!--source
+                  media="(min-width:900px)"
+                  srcset="images/socialIcons/tw64.png"
+                /-->
+                <img
+                  src="images/socialIcons/tw48.png"
+                  alt="Twitter"
+                  loading="lazy"
+                />
+              </picture>
+            </a>
+          </li>
+          <li>
+            <a target="_blank" href="https://www.instagram.com/">
+              <picture>
+                <!--source
+                  media="(min-width:900px)"
+                  srcset="images/socialIcons/ig64.png"
+                /-->
+                <img
+                  src="images/socialIcons/ig48.png"
+                  alt="Instagram"
+                  loading="lazy"
+                />
+              </picture>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="credits">
+        <hr />
+        <p class="borderSpace">
+          <strong>deLight Harbor</strong> is a fictional Chamber of Commerce for
+          the city of Porto Alegre, RS - Brazil. This website is part of Pedro
+          Vitor's WDD 230: Web Frontend Development at Brigham Young University
+          - Idaho. The website icon is made by
+          <a target="_blank" href="https://www.freepik.com" title="Freepik"
+            >Freepik</a
+          >
+          from
+          <a target="_blank" href="https://www.flaticon.com/" title="Flaticon"
+            >www.flaticon.com</a
+          >. All weather data provided by
+          <a target="_blank" href="https://openweathermap.org/">OpenWeather</a
+          >'s API.
+        </p>
+        <p>
+          &copy; 2021 by Pedro Vitor (@ppedrovit01r on
+          <a href="https://github.com/">GitHub</a>)<br />WDD 230 &bull;
+          BYU-Idaho
+        </p>
+        <hr />
+      </div>
+    </footer>
+    <!--Javascript bellow here-->
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+      WebFont.load({
+        google: {
+          families: ["Nunito Sans", "Bona Nova", "Oleo Script Swash Caps"],
+        },
+      });
+    </script>
+    <script src="js/javascript.js" defer></script>
+  </body>
+</html>

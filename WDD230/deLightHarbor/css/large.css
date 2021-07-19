@@ -4,10 +4,16 @@
         font-weight: bold;
         color: white;
         border: 1px solid white;
+        border-radius: .5em;
     }
 
     .img-div picture img{
         width: 100%;
+    }
+
+    .max3Columns {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
     }
 
     .moreColumns {
@@ -85,6 +91,25 @@
         padding-right: 6em;
     }
 
-/***************** *********************/
+/***************** CONTACT PAGE *********************/
+main .contactGrid .max3Columns iframe {
+    grid-row-end: span 2;
+    grid-column-end: span 2;
+    height: 94%;
+    margin-top: 16px;
+}
+
+main .contactGrid .max3Columns div:nth-child(4) {
+    grid-column-end: span 2;
+    width: 86%;
+    padding: 2% 3% 1.5%;
+}
+
+main .contactGrid .max3Columns #sendMessage form div:nth-child(4) {
+    padding: 0;
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+}
 
 } /*************end of media query**********/

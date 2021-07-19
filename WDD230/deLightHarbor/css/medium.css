@@ -4,6 +4,12 @@
     }
     
     /***************** AUXILIARY *********************/
+    .max3Columns {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: .75em;
+    }
+    
     .moreColumns {
         grid-template-columns: 1fr 1fr 1fr;
     }
@@ -52,5 +58,25 @@
     footer .credits {
         margin-bottom: 0;
     }
+
+/***************** CONTACT PAGE *********************/
+main .contactGrid .max3Columns iframe {
+    grid-row-end: span 2;
+    height: 92%;
+    margin-top: 16px;
+}
+
+main .contactGrid .max3Columns div:nth-child(3) {
+    grid-row-end: span 2;
+}
+
+main .contactGrid ul.max3Columns {
+    margin: 1em 0;
+}
+
+main .contactGrid ul.max3Columns li {
+    margin: 0;
+}
+
 
 } /*************end of media query**********/

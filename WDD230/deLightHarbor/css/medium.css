@@ -4,7 +4,9 @@
     }
     
     /***************** AUXILIARY *********************/
-    
+    .moreColumns {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
     
     /***************** HEADER *********************/
     header .NavBar {
@@ -22,7 +24,7 @@
     width: 100vw;
     height: 75vw;
     }
-    
+
     /***************** FOOTER *********************/
     footer {
         display: grid;

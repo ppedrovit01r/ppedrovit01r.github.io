@@ -20,6 +20,24 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
 }
 
+h1 {
+  font-size: 1.5em;
+}
+
+h2 {
+  font-size: 1.25em;
+}
+
+h3 {
+  font-size: 1.1em;
+}
+
+.logo span {
+  font-family: "Oleo Script Swash Caps";
+  font-weight: normal;
+  font-size: 1.025em;
+}
+
 div {
   margin: 24px 0;
 }
@@ -44,6 +62,13 @@ ul {
 
 .img-div picture img{
   width: 100vw;
+}
+
+.moreColumns {
+  text-align: left;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: .75em;
 }
 
 /***************** HEADER *********************/
@@ -85,6 +110,13 @@ header .logo {
     flex-wrap: nowrap;
 }
 
+/*main div.navSpace {
+  width: 100%;
+  height: 85px;
+  background-color: var(--blue);
+  margin: 0;
+}*/
+
 /***************** NAVIGATION *********************/
 header ul li {
     display: none;
@@ -95,6 +127,7 @@ header ul li a {
 }
 
 header.responsive {
+    background: var(--blue);
     background: linear-gradient(157deg, var(--blue) 0%, rgba(255,187,22,.5) 250%);
 }
 
@@ -132,11 +165,12 @@ header li.liInactive:active {
 header .menuNav {
   display: inline-block;
   cursor: pointer;
+  margin: 15px 0;
 }
 
 header .bar1, header .bar2, header .bar3 {
   width: 28px;
-  height: 3px;
+  height: 2px;
   margin: 7px 0;
   transition: 0.4s;
   background-color: var(--platinum);
@@ -155,8 +189,8 @@ header .bar1, header .bar2, header .bar3 {
 
 /* Rotate last bar */
 .change .bar3 {
-  -webkit-transform: rotate(45deg) translate(-9px, -9px);
-  transform: rotate(45deg) translate(-9px, -9px);
+  -webkit-transform: rotate(45deg) translate(-8px, -9px);
+  transform: rotate(45deg) translate(-8px, -9px);
 }
 
 /***************** FOOTER *********************/
@@ -169,6 +203,7 @@ footer {
 footer h1.logo {
   text-align: left;
   padding-top: .75em;
+  color: var(--blue);
 }
 
 footer .headquarters ul, footer .follow ul {
@@ -196,6 +231,28 @@ footer .credits {
   font-size: 0.8em;
 }
 
+/***************** FOOTER SUMMARY *********************/
+footer .footerSummary {
+  list-style-type: none;
+  margin: .75em 3%;
+  padding-left: 0;
+  font-weight: bold;
+}
+
+footer .footerSummary a {
+  text-decoration: none;
+  color: var(--gray);
+}
+
+footer .footerSummary a:hover {
+  text-decoration: underline;
+}
+
+footer .footerSummary .sub-ul {
+  padding-left: 20px;
+  font-weight: normal;
+}
+
 /***************** MAIN *********************/
 main h1, main h2, main h3, main h4, main h5, main h6 {
     color: var(--blue);
@@ -208,10 +265,59 @@ main {
 }
 
 /***************** HERO IMG *********************/
+main .heroimg {
+  position: relative;
+}
 
 main .heroimg picture {
   display: block;
   background-color: #ccc;
   width: 100vw;
   height: 120vw;
+}
+
+/***************** WEATHER INFO *********************/
+main .weather-info {
+  position: absolute;
+  height: 200px;
+  width: 200px;
+  background-color: yellow;
+  right: 0;
+  top: 0;
+}
+
+/***************** WEATHER INFO *********************/
+main .join-invite {
+  position: absolute;
+  height: 200px;
+  width: 200px;
+  background-color: yellow;
+  left: 0;
+  bottom: 0;
+}
+
+/***************** MAIN ADVERTISEMENT *********************/
+main .advertisement {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+main .topThree {
+  width: 90%;
+  height: 75px;
+  border-radius: 1em;
+  background-color: var(--gray);
+  margin: 5px auto;
+}
+
+main .advertisement .Zaffari {
+  background-color: green;
+}
+
+main .advertisement .Big {
+  background-color: blue;
+}
+
+main .advertisement .Bourbon {
+  background-color: red;
 }

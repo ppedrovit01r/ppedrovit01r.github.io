@@ -47,6 +47,10 @@ ul {
 }
 
 /***************** AUXILIARY *********************/
+.activePage {
+  font-weight: bold;
+}
+
 .borderSpace {
   margin-left: 3%;
   margin-right: 3%;
@@ -393,24 +397,6 @@ main .contactBlock form div {
   margin: 12px 0;
 }
 
-main .contactBlock form input, main .contactBlock form textarea {
-  background-color: #eee;
-  border: 0;
-  display: block;
-  width: 94%;
-  padding: .5em 3%;
-}
-
-main .contactBlock form input.inputButton {
-  width: 100%;
-  font-weight: bold;
-}
-
-main .contactBlock form input.inputButton:hover {
-  background-color: var(--blue);
-  color: var(--platinum);
-}
-
 main .contactBlock ul {
   list-style: none;
   padding-left: 0;
@@ -432,4 +418,27 @@ main .contactBlock ul a {
   padding: .5em 6%;
   border-radius: 2px;
   text-align: center;
+}
+
+/***************** CONTACT + JOIN PAGE FORM *********************/
+main form input, main form textarea {
+  background-color: #eee;
+  border: 0;
+  display: block;
+  width: 94%;
+  padding: .5em 3%;
+}
+
+main form div.ratioInput input {
+  display: inline;
+}
+
+main form input.inputButton {
+  width: 100%;
+  font-weight: bold;
+}
+
+main form input.inputButton:hover {
+  background-color: var(--blue);
+  color: var(--platinum);
 }

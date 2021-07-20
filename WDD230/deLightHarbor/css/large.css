@@ -1,7 +1,6 @@
 @media only screen and (min-width: 900px) {
     /***************** AUXILIARY *********************/
     .activePage {
-        font-weight: bold;
         color: white;
         border: 1px solid white;
         border-radius: .5em;

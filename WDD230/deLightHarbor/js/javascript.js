@@ -40,7 +40,7 @@ function directoryAdd() /* Building content from JSON data source */ {
           card.classList.add("listView");
           
           let icon = document.createElement('img');
-          icon.setAttribute('src', 'images/' + dict[i].logo);
+          icon.setAttribute('src', 'images/directory/' + dict[i].logo);
           icon.setAttribute('alt', dict[i].name.toLowerCase() + " logo");
           icon.setAttribute('loading', 'lazy');
           card.appendChild(icon);

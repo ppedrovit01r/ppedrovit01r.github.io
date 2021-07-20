@@ -79,6 +79,18 @@ ul {
   grid-gap: .75em;
 }
 
+.cardBlock {
+  width: 80%;
+  margin: 1em auto;
+  border-radius: .75em;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  padding: 6% 6% 2%;
+}
+
+.cardBlock picture {
+  margin: 1em 0;
+}
+
 /***************** HEADER *********************/
 header {
     background-color: var(--blue);
@@ -354,18 +366,6 @@ main .contactGrid h1 {
   text-align: center;
 }
 
-.cardBlock {
-  width: 80%;
-  margin: 1em auto;
-  border-radius: .75em;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-  padding: 6% 6% 2%;
-}
-
-.cardBlock picture {
-  margin: 1em 0;
-}
-
 main .contactGrid iframe {
   display: block;
   margin: 0 auto;
@@ -528,3 +528,5 @@ main .joinBlock .mLevels li:nth-child(3) h3, main .joinBlock .mLevels li:nth-chi
 main .joinBlock .mLevels li:nth-child(4) h3, main .joinBlock .mLevels li:nth-child(4) h4 {
   color:  #cc9933;
 }
+
+/***************** city PAGE *********************/

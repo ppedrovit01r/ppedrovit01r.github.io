@@ -24,9 +24,16 @@ function checkHQStatus() /* Displays if we're inside working hours (7AM-7PM) */ 
     }
 }
 
+
+
 /***************** CONTACT PAGE *********************/
 if (document.querySelector(".activePage").textContent == `Contact Us`) {
     checkHQStatus();
+} /*************end of contact page query**********/
+
+/***************** city PAGE *********************/
+if (document.querySelector(".activePage").textContent == `Porto Alegre`) {
+    lightGallery(document.getElementById('lightgallery'));
 } /*************end of contact page query**********/
 
 console.log(DateBrazil());

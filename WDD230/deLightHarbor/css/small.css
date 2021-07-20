@@ -83,8 +83,12 @@ ul {
   width: 80%;
   margin: 1em auto;
   border-radius: .75em;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
   padding: 6% 6% 2%;
+}
+
+.cardBlock:hover {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
 .cardBlock picture {
@@ -424,6 +428,11 @@ main .contactBlock ul a {
   text-align: center;
 }
 
+main .contactBlock ul a:hover {
+  background: linear-gradient(157deg, var(--blue) 0%, rgba(255,187,22,.5) 250%);
+  color: white;
+}
+
 /***************** CONTACT + JOIN PAGE FORM *********************/
 main form input, main form textarea {
   background-color: #eee;
@@ -529,4 +538,64 @@ main .joinBlock .mLevels li:nth-child(4) h3, main .joinBlock .mLevels li:nth-chi
   color:  #cc9933;
 }
 
-/***************** city PAGE *********************/
+/***************** DIRECTORY PAGE *********************/
+main .directoryGrid h1 {
+  text-align: center;
+  position: relative;
+}
+
+main .directoryGrid .directoryAdd .listView {
+  width: 92%;
+  margin: 1em auto;
+  border-radius: .75em;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  padding: .2em;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: space-around;
+}
+
+
+main .directoryGrid .directoryAdd .listView:hover {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+main .directoryGrid .directoryAdd .gridView {
+  width: 92%;
+}
+
+main .directoryGrid .directoryAdd .telFlex {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+main .directoryGrid .directoryTitle {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+main .directoryGrid .directorySwitch {
+  text-align: right;
+  margin-right: 12%;
+  margin-left: auto;
+  background-color: var(--platinum);
+  border-radius: 2.5em;
+}
+
+main .directoryGrid .directorySwitch i {
+  padding: 1em;
+}
+
+main .directoryGrid .directorySwitch .icon-active {
+  background-color: var(--blue);
+  border-radius: 2.5em;
+  color: white;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+main .directoryGrid .directorySwitch .icon-active:hover {
+  background: linear-gradient(157deg, var(--blue) 0%, rgba(255,187,22,.5) 250%);
+}

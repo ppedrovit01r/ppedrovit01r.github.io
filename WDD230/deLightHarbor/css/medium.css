@@ -4,6 +4,11 @@
     }
     
     /***************** AUXILIARY *********************/
+    .max2Columns {
+        display: grid;
+        grid-template-columns: 4fr 4fr;
+    }
+    
     .max3Columns {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -76,6 +81,15 @@ main .contactGrid ul.max3Columns {
 
 main .contactGrid ul.max3Columns li {
     margin: 0;
+}
+
+/***************** JOIN PAGE *********************/
+main .joinGrid .max2Columns div:nth-child(2) {
+    grid-row-end: span 4;
+}
+
+main .joinGrid .max2Columns div:nth-child(3) {
+    grid-row-end: span 5;
 }
 
 

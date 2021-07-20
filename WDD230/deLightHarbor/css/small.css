@@ -362,6 +362,10 @@ main .contactGrid h1 {
   padding: 6% 6% 2%;
 }
 
+.cardBlock picture {
+  margin: 1em 0;
+}
+
 main .contactGrid iframe {
   display: block;
   margin: 0 auto;
@@ -481,6 +485,14 @@ main .joinGrid .joinBlock form fieldset div:nth-child(2) {
 main .joinBlock .mLevels {
   list-style: none;
   padding-left: 0;
+}
+
+main .joinBlock .mLevels li {
+  margin: 1.25em 0;
+}
+
+main .joinBlock .mLevels div {
+  margin: .75em 0;
 }
 
 main .joinBlock .mLevels p {

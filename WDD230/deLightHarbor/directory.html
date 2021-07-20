@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Fictional Chamber of Commerce for the city of Porto Alegre, RS - Brasil. This website is part of Pedro Vitor's WDD 230: Web Frontend Development at Brigham Young University - Idaho"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/small.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
+    <link rel="shortcut icon" href="delightharbor.ico" type="image/x-icon" />
+    <title>deLight Harbor | Home</title>
+  </head>
+  <body>
+    <header> <!--Upper bar-->
+      <div class="NavBar borderSpace">
+        <a href="../deLightHarbor/" class="logoNav">
+          <picture class="borderSpace">
+            <source media="(min-width:900px)" srcset="images/icon64.png" />
+            <img src="images/icon48.png" alt="dLH icon" />
+          </picture>
+          <h1 class="logo"><span>deLight</span>&nbsp;Harbor</h1>
+        </a>
+        <div class="menuNav" onclick="toggleMenu(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+      </div>
+      <ul>
+        <li><a href="portoalegre.html">Porto Alegre</a></li>
+        <li><a href="join.html">Join Us</a></li>
+        <li class="activePage"><a href="directory.html">Directory</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li class="liInactive"></li>
+      </ul>
+    </header>
+    <main>
+        <div class="top-hero img-div">
+            <picture
+              style="display: block; height: 300px; background-color: brown"
+            ></picture>
+            <div class="top-hero-text">
+              <h1>Work With Us!</h1>
+            </div>
+          </div>
+          <div class="directoryGrid">
+            <h1>List of Partners</h1>
+            <div class="max3Columns directoryAdd"></div>
+          </div>
+    </main>
+    <footer> <!--Down bar-->
+      <div class="footerHeadline">
+        <h1 class="logo borderSpace"><span>deLight</span> Harbor's Summary</h1>
+        <hr>
+        <ul class="footerSummary moreColumns">
+          <li><a href="../deLightHarbor/">Homepage</a><ul class="sub-ul">
+            <li><a href="../deLightHarbor/#">Local Top 3</a></li>
+            <li><a href="../deLightHarbor/#">Purpose</a></li>
+            <li><a href="../deLightHarbor/#">Upcoming Events</a></li>
+          </ul></li>
+          <li><a href="portoalegre.html">Porto Alegre</a><ul class="sub-ul">
+            <li><a href="portoalegre.html#cityInfo">Information</a></li>
+            <li><a href="portoalegre.html#cityHistory">History</a></li>
+            <li><a href="portoalegre.html#currentEvents">Current Events</a></li>
+          </ul></li>
+          <li><a href="join.html">Join Us</a><ul class="sub-ul">
+            <li><a href="join.html#benefits">Benefits</a></li>
+            <li><a href="join.html#membershipLevels">Membership Levels</a></li>
+          </ul></li>
+          <li><a href="directory.html">Directory</a><ul class="sub-ul">
+            <li><a href="directory.html#">List of Partners</a></li>
+            <li><a href="directory.json">JSON File</a></li>
+          </ul></li>
+          <li><a href="contact.html">Contact Us</a><ul class="sub-ul">
+            <li><a href="contact.html#sendMessage">Send Us a Message</a></li>
+          </ul></li>
+        </ul>
+        <hr />
+      </div>
+      <div class="headquarters borderSpace">
+        <h2>Headquarters</h2>
+        <ul>
+          <li>
+            <span>📌</span>Av. Borges de Medeiros, 410 - Centro Histórico, Porto
+            Alegre - RS
+          </li>
+          <li><span>🕐</span>Open Monday to Saturday 7AM-7PM</li>
+          <li><span>📞</span>+55 (51) 2345-6789</li>
+        </ul>
+      </div>
+      <div class="follow borderSpace">
+        <h2>Follow Us</h2>
+        <ul>
+          <li>
+            <a target="_blank" href="https://www.facebook.com/">
+              <picture>
+                <!--source
+                  media="(min-width:900px)"
+                  srcset="images/socialIcons/fb64.png"
+                /-->
+                <img
+                  src="images/socialIcons/fb48.png"
+                  alt="Facebook"
+                  loading="lazy"
+                />
+              </picture>
+            </a>
+          </li>
+          <li>
+            <a target="_blank" href="https://twitter.com/">
+              <picture>
+                <!--source
+                  media="(min-width:900px)"
+                  srcset="images/socialIcons/tw64.png"
+                /-->
+                <img
+                  src="images/socialIcons/tw48.png"
+                  alt="Twitter"
+                  loading="lazy"
+                />
+              </picture>
+            </a>
+          </li>
+          <li>
+            <a target="_blank" href="https://www.instagram.com/">
+              <picture>
+                <!--source
+                  media="(min-width:900px)"
+                  srcset="images/socialIcons/ig64.png"
+                /-->
+                <img
+                  src="images/socialIcons/ig48.png"
+                  alt="Instagram"
+                  loading="lazy"
+                />
+              </picture>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="credits">
+        <hr />
+        <p class="borderSpace">
+          <strong>deLight Harbor</strong> is a fictional Chamber of Commerce for
+          the city of Porto Alegre, RS - Brazil. This website is part of Pedro
+          Vitor's WDD 230: Web Frontend Development at Brigham Young University
+          - Idaho. The website icon is made by
+          <a target="_blank" href="https://www.freepik.com" title="Freepik"
+            >Freepik</a
+          >
+          from
+          <a target="_blank" href="https://www.flaticon.com/" title="Flaticon"
+            >www.flaticon.com</a
+          >. All weather data provided by
+          <a target="_blank" href="https://openweathermap.org/">OpenWeather</a
+          >'s API.
+        </p>
+        <p>
+          &copy; 2021 by Pedro Vitor (@ppedrovit01r on
+          <a href="https://github.com/">GitHub</a>)<br />WDD 230 &bull;
+          BYU-Idaho
+        </p>
+        <hr />
+      </div>
+    </footer>
+    <!--Javascript bellow here-->
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+      WebFont.load({
+        google: {
+          families: ["Nunito Sans", "Bona Nova", "Oleo Script Swash Caps"],
+        },
+      });
+    </script>
+    <script src="js/javascript.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,93 @@
+{
+    "directory": [
+      {
+        "name": "Zaffari",
+        "address": "R. Gen. Lima e Silva, 606 - Cidade Baixa, Porto Alegre - RS, 90050-100, Brazil",
+        "tel": {
+            "type": "fixo",
+            "number": "+555140041112",
+            "stylized": "51 4004-1112"
+        },
+        "logo": "zaffari.jpg",
+        "link": "https://www.zaffari.com.br/"
+      },
+      {
+        "name": "Food Lover",
+        "address": "R. Prof. Carvalho de Freitas, 504 - Teresópolis, Porto Alegre - RS, 90160-180, Brazil",
+        "tel": {
+            "type": "whatsapp",
+            "number": "+5551996025490",
+            "stylized": "51 99602-5490"
+        },
+        "logo": "foodlover.jpg",
+        "link": "https://www.foodlover.poa.br/"
+      },
+      {
+        "name": "Só Copias",
+        "address": "Av. Osvaldo Aranha, 222 - Centro, Porto Alegre - RS, 90035-190, Brazil",
+        "tel": {
+            "type": "whatsapp",
+            "number": "+5551993999766",
+            "stylized": "51 99399-9766"
+        },
+        "logo": "socopias.jpg",
+        "link": "https://www.facebook.com/socopiasdigital"
+      },
+      {
+        "name": "CFC MODELO",
+        "address": "Av. João Pessoa, 1084 - Farroupilha, Porto Alegre - RS, 90040-001, Brazil",
+        "tel": {
+            "type": "whatsapp",
+            "number": "+5551984457539",
+            "stylized": "51 98445-7539"
+        },
+        "logo": "cfcmodelo.jpg",
+        "link": "https://cfcmodelors.com.br/"
+      },
+      {
+        "name": "Polpa do Açaí",
+        "address": "Av. Venâncio Aires, 655 - Farroupilha, Porto Alegre - RS, 90040-192, Brazil",
+        "tel": {
+            "type": "fixo",
+            "number": "+555135331543",
+            "stylized": "51 3533-1543"
+        },
+        "logo": "acai.jpg",
+        "link": "https://www.google.com/maps/place/Polpa+do+A%C3%A7a%C3%AD+-+Av.+Ven%C3%A2ncio+Aires,+655+-+Farroupilha,+Porto+Alegre+-+RS,+90040-192,+Brazil/@-30.0398074,-51.2136567,21z/data=!4m2!3m1!1s0x951979f5b9bbbf33:0x73a4be0d0f36626"
+      },
+      {
+        "name": "Casa do Papel",
+        "address": "Av. Osvaldo Aranha, 1234 - Bom Fim, Porto Alegre - RS, 90035-191, Brazil",
+        "tel": {
+            "type": "whatsapp",
+            "number": "+555130217888",
+            "stylized": "51 3021-7888"
+        },
+        "logo": "casadopapel.jpg",
+        "link": "https://www.casadopapel.com.br/"
+      },
+      {
+        "name": "Redenção Bicicletas",
+        "address": "Av. Osvaldo Aranha, 660 - Bom Fim, Porto Alegre - RS, 90035-190, Brazil",
+        "tel": {
+            "type": "fixo",
+            "number": "+555133462158",
+            "stylized": "51 3346-2158"
+        },
+        "logo": "redencao.jpg",
+        "link": "www.redencaobicicletas.com.br"
+      },
+      {
+        "name": "SuperForce CrossFit",
+        "address": "Av. Osvaldo Aranha, 756 - Bom Fim, Porto Alegre - RS, 90035-190, Brazil",
+        "tel": {
+            "type": "whatsapp",
+            "number": "+5551999550756",
+            "stylized": "51 99955-0756"
+        },
+        "logo": "superforce.jpg",
+        "link": "https://www.superforcecrossfit.com/"
+      }
+
+    ]
+  }

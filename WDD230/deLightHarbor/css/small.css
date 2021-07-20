@@ -354,7 +354,7 @@ main .contactGrid h1 {
   text-align: center;
 }
 
-main .contactBlock {
+.cardBlock {
   width: 80%;
   margin: 1em auto;
   border-radius: .75em;
@@ -429,8 +429,23 @@ main form input, main form textarea {
   padding: .5em 3%;
 }
 
+main form div.ratioInput {
+  margin: 0;
+}
+
 main form div.ratioInput input {
   display: inline;
+  width: 10%;
+}
+
+main form div.ratioInput label {
+  display: block;
+  margin: .75em 0;
+}
+
+main form div.ratioInput p {
+  font-size: .9em;
+  margin-bottom: 0;
 }
 
 main form input.inputButton {
@@ -441,4 +456,24 @@ main form input.inputButton {
 main form input.inputButton:hover {
   background-color: var(--blue);
   color: var(--platinum);
+}
+
+/***************** JOIN PAGE *********************/
+main .joinGrid h1 {
+  text-align: center;
+}
+
+main .joinGrid .joinBlock form fieldset {
+  margin: 1em 0;
+  border: 0;
+  padding: 0;
+}
+
+main .joinGrid .joinBlock form fieldset legend {
+  font-weight: bold;
+  color: var(--blue);
+}
+
+main .joinGrid .joinBlock form fieldset div:nth-child(2) {
+  margin-top: 8px;
 }

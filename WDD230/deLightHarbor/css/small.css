@@ -46,6 +46,24 @@ ul {
   margin: 0.25em 0;
 }
 
+html, body /*the next 4 elements put the footer down*/{
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  width: 100vw;
+  flex: 1 0 auto;
+}
+
+footer {
+  flex-shrink: 0;
+}
+
 /***************** AUXILIARY *********************/
 .activePage {
   font-weight: bold;
@@ -243,12 +261,20 @@ footer .follow ul {
 footer .follow ul li {
   background-color: var(--blue);
   border-radius: 2.5em;
-  padding: 0.1em 0.2em 0;
+  width: 48px;
+  height: 48px;
+  padding: 0.2em;
   margin: 0 2%;
 }
 
 footer .follow ul li:hover {
   background: linear-gradient(157deg, var(--blue) 0%, rgba(255,187,22,.5) 250%);
+}
+
+footer .follow ul li i {
+  font-size: 32px;
+  padding: 8px;
+  color: white;
 }
 
 footer .credits {
@@ -323,28 +349,29 @@ main .join-invite {
 /***************** MAIN ADVERTISEMENT *********************/
 main .advertisement {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
+  text-align: center;
 }
 
 main .topThree {
-  width: 90%;
-  height: 75px;
+  width: 60%;
   border-radius: 1em;
-  background-color: var(--gray);
+  background-color: var(--platinum);
   margin: 5px auto;
+  text-align: center;
 }
 
-main .advertisement .Zaffari {
-  background-color: green;
+main .topThree img {
+  display: block;
+  max-width: 150px;
+  margin: 1em auto;
 }
 
-main .advertisement .Big {
-  background-color: blue;
+/***************** MAIN GRID *********************/
+main .mainGrid section {
+  
 }
 
-main .advertisement .Bourbon {
-  background-color: red;
-}
 
 /***************** TOP HERO *********************/
 main .top-hero {
@@ -558,64 +585,53 @@ main .directoryGrid .directoryAdd a.addWPP {
 
 main .directoryGrid .directoryAdd a:hover {
   background: linear-gradient(157deg, var(--blue) 0%, rgba(255,187,22,.5) 250%);
+  color: white;
 }
 
-main .directoryGrid .directoryAdd .listView {
-  width: 88%;
+main .directoryGrid .directoryAdd .listView, main .directoryGrid .directoryAdd .gridView {
+  width: 86%;
   margin: 1em auto;
   border-radius: .75em;
   box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
-  padding: .2em 2.5%;
+  padding: .2em 5%;
   display: flex;
-  text-align: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+main .directoryGrid .directoryAdd div div {
+  margin: .75em 0;
+}
+
+main .directoryGrid .directoryAdd .gridView img {
+    width: 150px;
+    margin: 1em auto;
+}
+
+main .directoryGrid .directoryAdd .telFlex {
+  display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-main .directoryGrid .directoryAdd .listView:hover {
+main .directoryGrid .directoryAdd .gridView:hover {
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-}
-
-main .directoryGrid .directoryAdd .listView p {
-  margin-top: 6px;
-  margin-bottom: 6px;
-}
-
-main .directoryGrid .directoryAdd .listView .telFlex {
-  display: flex;
-  width: 100%;
-  align-items: center;
-  justify-content: space-evenly;
-}
-
-main .directoryGrid .directoryAdd .gridView {
-  width: 92%;
 }
 
 main .directoryGrid .directoryTitle {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 2fr 5fr 2fr;
+}
+
+main .directoryGrid .directoryTitle h1 {
+  margin: 24px 0;
 }
 
 main .directoryGrid .directorySwitch {
-  text-align: right;
-  margin-right: 12%;
-  margin-left: auto;
-  background-color: var(--platinum);
-  border-radius: 2.5em;
+  display: none;
 }
 
-main .directoryGrid .directorySwitch i {
-  padding: 1em;
-}
-
-main .directoryGrid .directorySwitch .icon-active {
-  background-color: var(--blue);
-  border-radius: 2.5em;
-  color: white;
-  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-}
-
-main .directoryGrid .directorySwitch .icon-active:hover {
-  background: linear-gradient(157deg, var(--blue) 0%, rgba(255,187,22,.5) 250%);
+/***************** THANK YOU PAGE *********************/
+main .thankYou {
+  margin: 2em 0;
 }

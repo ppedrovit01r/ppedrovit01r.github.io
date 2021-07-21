@@ -61,14 +61,15 @@ function directoryAdd() /* Building content from JSON data source */ {
           tel.innerHTML = `<strong>Tel: </strong>${dict[i].tel.stylized}`;
           let fixo = document.createElement('a');
           fixo.setAttribute('href', "tel:" + dict[i].tel.number);
-          fixo.textContent = "CALL ☎";
+          fixo.innerHTML = `<i class="fas fa-phone-alt"></i>`;
           div.appendChild(tel);
           div.appendChild(fixo);
           if (dict[i].tel.type == "whatsapp") {
               let whatsapp = document.createElement('a');
               whatsapp.setAttribute('href', "https://wa.me/" + dict[i].tel.number);
               whatsapp.setAttribute('target', "_blank");
-              whatsapp.textContent = "MESSAGE ✉";
+              whatsapp.innerHTML = `<i class="fab fa-whatsapp"></i>`;
+              whatsapp.setAttribute('class', "addWPP");
               div.appendChild(whatsapp);
           }
           info.appendChild(div);

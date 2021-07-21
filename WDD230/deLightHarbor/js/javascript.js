@@ -45,11 +45,12 @@ function directoryAdd() /* Building content from JSON data source */ {
           icon.setAttribute('loading', 'lazy');
           card.appendChild(icon);
 
+          let info = document.createElement('div');
           let h2 = document.createElement('h2');
           h2.textContent = dict[i].name;
-          card.appendChild(h2);
+          info.appendChild(h2);
 
-          let info = document.createElement('div');
+          
           let address = document.createElement('p');
           address.innerHTML = `<strong>Address: </strong>${dict[i].address}`;
           info.appendChild(address);

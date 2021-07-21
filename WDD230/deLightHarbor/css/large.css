@@ -79,10 +79,44 @@
   }
 
   /***************** MAIN *********************/
+  main .mainGrid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+/***************** JOIN INFO *********************/
+  main .join-invite {
+    width: 50%;
+    font-size: 18px;
+  }
+
+  main .join-invite a {
+    padding: 1em 2em;
+  }
+
+  /***************** WEATHER INFO *********************/
+  main div.weather-info {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    min-height: 200px;
+  }
+
+  main .weather-info .titleBar, main .weather-info .weatherLabel {
+    grid-row-end: span 2;
+  }
+
+  main .weather-info .forecast {
+    grid-area: 2/2/span 5/3;
+  }
+
   /***************** HERO IMG *********************/
   main .heroimg picture {
     width: 100%;
     height: 56.3%;
+  }
+
+  main .top-hero picture {
+    width: 100%;
+    height: 20.74%;
   }
 
   /***************** FOOTER *********************/

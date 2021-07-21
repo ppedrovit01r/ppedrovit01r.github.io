@@ -341,7 +341,7 @@ main {
   margin-right: auto;
 }
 
-/***************** HERO IMG *********************/
+/***************** MAIN HERO IMG *********************/
 main .heroimg {
   position: relative;
 }
@@ -353,23 +353,111 @@ main .heroimg picture {
   height: 120vw;
 }
 
-/***************** WEATHER INFO *********************/
-main .weather-info {
+/***************** TOP HERO *********************/
+main .top-hero {
+  position: relative;
+}
+
+main .top-hero picture {
+  display: block;
+  background-color: #ccc;
+  width: 100vw;
+  height: 100vw;
+}
+
+main .top-hero img {
+  filter: brightness(80%);
+}
+
+main .top-hero-text {
   position: absolute;
-  width: 200px;
-  background-color: yellow;
-  right: 0;
-  top: 0;
+  top: 33%;
+  display: block;
+  width: 100%;
+}
+
+main .top-hero h1 {
+  width: 100%;
+  text-align: center;
+  color: white;
+  text-shadow: 4px 4px 10px var(--gray); 
 }
 
 /***************** WEATHER INFO *********************/
+main div.weather-info {
+  padding-top: 2%;
+  margin-top: 0;
+  margin-bottom: 0;
+  min-height: 400px;
+}
+
+main .weather-info div {
+  margin: 0;
+}
+
+main .weather-info .titleBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+main .weather-info .weatherLabel {
+  display: flex;
+  align-items: center;
+}
+
+main .weather-info .weatherLabel h2 {
+  font-size: 50px;
+}
+
+main .weather-info .weatherDesc {
+  margin-top: 0;
+}
+
+main .weather-info .forecast ul {
+  padding: 0;
+}
+
+main .weather-info .forecast .forecastItem {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+/***************** JOIN INFO *********************/
 main .join-invite {
   position: absolute;
-  height: 200px;
-  width: 200px;
-  background-color: yellow;
-  left: 0;
-  bottom: 0;
+  width: 80vw;
+  left: 5%;
+  bottom: 5%;
+  color: white;
+  text-shadow: 2px 2px 5px var(--gray); 
+}
+
+main .join-invite h1 {
+  color: white;
+  font-size: 30px;
+}
+
+main .join-invite p {
+  margin: 2.5% 0 7.5%;
+}
+
+main .join-invite a {
+  margin: 2em 0;
+  padding: .5em 2em;
+  border-radius: .5em;
+  background-color: var(--yellow);
+  color: var(--gray);
+  text-shadow: none;
+  font-weight: bold;
+  text-decoration: none;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+main .join-invite a:hover {
+  background-color: var(--platinum);
 }
 
 /***************** MAIN ADVERTISEMENT *********************/
@@ -394,28 +482,37 @@ main .topThree img {
 }
 
 /***************** MAIN GRID *********************/
+main .mainGrid .weather-info, main .mainGrid .advertisement {
+  grid-column-end: span 2;
+}
+
 main .mainGrid section {
-
+  grid-column-end: span 1;
 }
 
-
-/***************** TOP HERO *********************/
-main .top-hero {
-  position: relative;
+main .mainGrid ul {
+  padding-left: 0;
+  list-style: none;
 }
 
-main .top-hero-text {
-  position: absolute;
-  top: 33%;
-  display: block;
-  width: 100%;
+main .mainGrid li {
+  margin: .75em 0;
 }
 
-main .top-hero h1 {
-  width: 100%;
+main .mainGrid .liCurrentEvent {
+  background-color: var(--red);
+  padding: 1em;
+  border-radius: .5em;
+}
+
+main .mainGrid .liCurrentEvent a {
+  text-decoration: none;
+  color: var(--weath);
   text-align: center;
-  color: white;
-  text-shadow: 4px 4px 10px var(--gray); 
+}
+
+main .mainGrid .liCurrentEvent a:hover {
+  font-weight: bold;
 }
 
 /***************** CONTACT PAGE *********************/
@@ -659,5 +756,5 @@ main .directoryGrid .directorySwitch {
 
 /***************** THANK YOU PAGE *********************/
 main .thankYou {
-  margin: 2em 0;
+  margin: 2em;
 }

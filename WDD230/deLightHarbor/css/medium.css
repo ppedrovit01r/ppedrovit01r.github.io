@@ -37,10 +37,25 @@
 
   
   /***************** MAIN *********************/
+  /***************** JOIN INFO *********************/
+  main .join-invite {
+    width: 50vw;
+    font-size: 18px;
+  }
+
+  main .join-invite h1 {
+    font-size: 36px;
+  }
+
   /***************** HERO IMG *********************/
   main .heroimg picture {
     width: 100vw;
     height: 75vw;
+  }
+
+  main .top-hero picture {
+    width: 100vw;
+    height: 22.22vw;
   }
 
   /***************** FOOTER *********************/

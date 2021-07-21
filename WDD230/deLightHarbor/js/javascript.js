@@ -131,37 +131,34 @@ function weatherOneCall() /* Displays weather information */ {
     let icon = weather.current.weather[0].icon;
     let humidity = weather.current.humidity;
 
-    
-
     let titleLabel = document.createElement('div');
     titleLabel.classList.add("tempTitleLabel");
     let date = document.createElement('p');
-    date.textContent = DateBrazil();
+    date.textContent = `${getWeekMonthDay(DateBrazil())}`;
     titleLabel.appendChild(date);
     let h1 = document.createElement('h1');
     h1.textContent = "Porto Alegre, BR";
     titleLabel.appendChild(h1);
     let titleBar = document.createElement('div');
-    let unitChange = document.createElement('h2');
-    unitChange.classList.add("unitChange");
-    unitChange.innerHTML = `&#176;C`;
+    titleBar.classList.add("titleBar");
     titleBar.appendChild(titleLabel);
-    titleBar.appendChild(unitChange);
     document.querySelector('.weather-info').appendChild(titleBar);
 
     let weatherLabel = document.createElement('div');
+    weatherLabel.classList.add("weatherLabel");
     let img = document.createElement('img');
     img.setAttribute('src', `https://openweathermap.org/img/wn/${icon}@2x.png`);
     img.setAttribute('alt', desc);
     img.setAttribute('loading', 'lazy');
     let h2 = document.createElement('h2');
     h2.innerHTML = `${tC.toFixed(0)}&#176;C`;
-    h2.classList.add(tC);
+    h2.classList.add("tC");
     weatherLabel.appendChild(img);
     weatherLabel.appendChild(h2);
     document.querySelector('.weather-info').appendChild(weatherLabel);
 
     let p = document.createElement('p');
+    p.classList.add("weatherDesc");
     p.innerHTML = `Feels like <span class="feelC">${feelC.toFixed(0)}&#176;C</span> with ${desc}.<br>Humidity: ${humidity}%`;
     document.querySelector('.weather-info').appendChild(p);
 
@@ -185,48 +182,111 @@ function weatherOneCall() /* Displays weather information */ {
     } 
     
     let forecast = document.createElement('div');
+    forecast.classList.add("forecast");
     let h3 = document.createElement('h3');
-    h3.innerHTML = "3=day forecast";
+    h3.innerHTML = "3-day forecast";
     let ul = document.createElement('ul');
-    for (let i = 0; i < 3; i++) {
+    for (let i = 0; i < 3; i++) { 
       let li = document.createElement('li');
       li.classList.add("forecastItem");
-      let 
-      
+      let forecastDate = document.createElement('p');
+      forecastDate.innerHTML = writeWeekDay(DateBrazil().getDay()+i+1);
+      li.appendChild(forecastDate);
+      let forecastImg = document.createElement('img');
+      forecastImg.setAttribute('src', `https://openweathermap.org/img/wn/${weather.daily[i].weather[0].icon}.png`);
+      forecastImg.setAttribute('alt', weather.daily[i].weather[0].description);
+      forecastImg.setAttribute('loading', 'lazy');
+      li.appendChild(forecastImg);
+      let minMax = document.createElement('p');
+      minMax.classList.add("minMaxC");
+      let tempMinC = weather.daily[i].temp.min - 273.15;
+      let tempMaxC = weather.daily[i].temp.max - 273.15;
+      minMax.innerHTML = `${tempMinC.toFixed(0)} / ${tempMaxC.toFixed(0)}&#176;C`;
+      li.appendChild(minMax);
+      let forecastDesc = document.createElement('p');
+      forecastDesc.textContent = weather.daily[i].weather[0].main;
+      li.appendChild(forecastDesc);
+      ul.appendChild(li);
     }
-
-
-    let threeDayForecast = 4;
-
-    let tempC = new Array(tC, feelC, );
-    return tempC
+    forecast.appendChild(h3);
+    forecast.appendChild(ul);
+    document.querySelector('.weather-info').appendChild(forecast);
   });
 }
 
-function getWeekMonthDay(date) {
-  switch (date.getDay()) {
+function writeWeekDay(date) {
+  let week;
+  switch (date) {
     case 0:
-      let week = "Sun";
+      week = "Sun";
       break;
     case 1:
-      let week = "Mon";
+      week = "Mon";
       break;
     case 2:
-      let week = "Tue";
+      week = "Tue";
       break;
     case 3:
-      let week = "Wed";
+      week = "Wed";
       break;
     case 4:
-      let week = "Thu";
+      week = "Thu";
       break;
     case 5:
-      let week = "Fri";
+      week = "Fri";
       break;
     default:
-      let week = "Sat"
+      week = "Sat"
       break;
   }
+  return week;
+}
+
+function writeMonth(date) {
+  let month;
+  switch (date) {
+    case 0:
+      month = "Jan";
+      break;
+    case 1:
+      month = "Feb";
+      break;
+    case 2:
+      month = "Mar";
+      break;
+    case 3:
+      month = "Apr";
+      break;
+    case 4:
+      month = "May";
+      break;
+    case 5:
+      month = "Jun";
+      break;
+    case 6:
+      month = "Jul";
+      break;
+    case 7:
+      month = "Ago";
+      break;
+    case 8:
+      month = "Sep";
+      break;
+    case 9:
+      month = "Oct";
+      break;
+    case 10:
+      month = "Nov";
+      break;
+    default:
+      month = "Dez";
+      break;
+  }
+  return month;
+}
+
+function getWeekMonthDay(date) {
+  return `${writeWeekDay(date.getDay())}, ${writeMonth(date.getMonth())} ${date.getDate()}`;
 }
 
 function closeAlert() {
@@ -246,6 +306,7 @@ if (document.querySelector(".activePage").textContent == `Directory`) {
 
 /***************** HOMEPAGE *********************/
 if (document.querySelector("title").textContent == `deLight Harbor | Home`) {
-  let tempK = weatherOneCall();
+  weatherOneCall();
+
 } /*************end of contact page query**********/
 

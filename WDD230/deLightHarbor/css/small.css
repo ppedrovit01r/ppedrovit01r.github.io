@@ -303,6 +303,33 @@ footer .footerSummary .sub-ul {
   font-weight: normal;
 }
 
+/***************** ALERT BOX *********************/
+aside.alertBox {
+  background-color: var(--red);
+  color: wheat;
+  padding: 1em;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+}
+
+aside.alertBox p {
+  max-width: 1350px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+aside.alertBox div.alertTitleLabel {
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
+
+aside.alertBox h1, aside.alertBox i {
+  font-size: 20px;
+}
+
 /***************** MAIN *********************/
 main h1, main h2, main h3, main h4, main h5, main h6 {
     color: var(--blue);
@@ -329,7 +356,6 @@ main .heroimg picture {
 /***************** WEATHER INFO *********************/
 main .weather-info {
   position: absolute;
-  height: 200px;
   width: 200px;
   background-color: yellow;
   right: 0;
@@ -369,7 +395,7 @@ main .topThree img {
 
 /***************** MAIN GRID *********************/
 main .mainGrid section {
-  
+
 }
 
 

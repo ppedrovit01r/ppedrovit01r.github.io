@@ -113,6 +113,126 @@ function toggleDirectory(x) /* Toggles the Directory from List View to Grid View
     }
 }
 
+function weatherOneCall() /* Displays weather information */ {
+  const myId = "f6b72466de41a9b962d33a29f3f1e123";
+  const POAlat = -30.03;
+  const POAlon = -51.23;
+  let exclusion = "rain,minutely,hourly"
+  const weatherURL = `https://api.openweathermap.org/data/2.5/onecall?lat=${POAlat}&lon=${POAlon}&exclude=${exclusion}&appid=${myId}`;
+  fetch(weatherURL)
+  .then((response) => response.json())
+  .then((jsObject) => {
+    console.log(jsObject);
+    let weather = jsObject
+
+    let tC = weather.current.temp - 273.15;
+    let feelC = weather.current.feels_like - 273.15;
+    let desc = weather.current.weather[0].description;
+    let icon = weather.current.weather[0].icon;
+    let humidity = weather.current.humidity;
+
+    
+
+    let titleLabel = document.createElement('div');
+    titleLabel.classList.add("tempTitleLabel");
+    let date = document.createElement('p');
+    date.textContent = DateBrazil();
+    titleLabel.appendChild(date);
+    let h1 = document.createElement('h1');
+    h1.textContent = "Porto Alegre, BR";
+    titleLabel.appendChild(h1);
+    let titleBar = document.createElement('div');
+    let unitChange = document.createElement('h2');
+    unitChange.classList.add("unitChange");
+    unitChange.innerHTML = `&#176;C`;
+    titleBar.appendChild(titleLabel);
+    titleBar.appendChild(unitChange);
+    document.querySelector('.weather-info').appendChild(titleBar);
+
+    let weatherLabel = document.createElement('div');
+    let img = document.createElement('img');
+    img.setAttribute('src', `https://openweathermap.org/img/wn/${icon}@2x.png`);
+    img.setAttribute('alt', desc);
+    img.setAttribute('loading', 'lazy');
+    let h2 = document.createElement('h2');
+    h2.innerHTML = `${tC.toFixed(0)}&#176;C`;
+    h2.classList.add(tC);
+    weatherLabel.appendChild(img);
+    weatherLabel.appendChild(h2);
+    document.querySelector('.weather-info').appendChild(weatherLabel);
+
+    let p = document.createElement('p');
+    p.innerHTML = `Feels like <span class="feelC">${feelC.toFixed(0)}&#176;C</span> with ${desc}.<br>Humidity: ${humidity}%`;
+    document.querySelector('.weather-info').appendChild(p);
+
+
+    if (weather.length == 8) {
+      let alertTitleLabel = document.createElement('div');
+      alertTitleLabel.classList.add("alertTitleLabel");
+      let alertTitle = document.createElement('h1');
+      alertTitle.innerHTML = `<i class="fas fa-exclamation-triangle"></i> ` + weather.alerts[0].event;
+      let closeButton = document.createElement('i');
+      closeButton.classList.add("fas");
+      closeButton.classList.add("fa-times");
+      closeButton.setAttribute('onclick', "closeAlert()");
+      let alertDesc = document.createElement('p');
+      alertDesc.textContent = weather.alerts[0].description;
+      document.querySelector('.alertBox').appendChild(alertTitleLabel);
+      document.querySelector('.alertTitleLabel').appendChild(alertTitle);
+      document.querySelector('.alertTitleLabel').appendChild(closeButton);
+      document.querySelector('.alertBox').appendChild(alertDesc);
+      document.querySelector('.alertBox').style.display = "flex";
+    } 
+    
+    let forecast = document.createElement('div');
+    let h3 = document.createElement('h3');
+    h3.innerHTML = "3=day forecast";
+    let ul = document.createElement('ul');
+    for (let i = 0; i < 3; i++) {
+      let li = document.createElement('li');
+      li.classList.add("forecastItem");
+      let 
+      
+    }
+
+
+    let threeDayForecast = 4;
+
+    let tempC = new Array(tC, feelC, );
+    return tempC
+  });
+}
+
+function getWeekMonthDay(date) {
+  switch (date.getDay()) {
+    case 0:
+      let week = "Sun";
+      break;
+    case 1:
+      let week = "Mon";
+      break;
+    case 2:
+      let week = "Tue";
+      break;
+    case 3:
+      let week = "Wed";
+      break;
+    case 4:
+      let week = "Thu";
+      break;
+    case 5:
+      let week = "Fri";
+      break;
+    default:
+      let week = "Sat"
+      break;
+  }
+}
+
+function closeAlert() {
+  document.querySelector('.alertBox').style.display = "none";
+}
+
 /***************** CONTACT PAGE *********************/
 if (document.querySelector(".activePage").textContent == `Contact Us`) {
   checkHQStatus();
@@ -124,12 +244,8 @@ if (document.querySelector(".activePage").textContent == `Directory`) {
   console.table(document.querySelector(".directoryAdd").classList.length);
 } /*************end of contact page query**********/
 
-const dictFile1 =
-    "https://ppedrovit01r.github.io/WDD230/deLightHarbor/directory.json";
-   fetch(dictFile1)
-    .then(function (response) {
-      return response.json();
-    })
-    .then(function (jsonObject) {
-      console.table(jsonObject);
-    });
+/***************** HOMEPAGE *********************/
+if (document.querySelector("title").textContent == `deLight Harbor | Home`) {
+  let tempK = weatherOneCall();
+} /*************end of contact page query**********/
+

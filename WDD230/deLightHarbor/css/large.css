@@ -26,6 +26,10 @@
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   }
 
+  .liInactive {
+    display: none;
+  }
+
   /***************** HEADER *********************/
   /*max-width attribute for header ul inside footer section*/
   header {
@@ -68,6 +72,10 @@
 
   header ul li {
     display: block;
+  }
+
+  aside.alertBox div.alertTitleLabel {
+    justify-content: space-around;
   }
 
   /***************** MAIN *********************/

@@ -1,115 +1,160 @@
 @media only screen and (min-width: 900px) {
-    /***************** AUXILIARY *********************/
-    .activePage {
-        color: white;
-        border: 1px solid white;
-        border-radius: .5em;
-    }
+  /***************** AUXILIARY *********************/
+  .activePage {
+    color: white;
+    border: 1px solid white;
+    border-radius: 0.5em;
+  }
 
-    .img-div picture img{
-        width: 100%;
-    }
+  .img-div picture img {
+    width: 100%;
+  }
 
-    .max2Columns {
-        display: grid;
-        grid-template-columns: 2fr 3fr;
-    }
+  .max2Columns {
+    grid-template-columns: 2fr 3fr;
+  }
 
-    .max3Columns {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-    }
+  .max3Columns {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 
-    .moreColumns {
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    }
-    
-    /***************** HEADER *********************/
-    /*max-width attribute for header ul inside footer section*/
-    header {
-        display: grid;
-        grid-template-columns: 1fr 2fr;
-        background: linear-gradient(157deg, var(--blue) 0%, rgba(255,187,22,.5) 250%);
-    }
-    
-    header .NavBar .menuNav {
-        display: none;
-    }
+  .max4Columns {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
 
-    /***************** NAVIGATION *********************/
-    header ul {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        width: 100%;
-    }
+  .moreColumns {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
 
-    header ul li {
-        width: 90%;
-    }
+  /***************** HEADER *********************/
+  /*max-width attribute for header ul inside footer section*/
+  header {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    background: linear-gradient(
+      157deg,
+      var(--blue) 0%,
+      rgba(255, 187, 22, 0.5) 250%
+    );
+  }
 
-    header li:hover {
-        border-radius: 1em;
-    }
+  header .NavBar .menuNav {
+    display: none;
+  }
 
-    header ul li a {
-        padding: 0 12%;
-    }
+  /***************** NAVIGATION *********************/
+  header ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
 
-    header .borderSpace {
-        margin: 1%;
-    }
+  header ul li {
+    width: 90%;
+  }
 
-    header ul li {
-        display: block;
-    }
+  header li:hover {
+    border-radius: 1em;
+  }
 
-    /***************** MAIN *********************/
-    /***************** HERO IMG *********************/
-    main .heroimg picture {
-        width: 100%;
-        height: 56.3%;
-    }
-        
-    /***************** FOOTER *********************/
-    header ul, header .NavBar, footer div {
-        max-width: 1440px;
-        margin-left: auto;
-        margin-right: auto;
-    }
+  header ul li a {
+    padding: 0 12%;
+  }
 
-    footer .footerHeadline {
-        text-align: left;
-        width: 100%;
-    }
+  header .borderSpace {
+    margin: 1%;
+  }
 
-    footer .headquarters {
-        padding-left: 8em;
-    }
+  header ul li {
+    display: block;
+  }
 
-    footer .follow {
-        padding-right: 6em;
-    }
+  /***************** MAIN *********************/
+  /***************** HERO IMG *********************/
+  main .heroimg picture {
+    width: 100%;
+    height: 56.3%;
+  }
 
-/***************** CONTACT PAGE *********************/
-main .contactGrid .max3Columns iframe {
+  /***************** FOOTER *********************/
+  header ul,
+  header .NavBar,
+  footer div {
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  footer .footerHeadline {
+    text-align: left;
+    width: 100%;
+  }
+
+  footer .headquarters {
+    padding-left: 8em;
+  }
+
+  footer .follow {
+    padding-right: 6em;
+  }
+
+  /***************** CONTACT PAGE *********************/
+  main .contactGrid .max3Columns iframe {
     grid-row-end: span 2;
     grid-column-end: span 2;
     height: 94%;
     margin-top: 16px;
-}
+  }
 
-main .contactGrid .max3Columns div:nth-child(4) {
+  main .contactGrid .max3Columns div:nth-child(4) {
     grid-column-end: span 2;
     width: 86%;
     padding: 2% 3% 1.5%;
-}
+  }
 
-main .contactGrid .max3Columns #sendMessage form div:nth-child(4) {
+  main .contactGrid .max3Columns #sendMessage form div:nth-child(4) {
     padding: 0;
     margin-left: 0;
     margin-right: 0;
     width: 100%;
-}
+  }
 
+  /***************** DIRECTORY PAGE *********************/
+  main .directoryGrid .directoryAdd .listView {
+    justify-content: space-evenly;
+  }
+
+  main .directoryGrid .directoryAdd .gridView {
+    width: 84%;
+    padding: .75em 5%;
+  }
+
+  main .directoryGrid div.directoryAdd.max4Columns div.gridView:nth-child(1) {
+    grid-row-end: span 2;
+  }
+
+  main .directoryGrid div.directoryAdd.max4Columns div.gridView:nth-child(3) {
+    grid-row-end: span 3;
+  }
+
+  main .directoryGrid div.directoryAdd.max4Columns div.gridView:nth-child(4) {
+    grid-row-end: span 2;
+  }
+
+  main .directoryGrid div.directoryAdd.max4Columns div.gridView:nth-child(5) {
+    grid-row-end: span 4;
+  }
+
+  main .directoryGrid div.directoryAdd.max4Columns div.gridView:nth-child(6) {
+    grid-row-end: span 2;
+  }
+
+  main .directoryGrid div.directoryAdd.max4Columns div.gridView:nth-child(7) {
+    grid-row-end: span 3;
+  }
+
+  main .directoryGrid div.directoryAdd.max4Columns div.gridView:nth-child(8) {
+    grid-row-end: span 3;
+  }
 } /*************end of media query**********/

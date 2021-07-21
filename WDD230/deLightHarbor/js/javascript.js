@@ -39,11 +39,18 @@ function directoryAdd() /* Building content from JSON data source */ {
           let card = document.createElement('div');
           card.classList.add("listView");
           
-          let icon = document.createElement('img');
+          /*let icon = document.createElement('img');
           icon.setAttribute('src', 'images/directory/' + dict[i].logo);
           icon.setAttribute('alt', dict[i].name.toLowerCase() + " logo");
           icon.setAttribute('loading', 'lazy');
-          card.appendChild(icon);
+          card.appendChild(icon);*/
+
+          let largePic = document.createElement('img');
+          largePic.setAttribute('src', 'images/directory/HD' + dict[i].logo);
+          largePic.setAttribute('alt', dict[i].name.toLowerCase() + " HD logo");
+          largePic.setAttribute('loading', 'lazy');
+          largePic.classList.add("dissapear");
+          card.appendChild(largePic);
 
           let info = document.createElement('div');
           let h2 = document.createElement('h2');
@@ -92,7 +99,7 @@ function toggleDirectory(x) /* Toggles the Directory from List View to Grid View
     x.removeAttribute('onclick', "toggleDirectory(this)");
     x.classList.add("icon-active");
 
-    document.querySelector(".directoryAdd").classList.toggle("max3Columns");
+    document.querySelector(".directoryAdd").classList.toggle("max4Columns");
     if (document.querySelector(".directoryAdd").classList.length > 1) /*means it has changed to GridView*/{
         for (let i = 0; i < 8; i++) {
             document.querySelector(".listView").classList.add("gridView");

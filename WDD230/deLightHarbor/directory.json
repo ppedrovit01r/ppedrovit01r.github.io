@@ -2,7 +2,7 @@
     "directory": [
       {
         "name": "Zaffari",
-        "address": "R. Gen. Lima e Silva, 606 - Cidade Baixa, Porto Alegre",
+        "address": "R. Gen. Lima e Silva, 606 - Cidade Baixa",
         "tel": {
             "type": "fixo",
             "number": "+555140041112",
@@ -13,7 +13,7 @@
       },
       {
         "name": "Food Lover",
-        "address": "R. Prof. Carvalho de Freitas, 504 - Teresópolis, Porto Alegre",
+        "address": "R. Prof. Carvalho de Freitas, 504 - Teresópolis",
         "tel": {
             "type": "whatsapp",
             "number": "+5551996025490",
@@ -24,7 +24,7 @@
       },
       {
         "name": "Só Copias",
-        "address": "Av. Osvaldo Aranha, 222 - Centro, Porto Alegre",
+        "address": "Av. Osvaldo Aranha, 222 - Centro",
         "tel": {
             "type": "whatsapp",
             "number": "+5551993999766",
@@ -35,7 +35,7 @@
       },
       {
         "name": "CFC MODELO",
-        "address": "Av. João Pessoa, 1084 - Farroupilha, Porto Alegre",
+        "address": "Av. João Pessoa, 1084 - Farroupilha",
         "tel": {
             "type": "whatsapp",
             "number": "+5551984457539",
@@ -46,7 +46,7 @@
       },
       {
         "name": "Polpa do Açaí",
-        "address": "Av. Venâncio Aires, 655 - Farroupilha, Porto Alegre",
+        "address": "Av. Venâncio Aires, 655 - Farroupilha",
         "tel": {
             "type": "fixo",
             "number": "+555135331543",
@@ -57,7 +57,7 @@
       },
       {
         "name": "Casa do Papel",
-        "address": "Av. Osvaldo Aranha, 1234 - Bom Fim, Porto Alegre",
+        "address": "Av. Osvaldo Aranha, 1234 - Bom Fim",
         "tel": {
             "type": "whatsapp",
             "number": "+555130217888",
@@ -68,7 +68,7 @@
       },
       {
         "name": "Redenção Bicicletas",
-        "address": "Av. Osvaldo Aranha, 660 - Bom Fim, Porto Alegre",
+        "address": "Av. Osvaldo Aranha, 660 - Bom Fim",
         "tel": {
             "type": "fixo",
             "number": "+555133462158",
@@ -79,7 +79,7 @@
       },
       {
         "name": "SuperForce CrossFit",
-        "address": "Av. Osvaldo Aranha, 756 - Bom Fim, Porto Alegre",
+        "address": "Av. Osvaldo Aranha, 756 - Bom Fim",
         "tel": {
             "type": "whatsapp",
             "number": "+5551999550756",

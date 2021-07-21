@@ -544,16 +544,25 @@ main .directoryGrid h1 {
   position: relative;
 }
 
+main .directoryGrid .directoryAdd a {
+  background-color: var(--blue);
+  color: var(--platinum);
+  text-decoration: none;
+  font-weight: normal;
+  padding: .5em;
+  border-radius: 5px;
+}
+
 main .directoryGrid .directoryAdd .listView {
-  width: 92%;
+  width: 88%;
   margin: 1em auto;
   border-radius: .75em;
   box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
-  padding: .2em;
+  padding: .2em 5%;
   display: flex;
   text-align: center;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 
@@ -569,7 +578,7 @@ main .directoryGrid .directoryAdd .telFlex {
   display: flex;
   width: 100%;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
 }
 
 main .directoryGrid .directoryTitle {

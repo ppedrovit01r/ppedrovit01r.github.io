@@ -293,6 +293,10 @@ function closeAlert() {
   document.querySelector('.alertBox').style.display = "none";
 }
 
+function lastModified() {
+  document.querySelector("#lastModified").innerHTML = document.lastModified;
+}
+
 /***************** CONTACT PAGE *********************/
 if (document.querySelector(".activePage").textContent == `Contact Us`) {
   checkHQStatus();
@@ -307,6 +311,6 @@ if (document.querySelector(".activePage").textContent == `Directory`) {
 /***************** HOMEPAGE *********************/
 if (document.querySelector("title").textContent == `deLight Harbor | Home`) {
   weatherOneCall();
-
 } /*************end of contact page query**********/
 
+lastModified();

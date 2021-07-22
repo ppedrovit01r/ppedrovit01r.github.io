@@ -185,6 +185,7 @@
     padding: 0.2em 2.5%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
   }
 
   main .directoryGrid .directoryAdd .gridView img {
@@ -196,33 +197,7 @@
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
   }
 
-  main .directoryGrid div.directoryAdd.max4Columns div.gridView:nth-child(1) {
-    grid-row-end: span 2;
-  }
-
-  main .directoryGrid div.directoryAdd.max4Columns div.gridView:nth-child(3) {
-    grid-row-end: span 3;
-  }
-
-  main .directoryGrid div.directoryAdd.max4Columns div.gridView:nth-child(4) {
-    grid-row-end: span 3;
-  }
-
-  main .directoryGrid div.directoryAdd.max4Columns div.gridView:nth-child(5) {
-    grid-row-end: span 3;
-  }
-
-  main .directoryGrid div.directoryAdd.max4Columns div.gridView:nth-child(6) {
-    grid-row-end: span 3;
-  }
-
-  main .directoryGrid div.directoryAdd.max4Columns div.gridView:nth-child(7) {
-    grid-row-end: span 4;
-  }
-
-  main .directoryGrid div.directoryAdd.max4Columns div.gridView:nth-child(8) {
-    grid-row-end: span 4;
-  }
+  
 
   /***************** HOMEPAGE *********************/
   main .advertisement {
@@ -246,4 +221,12 @@
     grid-column-end: span 3;
   }
 
+  main .Upcoming picture {
+    display: flex;
+    justify-content: center;
+  }
+
+  main .Upcoming img {
+    width: 400px;
+  }
 } /*************end of media query**********/

@@ -83,6 +83,20 @@
     display: grid;
     grid-template-columns: 1fr 2fr;
   }
+
+  main .mainGrid .pic1 {
+    margin: 12px 4%;
+  }
+
+  main .mainGrid .pic1 img {
+    width: 92%;
+    border-radius: .5em;
+  }
+
+  main .mainGrid .Upcoming {
+    grid-area: 3/2/span 3/span 1;
+  }
+
 /***************** JOIN INFO *********************/
   main .join-invite {
     width: 50%;
@@ -172,31 +186,30 @@
     padding: .75em 5%;
   }
 
-  main .directoryGrid div.directoryAdd.max4Columns div.gridView:nth-child(1) {
+  /***************** CITY PAGE *********************/
+  main .cityGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  main .cityGrid .pics {
+    margin: 12px 4%;
+  }
+
+  main .cityGrid .pics img {
+    border-radius: .5em;
+  }
+  
+  main .cityGrid #cityInfo {
     grid-row-end: span 2;
   }
 
-  main .directoryGrid div.directoryAdd.max4Columns div.gridView:nth-child(3) {
-    grid-row-end: span 3;
+  main .cityGrid .pic1 {
+    grid-column-end: span 2;
   }
 
-  main .directoryGrid div.directoryAdd.max4Columns div.gridView:nth-child(4) {
-    grid-row-end: span 2;
-  }
-
-  main .directoryGrid div.directoryAdd.max4Columns div.gridView:nth-child(5) {
-    grid-row-end: span 4;
-  }
-
-  main .directoryGrid div.directoryAdd.max4Columns div.gridView:nth-child(6) {
-    grid-row-end: span 2;
-  }
-
-  main .directoryGrid div.directoryAdd.max4Columns div.gridView:nth-child(7) {
-    grid-row-end: span 3;
-  }
-
-  main .directoryGrid div.directoryAdd.max4Columns div.gridView:nth-child(8) {
+  main .cityGrid #cityHistory {
+    grid-column-end: span 2;
     grid-row-end: span 3;
   }
 } /*************end of media query**********/

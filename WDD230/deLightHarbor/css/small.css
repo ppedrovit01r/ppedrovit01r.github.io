@@ -626,6 +626,10 @@ main .joinGrid h1 {
   text-align: center;
 }
 
+main .joinGrid .cardBlock h2 {
+  margin-bottom: .75em;
+}
+
 main .joinGrid .joinBlock form fieldset {
   margin: 1em 0;
   border: 0;
@@ -757,4 +761,19 @@ main .directoryGrid .directorySwitch {
 /***************** THANK YOU PAGE *********************/
 main .thankYou {
   margin: 2em;
+}
+
+/***************** city PAGE *********************/
+main .pics img {
+  width: 100%;
+}
+
+main .cardBlock .farrou-pic img {
+  margin: .5em 0;
+  width: 100%;
+}
+
+main .Upcoming img {
+  width: 100%;
+  border-radius: .5em;
 }

@@ -348,7 +348,7 @@ main .heroimg {
 
 main .heroimg picture {
   display: block;
-  background-color: #ccc;
+  background-color: black;
   width: 100vw;
   height: 120vw;
 }
@@ -360,7 +360,7 @@ main .top-hero {
 
 main .top-hero picture {
   display: block;
-  background-color: #ccc;
+  background-color: black;
   width: 100vw;
   height: 100vw;
 }

@@ -50,7 +50,7 @@ a:active {
 
 header a:link, header a:visited {
     color: var(--antique);
-};
+}
 
 header a:hover {
     color: white;

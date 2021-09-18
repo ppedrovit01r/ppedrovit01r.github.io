@@ -1,0 +1,7 @@
+name = input('What is your name? ')
+print('Hello ' + name + '! I would like to know you better.')
+age = input('How old are you? ')
+place = input('Where are you from? ')
+color = input('Please tell me your favorite color: ')
+print('That is fantastic, ' + name + '!\penNow I know you are ' + age + ' years old, that you are from ' + place + ', and that your favorite color is ' + color + '!')
+print('Thank you for letting me get to know you better!')

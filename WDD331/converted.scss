@@ -1,0 +1,143 @@
+//Mixin
+@mixin display-grid {
+    display: -ms-grid;
+    display: grid;
+}
+
+@mixin box-shadow($h: 0px, $v: 0px, $b: 0px, $s: 0px, $c: #000) {
+    -webkit-box-shadow: $h $v $b $s $c;
+    -moz-box-shadow: $h $v $b $s $c;
+    box-shadow: $h $v $b $s $c;
+}
+
+/************** Fonts ***************/
+/*Lora is the font for the headlines*/
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+h1, h2 {
+    font-family: Lora, serif;
+}
+
+/************** Colors ***************/
+// Variables
+$header-background-color: #6495ed;
+$main-background-color: #faebd7;
+$article-background-color: white;
+
+$blue-color: #6495ed;
+$antique-color: #faebd7;
+$darker-antique-color: #deb887;
+//
+
+header {
+    background-color: $header-background-color;
+}
+
+main {
+    background-color: $main-background-color;
+}
+
+article {
+    @include box-shadow(2.4px, 2.4px, 3.2px);
+    background-color: $article-background-color;
+    div.post-date {
+        color: gray;
+    }
+}
+
+/************** Link Colors ***************/
+a {
+    &:link, &:visited {
+        color: $blue-color;
+        text-decoration: none;
+    }
+    &:hover {
+        text-decoration: underline;
+    }
+    &:active {
+        color: $darker-antique-color;
+    }
+}
+
+header a {
+    &:link, &:visited {
+        color: $antique-color;
+    }
+    &:hover {
+        color: white;
+    }
+}
+
+article h2 a {
+    &:link, &:visited {
+        color: black;
+    }
+    &:hover {
+        color: $blue-color;
+    }
+}
+
+/************** Body ***************/
+body {
+    margin: 0;
+    div {
+        @media only screen and (min-width: 42em) {
+            & {
+                @include display-grid;
+                -ms-grid-columns: 300px 1fr;
+                grid-template-columns: 300px 1fr;
+            }
+        }
+    }
+}
+
+/************** Header ***************/
+header {
+    padding: 1.5em;
+    text-align: right;
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        li {
+            margin: 1em 0;
+        }
+    }
+    @media only screen and (min-width: 42em) {
+        & {
+            padding: 1.5em 3em;
+        }
+    }
+}
+
+/************** Article ***************/
+main {
+    padding: 1.5em 0;
+}
+
+article {
+    margin: 1.5em;
+    border-radius: 4px;
+    padding: 1.5em;
+    h2 {
+        font-size: 1.7em;
+        font-weight: normal;
+        margin-top: .25em;
+        margin-bottom: 2em;
+    }
+    figure img {
+        width: 90%;
+        max-width: 250px;
+        display: block;
+        margin: 0 auto;
+    }
+    @media only screen and (min-width: 42em) {
+        & {
+            margin: 1.5em 10%;
+        }
+    }
+}

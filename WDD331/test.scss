@@ -1,0 +1,80 @@
+// ********* MIXINS
+//mixins
+@mixin grid-col($span-num) {
+    grid-column-start: $span-num;
+}
+
+@mixin grid-row($span-num) {
+    grid-row-start: $span-num;
+}
+
+@mixin offset($offset-num) {
+    margin-left: $one-column * $offset-num;
+}
+
+//************* GRID
+//creating grid
+.row {
+    display: grid;
+    grid-template-columns: repeat($num-columns, $one-column);
+    height: 100%;
+}
+
+//defining columns
+@for $index from $loop-start to $loop-col-end {
+    .col-#{$index} {
+        @include grid-col($index);
+    }
+}
+
+//defining rows
+@for $index from $loop-start to $loop-row-end {
+    .row-#{$index} {
+        @include grid-row($index);
+    }
+}
+
+//adjust the alignment
+.cell {
+    place-self: center;
+}
+
+.pip {
+    grid-column-end: span 2;
+}
+
+//*********** FLEXBOX
+//creating rows
+.row {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    align-content: space-between;
+    height: 100%;
+}
+
+.cell {
+    flex: 1;
+    text-align: center;
+}
+
+//creating columns
+.number {
+    flex: 0 0 $one-column;
+}
+
+.pip {
+    flex: 0 0 $one-column * 2;
+}
+
+//creating offsets
+@for $index from $loop-start to $loop-col-end {
+    .offset-#{$index} {
+        @include offset($index);
+    }
+}
+
+.offset-solo {
+    margin-right: $one-column * 3;
+    margin-left: $one-column * 3;
+}
